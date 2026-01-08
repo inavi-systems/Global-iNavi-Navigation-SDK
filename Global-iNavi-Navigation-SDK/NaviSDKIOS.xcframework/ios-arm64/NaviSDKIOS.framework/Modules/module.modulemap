@@ -1,0 +1,6 @@
+framework module NaviSDKIOS {
+  umbrella header "NaviSDKIOS.h"
+  export *
+
+  module * { export * }
+}

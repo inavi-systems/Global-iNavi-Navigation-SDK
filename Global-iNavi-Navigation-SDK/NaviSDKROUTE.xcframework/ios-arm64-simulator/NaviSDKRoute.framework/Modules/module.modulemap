@@ -1,0 +1,6 @@
+framework module NaviSDKRoute {
+  umbrella header "NaviSDKRoute.h"
+  export *
+
+  module * { export * }
+}

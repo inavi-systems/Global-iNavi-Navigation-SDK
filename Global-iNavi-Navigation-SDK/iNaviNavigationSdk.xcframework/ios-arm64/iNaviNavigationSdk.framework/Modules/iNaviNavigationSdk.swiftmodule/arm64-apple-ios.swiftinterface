@@ -1,0 +1,382 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name iNaviNavigationSdk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Combine
+import CoreLocation
+import DeveloperToolsSupport
+import Foundation
+import MapLibre
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import iNaviNavigationSdk
+extension ObjectiveC.NSObject {
+  public class var className: Swift.String {
+    get
+  }
+}
+public enum GeocodingStatus {
+  case success(geocodeResponse: iNaviNavigationSdk.InvGeocode)
+  case failure(errorCode: Swift.Int, errorMsg: Swift.String)
+}
+public enum InitStatus {
+  case success
+  case fail(Swift.String)
+  case onMapReady(Any?)
+}
+public struct InvAddress {
+}
+public enum InvBottomBtnEvent : Swift.Int, Swift.CaseIterable {
+  case reroute
+  case showRouteOption
+  case toggleEtaMode
+  case routeOptionBack
+  case routeSummary
+  case otherRoute
+  case trafficInfo
+  case cancelGuide
+  case simulBefore
+  case simulForward
+  case simulStartStop
+  case simulCancel
+  case simulSpeedControl
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [iNaviNavigationSdk.InvBottomBtnEvent]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [iNaviNavigationSdk.InvBottomBtnEvent] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct InvBoundingBox {
+}
+public struct InvCoordinate {
+  public let wgsLon: Swift.Double
+  public let wgsLat: Swift.Double
+  public init(wgsLon: Swift.Double, wgsLat: Swift.Double)
+}
+public struct InvGeocode {
+}
+public struct InvMapCode {
+}
+public struct InvMapMarkerOption {
+  public var coordinate: iNaviNavigationSdk.InvCoordinate?
+  public var iconImage: UIKit.UIImage?
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(coordinate: iNaviNavigationSdk.InvCoordinate? = nil, iconImage: UIKit.UIImage? = nil)
+  #endif
+}
+public enum InvMapRouteColor : Swift.Int, Swift.CaseIterable {
+  case traffic
+  case red
+  case orange
+  case yellow
+  case green
+  case blue
+  case indigo
+  case gray
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [iNaviNavigationSdk.InvMapRouteColor]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [iNaviNavigationSdk.InvMapRouteColor] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum InvMapTheme {
+  case automatic
+  case day
+  case night
+  public static func == (a: iNaviNavigationSdk.InvMapTheme, b: iNaviNavigationSdk.InvMapTheme) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum InvMapViewMode : Swift.Int, Swift.CaseIterable {
+  case viewMode3D
+  case viewMode2D
+  case viewMode2DFix
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [iNaviNavigationSdk.InvMapViewMode]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [iNaviNavigationSdk.InvMapViewMode] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct InvNaviLocation {
+  public var coordinate: iNaviNavigationSdk.InvCoordinate
+  public var angle: Swift.Double
+  public var speed: Swift.Int
+  public init(coordinate: iNaviNavigationSdk.InvCoordinate, angle: Swift.Double = 0.0, speed: Swift.Int = 0)
+}
+public struct InvReqSearch {
+  public var query: Swift.String
+  public var coordinate: iNaviNavigationSdk.InvCoordinate
+}
+public enum InvReRouteType {
+  case manual
+  case escape
+  case period
+  public static func == (a: iNaviNavigationSdk.InvReRouteType, b: iNaviNavigationSdk.InvReRouteType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct InvReverseGeocode {
+}
+public struct InvRoutePtItem {
+  public var name: Swift.String
+  public var address: Swift.String
+  public var coordinate: iNaviNavigationSdk.InvCoordinate
+  public var angle: Swift.Int
+  public let centerCoordinate: iNaviNavigationSdk.InvCoordinate?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String, address: Swift.String = "", coordinate: iNaviNavigationSdk.InvCoordinate, angle: Swift.Int = -1, centerCoordinate: iNaviNavigationSdk.InvCoordinate? = nil)
+  #endif
+}
+public struct InvSearchItem {
+  public let coordinate: iNaviNavigationSdk.InvCoordinate
+  public var mainTitle: Swift.String
+  public var addrJibun: Swift.String
+  public var addrRoad: Swift.String
+  public var distance: Swift.Int
+  public var type: iNaviNavigationSdk.InvSearchResultType
+  public var id: Swift.Int
+  public let routePosition: iNaviNavigationSdk.InvCoordinate?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(coordinate: iNaviNavigationSdk.InvCoordinate, mainTitle: Swift.String, addrJibun: Swift.String = "", addrRoad: Swift.String = "", distance: Swift.Int = 0, type: iNaviNavigationSdk.InvSearchResultType = .unknown, id: Swift.Int = 0, routePosition: iNaviNavigationSdk.InvCoordinate? = nil)
+  #endif
+}
+public struct InvSearchResult {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(type: Swift.String?, id: Swift.String?, score: Swift.Double?, dist: Swift.Double?, info: Swift.String?, entityType: Swift.String?, poi: iNaviNavigationSdk.InvPoi?, relatedPois: [iNaviNavigationSdk.RelatedPoi]?, address: iNaviNavigationSdk.InvAddress?, position: iNaviNavigationSdk.InvCoordinate?, mapcodes: [iNaviNavigationSdk.InvMapCode]?, viewport: iNaviNavigationSdk.InvViewport?, boundingBox: iNaviNavigationSdk.InvBoundingBox?, entryPoints: [iNaviNavigationSdk.InvEntryPoint]?, addressRanges: iNaviNavigationSdk.InvAddressRanges?, chargingPark: iNaviNavigationSdk.InvChargingPark?, vehicleConstraint: [iNaviNavigationSdk.InvBrand]?, dataSources: iNaviNavigationSdk.InvDataSources?, fuelTypes: [Swift.String]?, vehicleTypes: [Swift.String]?)
+  #endif
+}
+public struct RelatedPoi : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InvViewport {
+}
+public struct InvEntryPoint {
+}
+public struct InvAddressRanges {
+}
+public struct InvChargingPark {
+}
+public struct InvConnector {
+}
+public struct InvDataSources {
+}
+public struct InvDataSourceInfo {
+}
+public struct InvGeometryInfo {
+}
+public struct InvPoi {
+}
+public struct InvBrand {
+}
+public struct InvCategory {
+}
+public struct InvOpeningHours {
+}
+public struct InvClassification {
+}
+public struct InvTimeZoneInfo {
+}
+public struct InvQueryIntent {
+}
+public struct InvQueryIntentDetails {
+}
+public struct InvTimeRange {
+}
+public struct InvNameLocale {
+}
+public struct InvTimePoint {
+}
+public enum InvSearchResultType : Swift.Int, Swift.CaseIterable {
+  case poi
+  case recent
+  case category
+  case address
+  case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [iNaviNavigationSdk.InvSearchResultType]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [iNaviNavigationSdk.InvSearchResultType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct InvSummary {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(query: Swift.String?, queryType: Swift.String?, queryTime: Swift.Int?, numResults: Swift.Int?, offset: Swift.Int?, totalResults: Swift.Int?, fuzzyLevel: Swift.Int?, geoBias: iNaviNavigationSdk.InvCoordinate?, queryIntent: [iNaviNavigationSdk.InvQueryIntent]?)
+  #endif
+}
+public enum InvUIComponent : Swift.Int, Swift.CaseIterable {
+  case allComponent
+  case angleBtn
+  case curOnBtn
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [iNaviNavigationSdk.InvUIComponent]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [iNaviNavigationSdk.InvUIComponent] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum MapModeStatus {
+  case nomal
+  case guide
+  case mapMove
+  case simuleGuide
+  case simuleMapMove
+  public static func == (a: iNaviNavigationSdk.MapModeStatus, b: iNaviNavigationSdk.MapModeStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum MapMoveStatus {
+  case onMove
+  case onMoveBegin
+  case onMoveEnd
+  public static func == (a: iNaviNavigationSdk.MapMoveStatus, b: iNaviNavigationSdk.MapMoveStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ReverseGeocodingStatus {
+  case success(reverseGeocodeResponse: iNaviNavigationSdk.InvReverseGeocode)
+  case failure(errorCode: Swift.Int, errorMsg: Swift.String)
+}
+public enum RouteStatus {
+  case success(listID: [Swift.String])
+  case failure(errorCode: Swift.Int, errorMsg: Swift.String)
+}
+public enum SearchStatus {
+  case success(items: [iNaviNavigationSdk.InvSearchItem])
+  case failure
+}
+@_hasMissingDesignatedInitializers final public class AtomicUInt {
+  final public func incrementAndGet() -> Swift.UInt
+  @objc deinit
+}
+public enum ShapeIDHelper {
+  public static func nextID() -> Swift.UInt
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class InvMapView : UIKit.UIView {
+  @objc deinit
+}
+extension iNaviNavigationSdk.InvMapView : MapLibre.MLNMapViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mapViewDidFailLoadingMap(_ mapView: MapLibre.MLNMapView, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mapView(_ mapView: MapLibre.MLNMapView, didFinishLoading style: MapLibre.MLNStyle)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mapView(_ mapView: MapLibre.MLNMapView, regionIsChangingWith reason: MapLibre.MLNCameraChangeReason)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mapView(_ mapView: MapLibre.MLNMapView, regionDidChangeWith reason: MapLibre.MLNCameraChangeReason, animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func mapViewDidFinishRenderingMap(_ mapView: MapLibre.MLNMapView, fullyRendered: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class InvSimpleSearchBar : UIKit.UIView {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class InaviController : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  @objc public static let shared: iNaviNavigationSdk.InaviController
+  @objc override dynamic public init()
+  public func naviInitialize(viewController: UIKit.UIViewController, mapContainer: UIKit.UIView, listener: @escaping (iNaviNavigationSdk.InitStatus) -> Swift.Void)
+  public func checkIsNight() -> Swift.Bool
+  public func setMapClickListener(listener: @escaping (iNaviNavigationSdk.InvCoordinate) -> Swift.Void)
+  public func setMapPosition(latitude: Swift.Double, longitude: Swift.Double, angle: Swift.Double)
+  public func zoomIn()
+  public func zoomOut()
+  public func setMapViewMode(mode: iNaviNavigationSdk.InvMapViewMode)
+  public func getMapViewMode() -> iNaviNavigationSdk.InvMapViewMode
+  public func addMapIcon(mapMarkerOption: iNaviNavigationSdk.InvMapMarkerOption)
+  public func removeMapIcon(markerId: Swift.String)
+  public func removeMapIconAll()
+  public func setMapPadding(bottom: Swift.Int, left: Swift.Int, right: Swift.Int, top: Swift.Int)
+  public func setMapLevel(level: Swift.Int)
+  public func setMapEnableRotate(enable: Swift.Bool)
+  public func setMapMoveChangedListener(listener: @escaping (iNaviNavigationSdk.MapMoveStatus) -> Swift.Void)
+  public func forceHideMapComponent(componentID: iNaviNavigationSdk.InvUIComponent, hide: Swift.Bool)
+  public func setMapRouteColor(color: iNaviNavigationSdk.InvMapRouteColor)
+  public func runSearch(req: iNaviNavigationSdk.InvReqSearch, listener: @escaping (iNaviNavigationSdk.SearchStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func runRoute(start: iNaviNavigationSdk.InvRoutePtItem, end: iNaviNavigationSdk.InvRoutePtItem, via: [iNaviNavigationSdk.InvRoutePtItem]? = nil, listener: @escaping (iNaviNavigationSdk.RouteStatus) -> Swift.Void)
+  #endif
+  public func runGuidance(searchItem: iNaviNavigationSdk.InvSearchItem, routeID: Swift.String)
+  public func runGuidanceFromRouteInfo(routeID: Swift.String)
+  public func getCurrentPosition() -> iNaviNavigationSdk.InvNaviLocation
+  public func getOrbisLogDrive() -> Swift.Bool
+  public func cancelRoute()
+  public func setNaviBottomViewEventListener(listener: @escaping (iNaviNavigationSdk.InvBottomBtnEvent) -> Swift.Void)
+  public func removeNaviBottomViewEventListener()
+  public func setMapModeListener(listener: @escaping (iNaviNavigationSdk.MapModeStatus) -> Swift.Void)
+  public func setBottomButtonEvent(bottomBtnEvent: iNaviNavigationSdk.InvBottomBtnEvent)
+  public func isSetNaviBottomViewEventListener() -> Swift.Bool
+  public func requestGeocoding(address: Swift.String, onGeoCodingListener: @escaping (iNaviNavigationSdk.GeocodingStatus) -> Swift.Void)
+  public func requestReverseGeocoding(coordinate: iNaviNavigationSdk.InvCoordinate, onReverseGeocodingListener: @escaping (iNaviNavigationSdk.ReverseGeocodingStatus) -> Swift.Void)
+  public func requestOrbisReRoute(reRouteType: iNaviNavigationSdk.InvReRouteType)
+  public func moveOrbisSimulStep(bIsForward: Swift.Bool)
+  public func runSimulGuidance(routeID: Swift.String)
+  public func startOrbisSimulGuide()
+  public func stopOrbisSimulGuide()
+  public func setOrbisSimulSpeed(nSpeed: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getSearchItem() -> iNaviNavigationSdk.InvSearchItem?
+  #endif
+  public func setMapTheme(theme: iNaviNavigationSdk.InvMapTheme)
+  public func showSearchView()
+  public func showTotalRouteInfoView()
+  @objc deinit
+}
+extension iNaviNavigationSdk.InvBottomBtnEvent : Swift.Equatable {}
+extension iNaviNavigationSdk.InvBottomBtnEvent : Swift.Hashable {}
+extension iNaviNavigationSdk.InvBottomBtnEvent : Swift.RawRepresentable {}
+extension iNaviNavigationSdk.InvMapRouteColor : Swift.Equatable {}
+extension iNaviNavigationSdk.InvMapRouteColor : Swift.Hashable {}
+extension iNaviNavigationSdk.InvMapRouteColor : Swift.RawRepresentable {}
+extension iNaviNavigationSdk.InvMapTheme : Swift.Equatable {}
+extension iNaviNavigationSdk.InvMapTheme : Swift.Hashable {}
+extension iNaviNavigationSdk.InvMapViewMode : Swift.Equatable {}
+extension iNaviNavigationSdk.InvMapViewMode : Swift.Hashable {}
+extension iNaviNavigationSdk.InvMapViewMode : Swift.RawRepresentable {}
+extension iNaviNavigationSdk.InvReRouteType : Swift.Equatable {}
+extension iNaviNavigationSdk.InvReRouteType : Swift.Hashable {}
+extension iNaviNavigationSdk.InvSearchResultType : Swift.Equatable {}
+extension iNaviNavigationSdk.InvSearchResultType : Swift.Hashable {}
+extension iNaviNavigationSdk.InvSearchResultType : Swift.RawRepresentable {}
+extension iNaviNavigationSdk.InvUIComponent : Swift.Equatable {}
+extension iNaviNavigationSdk.InvUIComponent : Swift.Hashable {}
+extension iNaviNavigationSdk.InvUIComponent : Swift.RawRepresentable {}
+extension iNaviNavigationSdk.MapModeStatus : Swift.Equatable {}
+extension iNaviNavigationSdk.MapModeStatus : Swift.Hashable {}
+extension iNaviNavigationSdk.MapMoveStatus : Swift.Equatable {}
+extension iNaviNavigationSdk.MapMoveStatus : Swift.Hashable {}

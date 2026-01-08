@@ -1,0 +1,25 @@
+//
+//  NaviSDK.modulemap
+//  NaviSDK
+//
+//  Created by DAECHEOL KIM on 12/13/24.
+//
+
+framework module iNaviNavigationSdk {
+  umbrella header "iNaviNavigationSdk.h"
+
+  export *
+
+  module * { export * }
+  
+//  framework module NaviSDKCore {
+//      umbrella header "NaviSDKCore.xcframework/headers/NaviSDKCore.h"
+//
+//      module * { export * }
+//  }
+}
+
+module iNaviNavigationSdk.Swift {
+  header "iNaviNavigationSdk-Swift.h"
+  requires objc
+}

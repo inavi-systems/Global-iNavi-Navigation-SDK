@@ -1,0 +1,6 @@
+framework module NaviSDKMMC {
+  umbrella header "NaviSDKMMC.h"
+  export *
+
+  module * { export * }
+}

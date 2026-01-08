@@ -1,0 +1,2880 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name NaviSDKCore
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Foundation
+@_exported import NaviSDKCore
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum Skie {
+  public enum KotlinxCoroutinesCore {
+    public enum StateFlow {
+      public typealias __Kotlin = NaviSDKCore.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = NaviSDKCore.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum Flow {
+      public typealias __Kotlin = NaviSDKCore.Kotlinx_coroutines_coreFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = NaviSDKCore.Kotlinx_coroutines_coreRunnable
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = NaviSDKCore.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = NaviSDKCore.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum SelectClause0 {
+    }
+    public enum SelectClause {
+    }
+    public enum SelectInstance {
+    }
+    public enum SelectClause1 {
+    }
+    public enum SelectClause2 {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = NaviSDKCore.Skie.KotlinxCoroutinesCore
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = NaviSDKCore.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = NaviSDKCore.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = NaviSDKCore.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = NaviSDKCore.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = NaviSDKCore.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = NaviSDKCore.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = NaviSDKCore.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = NaviSDKCore.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = NaviSDKCore.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = NaviSDKCore.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = NaviSDKCore.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = NaviSDKCore.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = NaviSDKCore.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = NaviSDKCore.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = NaviSDKCore.Skie_SuspendResult
+      public enum Success {
+        public typealias __Kotlin = NaviSDKCore.Skie_SuspendResult.Success
+      }
+      public enum Error {
+        public typealias __Kotlin = NaviSDKCore.Skie_SuspendResult.Error
+      }
+      public enum Canceled {
+        public typealias __Kotlin = NaviSDKCore.Skie_SuspendResult.Canceled
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = NaviSDKCore.Skie.RuntimeKotlin
+  public enum KtorUtils {
+    public enum Pipeline {
+    }
+  }
+  public typealias io_ktor__ktor_utils = NaviSDKCore.Skie.KtorUtils
+  public enum Model {
+    public enum ImageSource {
+    }
+    public enum LocationInfo {
+    }
+    public enum ReRouteType {
+    }
+    public enum ReqBase {
+    }
+    public enum OrbismapException {
+    }
+    public enum TomTomSearchRequest {
+    }
+    public enum InitStatus {
+    }
+    public enum ResultEvent {
+    }
+    public enum NetworkResponse {
+    }
+    public enum ResOrbisBase {
+    }
+  }
+  public typealias com_inavisys_navisdk_model__model = NaviSDKCore.Skie.Model
+  public enum KotlinxSerializationCore {
+    public enum SerialKind {
+    }
+    public enum SerializersModule {
+    }
+    public enum PolymorphicKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = NaviSDKCore.Skie.KotlinxSerializationCore
+  public enum KotlinxDatetime {
+    public enum DateTimeFormat {
+    }
+    public enum DateTimeFormatBuilder {
+      public enum WithTime {
+      }
+      public enum WithDate {
+      }
+      public enum WithDateTime {
+      }
+      public enum WithUtcOffset {
+      }
+      public enum WithDateTimeComponents {
+      }
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_datetime = NaviSDKCore.Skie.KotlinxDatetime
+  public enum KotlinxSerializationJson {
+    public enum Json {
+    }
+    public enum JsonElement {
+    }
+    public enum JsonPrimitive {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_json = NaviSDKCore.Skie.KotlinxSerializationJson
+  public enum Runtime {
+    public enum QueryResult {
+    }
+    public enum TransacterBase {
+    }
+  }
+  public typealias app_cash_sqldelight__runtime = NaviSDKCore.Skie.Runtime
+  public enum Core {
+    public enum VisibilityState {
+    }
+    public enum MapClickEvent {
+    }
+    public enum RouteResultUiState {
+    }
+    public enum RouteEvent {
+    }
+  }
+  public typealias com_inavisys_navisdk_core__core = NaviSDKCore.Skie.Core
+  public enum KtorHttp {
+    public enum OutgoingContent {
+    }
+  }
+  public typealias io_ktor__ktor_http = NaviSDKCore.Skie.KtorHttp
+  public enum KotlinxIoCore {
+    public enum Source {
+    }
+    public enum Sink {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_io_core = NaviSDKCore.Skie.KotlinxIoCore
+}
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func next() async -> T?
+  #endif
+  @objc deinit
+  public typealias Element = T
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
+}
+public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
+  associatedtype Element
+  associatedtype Delegate : NaviSDKCore.Kotlinx_coroutines_coreFlow
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : NaviSDKCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> NaviSDKCore.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> NaviSDKCore.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = NaviSDKCore.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = NaviSDKCore.SkieKotlinFlow<Swift.AnyObject>
+  public typealias Delegate = any NaviSDKCore.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : NaviSDKCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftOptionalFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> NaviSDKCore.SkieKotlinOptionalFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> NaviSDKCore.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = NaviSDKCore.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = NaviSDKCore.SkieKotlinOptionalFlow<Swift.AnyObject>
+  public typealias Delegate = any NaviSDKCore.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : NaviSDKCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> NaviSDKCore.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> NaviSDKCore.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = NaviSDKCore.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = NaviSDKCore.SkieKotlinSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any NaviSDKCore.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : NaviSDKCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftOptionalSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> NaviSDKCore.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> NaviSDKCore.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = NaviSDKCore.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = NaviSDKCore.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any NaviSDKCore.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : NaviSDKCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var subscriptionCount: NaviSDKCore.SkieSwiftStateFlow<NaviSDKCore.KotlinInt> {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftMutableSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinMutableSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> NaviSDKCore.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> NaviSDKCore.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = NaviSDKCore.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = NaviSDKCore.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any NaviSDKCore.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : NaviSDKCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var subscriptionCount: NaviSDKCore.SkieSwiftStateFlow<NaviSDKCore.KotlinInt> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func tryEmit(value: T?) -> Swift.Bool
+  #endif
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> NaviSDKCore.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = NaviSDKCore.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any NaviSDKCore.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : NaviSDKCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinStateFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinStateFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> NaviSDKCore.SkieKotlinStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> NaviSDKCore.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = NaviSDKCore.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = NaviSDKCore.SkieKotlinStateFlow<Swift.AnyObject>
+  public typealias Delegate = any NaviSDKCore.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : NaviSDKCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var value: T? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftOptionalStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> NaviSDKCore.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> NaviSDKCore.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = NaviSDKCore.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = NaviSDKCore.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  public typealias Delegate = any NaviSDKCore.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : NaviSDKCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T {
+    get
+    set(value)
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  final public var subscriptionCount: NaviSDKCore.SkieSwiftStateFlow<NaviSDKCore.KotlinInt> {
+    get
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftMutableStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinMutableStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> NaviSDKCore.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> NaviSDKCore.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = NaviSDKCore.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = NaviSDKCore.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any NaviSDKCore.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : NaviSDKCore.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var value: T? {
+    get
+    set(value)
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var replayCache: [T?] {
+    get
+  }
+  #endif
+  final public var subscriptionCount: NaviSDKCore.SkieSwiftStateFlow<NaviSDKCore.KotlinInt> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func tryEmit(value: T?) -> Swift.Bool
+  #endif
+  final public func resetReplayCache()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>?) -> Self
+  #endif
+  final public func _bridgeToObjectiveC() -> NaviSDKCore.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeAsyncIterator() -> NaviSDKCore.SkieSwiftFlowIterator<T?>
+  #endif
+  public typealias AsyncIterator = NaviSDKCore.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = NaviSDKCore.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any NaviSDKCore.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+extension NaviSDKCore.AgentNetworkModule_iosKt {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public static func streamingDownload(url: Swift.String, outputFilePath: Swift.String) async throws
+}
+#if compiler(>=5.3) && $NonescapableTypes
+public func __streamingDownload(url: Swift.String, outputFilePath: Swift.String, completionHandler: @escaping ((any Swift.Error)?) -> Swift.Void)
+#endif
+@available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+public func streamingDownload(url: Swift.String, outputFilePath: Swift.String) async throws
+extension NaviSDKCore.CommonUtilsKt {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public static func getResponseBody(response: NaviSDKCore.Ktor_client_coreHttpResponse) async throws -> Swift.String
+}
+public var jsonInstance: NaviSDKCore.Kotlinx_serialization_jsonJson {
+  get
+}
+#if compiler(>=5.3) && $NonescapableTypes
+public func __getResponseBody(response: NaviSDKCore.Ktor_client_coreHttpResponse, completionHandler: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+#endif
+@available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+public func getResponseBody(response: NaviSDKCore.Ktor_client_coreHttpResponse) async throws -> Swift.String
+extension NaviSDKCore.IOSRouteController {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func updateLineFeature(routeOptions: NaviSDKCore.MapRouteOptions, routeInfo: NaviSDKCore.RouteInfo) async throws
+}
+extension NaviSDKCore.OrbisGuidance {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func runGuidance() async throws
+}
+extension NaviSDKCore.Kotlinx_coroutines_coreFlow {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(collector: any NaviSDKCore.Kotlinx_coroutines_coreFlowCollector) async throws
+}
+extension NaviSDKCore.Kotlinx_coroutines_coreFlowCollector {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(value: Any?) async throws
+  #endif
+}
+extension NaviSDKCore.OrbisGuidanceAdapter {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func runGuidance() async throws
+}
+extension NaviSDKCore.Kotlinx_coroutines_coreJob {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func join() async throws
+}
+extension NaviSDKCore.RuntimeQueryResult {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func await() async throws -> Any?
+  #endif
+}
+extension NaviSDKCore.Skie.Runtime.QueryResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.Runtime.QueryResult.__Sealed, b: NaviSDKCore.Skie.Runtime.QueryResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Runtime.QueryResult.__Sealed where __Sealed : NaviSDKCore.RuntimeQueryResult
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Runtime.QueryResult.__Sealed? where __Sealed : NaviSDKCore.RuntimeQueryResult
+#endif
+extension NaviSDKCore.RecentSearchRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func addSearch(searchItem: NaviSDKCore.LocationInfo.SearchItem) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func clearAllSearches() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func deleteSearchById(id: Swift.Int64) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getSearchesList(limit: Swift.Int32) async throws -> [NaviSDKCore.LocationInfo.SearchItem]
+}
+extension NaviSDKCore.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: NaviSDKCore.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: NaviSDKCore.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: NaviSDKCore.SkieColdFlowIterator<E>) -> NaviSDKCore.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension NaviSDKCore.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> NaviSDKCore.KotlinBoolean
+}
+extension NaviSDKCore.GetNetworkTimeuseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
+}
+extension NaviSDKCore.ServiceRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getNetworkResponseTime() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.NetworkTimeResponse>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getServiceGateForOrbis(reqServiceGateForOrbis: NaviSDKCore.ServiceGateRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ServiceGateResponse>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getTomTomApiKey() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomKeys>
+}
+extension NaviSDKCore.NaviMapView {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(event: NaviSDKCore.MapClickEvent) async throws
+}
+extension NaviSDKCore.AgentNetworkModule {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func checkFileSize(ltempFileSize: Swift.Int64, strTempServerUrl: Swift.String) async throws -> NaviSDKCore.KotlinBoolean
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func request(httpMethod: NaviSDKCore.Ktor_httpHttpMethod, path: Swift.String, body: NaviSDKCore.ReqBase?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func requestDownloadBuffer(url: Swift.String) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.KotlinByteArray>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func requestStreamingDownload(url: Swift.String, outputFilePath: Swift.String) async throws -> NaviSDKCore.NetworkResponse<Foundation.NSString>
+}
+extension NaviSDKCore.Skie.KtorUtils.Pipeline {
+  public struct __Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject {
+    public let __kotlinObject: NaviSDKCore.Ktor_utilsPipeline<TSubject, TContext>
+    public init(_ __kotlinObject: NaviSDKCore.Ktor_utilsPipeline<TSubject, TContext>)
+  }
+}
+public func skie<TSubject, TContext>(_ kotlinObject: NaviSDKCore.Ktor_utilsPipeline<TSubject, TContext>) -> NaviSDKCore.Skie.KtorUtils.Pipeline.__Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject
+extension NaviSDKCore.Skie.KtorUtils.Pipeline.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(context: TContext, subject: TSubject) async throws -> TSubject
+}
+extension NaviSDKCore.KotlinSuspendFunction2 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?, p2: Any?) async throws -> Any?
+  #endif
+}
+extension NaviSDKCore.Ktor_client_coreHttpClientCall {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func body(info: NaviSDKCore.Ktor_utilsTypeInfo) async throws -> Any
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func bodyNullable(info: NaviSDKCore.Ktor_utilsTypeInfo) async throws -> Any?
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getResponseContent() async throws -> any NaviSDKCore.Ktor_ioByteReadChannel
+}
+extension NaviSDKCore.Ktor_ioByteReadChannel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func awaitContent(min: Swift.Int32) async throws -> NaviSDKCore.KotlinBoolean
+}
+extension NaviSDKCore.Ktor_client_coreHttpClientEngine {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(data: NaviSDKCore.Ktor_client_coreHttpRequestData) async throws -> NaviSDKCore.Ktor_client_coreHttpResponseData
+}
+extension NaviSDKCore.OrbisNetworkModule {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getNetworkResponseTime() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.NetworkTimeResponse>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getTomTomApiKey() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomKeys>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func requestAuth(authType: NaviSDKCore.AuthType, body: NaviSDKCore.AuthRequest?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func requestMultiRoute(routeType: NaviSDKCore.RouteType, body: NaviSDKCore.SearchRouteMultiRequest?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func requestSafetyCamera(cameraType: NaviSDKCore.SafetyCameraType, body: NaviSDKCore.TomTomSafetyCameraRequest?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func requestSearch(type: NaviSDKCore.SearchType, body: NaviSDKCore.TomTomSearchRequest?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func requestServiceGateForOrbis(body: NaviSDKCore.ServiceGateRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ServiceGateResponse>
+}
+extension NaviSDKCore.AuthApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func requestAuth(reqAuth: NaviSDKCore.AuthRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.AuthDto>
+}
+extension NaviSDKCore.BufferDownloadApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getDownloadBuffer(url: Swift.String) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.KotlinByteArray>
+}
+extension NaviSDKCore.CameraApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getSafetyCamera(reqData: NaviSDKCore.TomTomSafetyCameraRequest, isMobile: Swift.Bool) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomSafetyCameraDto>
+}
+extension NaviSDKCore.MapDownloadApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func downloadZipFileFromUrl(url: Swift.String, path: Swift.String) async throws -> NaviSDKCore.NetworkResponse<Foundation.NSString>
+}
+extension NaviSDKCore.RouteApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getMultiRoute(reqData: NaviSDKCore.ReqBase.ReqFindMultiRoute) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ResFindMultiRoute>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getOrbisMultiRoute(req: NaviSDKCore.SearchRouteMultiRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchRouteMultiDto>
+}
+extension NaviSDKCore.SearchApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getCategorySearch(reqData: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchCommonDto>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getGenesisFuzzySearch(reqData: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchCommonDto>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getGenesisGeocodeSearch(reqData: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchCommonDto>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getGenesisReverseGeocodeSearch(reqData: NaviSDKCore.TomTomReverseGeocodeRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomReverseGeocodeDto>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getGeocodeSearch(reqData: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchCommonDto>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getNearbySearch(reqData: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchCommonDto>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getOrbisFuzzySearch(reqData: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchCommonDto>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPOISearch(reqData: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchCommonDto>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getRevGeocoding(reqData: NaviSDKCore.ReqBase.ReqGeocoding) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ResGeocoding>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getReverseGeocodeSearch(reqData: NaviSDKCore.TomTomReverseGeocodeRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomReverseGeocodeDto>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getSQESearch(reqData: NaviSDKCore.ReqSQE) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ResSQE>
+}
+extension NaviSDKCore.ServiceApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getNetworkResponseTime() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.NetworkTimeResponse>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getServiceGateForOrbis(body: NaviSDKCore.ServiceGateRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ServiceGateResponse>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getTomTomApiKey() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomKeys>
+}
+extension NaviSDKCore.AuthRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func requestAuth(authRequest: NaviSDKCore.AuthRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+}
+extension NaviSDKCore.MapDownloadRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func orbisDownloadAndExtractMapData(serverUrl: Swift.String, mapVer: Swift.String, country: Swift.String) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ResBase>
+}
+extension NaviSDKCore.RouteRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getBufferDownload(url: Swift.String) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.KotlinByteArray>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getMultiRoute(reqMultiRoute: NaviSDKCore.ReqBase.ReqFindMultiRoute) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getOrbisMultiRoute(request: NaviSDKCore.SearchRouteMultiRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchRouteMultiDto>
+}
+extension NaviSDKCore.SafeGuideRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func downLoadFixedCamera(req: NaviSDKCore.TomTomSafetyCameraRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.Response>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getSafetyCamera(req: NaviSDKCore.TomTomSafetyCameraRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomSafetyCameraDto>
+}
+extension NaviSDKCore.SearchRepository {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getCategorySearch(req: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getCommonSearch(reqSQE: NaviSDKCore.ReqSQE) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getGenesisFuzzySearch(req: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getGenesisGeocodeSearch(req: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getGenesisReverseGeocodeSearch(req: NaviSDKCore.TomTomReverseGeocodeRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getGeocodeSearch(req: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getNearbySearch(req: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getOrbisFuzzySearch(req: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPOISearch(req: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getRevGeocoding(reqGeocoding: NaviSDKCore.ReqBase.ReqGeocoding) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getReverseGeocodeSearch(req: NaviSDKCore.TomTomReverseGeocodeRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+}
+extension NaviSDKCore.GetSafeGuideUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getMobileCamera() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomSafetyCameraDto>
+}
+extension NaviSDKCore.GetOrbisMapDownloadUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> NaviSDKCore.ResultEvent
+}
+extension NaviSDKCore.GetBufferUseCase {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getGuideBuffer(gdata: Swift.String) async throws -> NaviSDKCore.KotlinByteArray?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getRouteBuffer(rdata: Swift.String) async throws -> NaviSDKCore.KotlinByteArray?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getTrafficBuffer(tdata: Swift.String) async throws -> NaviSDKCore.KotlinByteArray?
+  #endif
+}
+extension NaviSDKCore.GetMultiRouteUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(reqMultiRoute: NaviSDKCore.ReqBase.ReqFindMultiRoute) async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
+}
+extension NaviSDKCore.GetCommonSearchUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(reqSearch: NaviSDKCore.ReqSQE) async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
+}
+extension NaviSDKCore.GetRevGeocodingUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(reqGeocoding: NaviSDKCore.ReqBase.ReqGeocoding) async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
+}
+extension NaviSDKCore.GetServiceGateUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(reqServiceGateForOrbis: NaviSDKCore.ServiceGateRequest) async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
+}
+extension NaviSDKCore.GetTomTomAPIKeyUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke() async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
+}
+extension NaviSDKCore.RouteStore {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func runRoute(routeCount: Swift.Int32, start: NaviSDKCore.LocationInfo.RoutePtItem, goal: NaviSDKCore.LocationInfo.RoutePtItem, sideRoadStart: Swift.Int32, viaList: [NaviSDKCore.LocationInfo.RoutePtItem]?) async throws -> NaviSDKCore.KotlinPair<Foundation.NSArray, NaviSDKCore.InvErrorCode>?
+  #endif
+}
+extension NaviSDKCore.PermissionsPermissionsControllerProtocol {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPermissionState(permission: any NaviSDKCore.PermissionsPermission) async throws -> NaviSDKCore.PermissionsPermissionState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func isPermissionGranted(permission: any NaviSDKCore.PermissionsPermission) async throws -> NaviSDKCore.KotlinBoolean
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func providePermission(permission: any NaviSDKCore.PermissionsPermission) async throws
+}
+extension NaviSDKCore.PermissionsPermissionDelegate {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPermissionState() async throws -> NaviSDKCore.PermissionsPermissionState
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func providePermission() async throws
+}
+extension NaviSDKCore.PermissionRequestUseCase {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(activity: Any?) async throws -> NaviSDKCore.ResultEvent
+  #endif
+}
+extension NaviSDKCore.SDKInitializeUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(uniqueID: Swift.String) async throws -> NaviSDKCore.ResultEvent
+}
+extension NaviSDKCore.ChangeMapZoomUseCase {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func onSpeedChanged(speed: Swift.Float, currentMapLevel: Swift.Float, currentTimeMs: Swift.Int64) async throws
+}
+extension NaviSDKCore.RuntimeSuspendingTransacter {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func transaction(noEnclosing: Swift.Bool, body: any NaviSDKCore.KotlinSuspendFunction1) async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func transactionWithResult(noEnclosing: Swift.Bool, bodyWithReturn: any NaviSDKCore.KotlinSuspendFunction1) async throws -> Any?
+  #endif
+}
+extension NaviSDKCore.KotlinSuspendFunction1 {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?) async throws -> Any?
+  #endif
+}
+extension NaviSDKCore.Ktor_httpOutgoingContent.ProtocolUpgrade {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upgrade(input: any NaviSDKCore.Ktor_ioByteReadChannel, output: any NaviSDKCore.Ktor_ioByteWriteChannel, engineContext: any NaviSDKCore.KotlinCoroutineContext, userContext: any NaviSDKCore.KotlinCoroutineContext) async throws -> any NaviSDKCore.Kotlinx_coroutines_coreJob
+}
+extension NaviSDKCore.Ktor_ioByteWriteChannel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func flush() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func flushAndClose() async throws
+}
+extension NaviSDKCore.Ktor_httpOutgoingContent.WriteChannelContent {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeTo(channel: any NaviSDKCore.Ktor_ioByteWriteChannel) async throws
+}
+public func SkieKotlinFlow<T>(_ flow: NaviSDKCore.SkieSwiftFlow<T>) -> NaviSDKCore.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>) -> NaviSDKCore.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: NaviSDKCore.SkieSwiftFlow<T>) -> NaviSDKCore.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>) -> NaviSDKCore.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension NaviSDKCore.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+}
+extension NaviSDKCore.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension NaviSDKCore.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension NaviSDKCore.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>) -> NaviSDKCore.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>) -> NaviSDKCore.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension NaviSDKCore.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+}
+extension NaviSDKCore.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension NaviSDKCore.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension NaviSDKCore.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinMutableSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension NaviSDKCore.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+}
+extension NaviSDKCore.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+}
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>) -> NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension NaviSDKCore.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+extension NaviSDKCore.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+public func SkieKotlinStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension NaviSDKCore.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+}
+extension NaviSDKCore.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension NaviSDKCore.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension NaviSDKCore.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinMutableStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension NaviSDKCore.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+}
+extension NaviSDKCore.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>) -> NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension NaviSDKCore.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension NaviSDKCore.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: NaviSDKCore.SkieSwiftOptionalMutableStateFlow<T>)
+}
+@frozen public enum KotlinLazyThreadSafetyMode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case synchronized
+  case publication
+  case none
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__KotlinLazyThreadSafetyMode, result: inout NaviSDKCore.KotlinLazyThreadSafetyMode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__KotlinLazyThreadSafetyMode, result: inout NaviSDKCore.KotlinLazyThreadSafetyMode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__KotlinLazyThreadSafetyMode?) -> NaviSDKCore.KotlinLazyThreadSafetyMode
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__KotlinLazyThreadSafetyMode
+  public typealias _ObjectiveCType = NaviSDKCore.__KotlinLazyThreadSafetyMode
+  public static func == (a: NaviSDKCore.KotlinLazyThreadSafetyMode, b: NaviSDKCore.KotlinLazyThreadSafetyMode) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.KotlinLazyThreadSafetyMode]
+  nonisolated public static var allCases: [NaviSDKCore.KotlinLazyThreadSafetyMode] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.KotlinLazyThreadSafetyMode {
+  public func toKotlinEnum() -> NaviSDKCore.__KotlinLazyThreadSafetyMode
+}
+extension NaviSDKCore.__KotlinLazyThreadSafetyMode {
+  public func toSwiftEnum() -> NaviSDKCore.KotlinLazyThreadSafetyMode
+}
+@frozen public enum KotlinKVariance : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case invariant
+  case `in`
+  case out
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__KotlinKVariance, result: inout NaviSDKCore.KotlinKVariance?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__KotlinKVariance, result: inout NaviSDKCore.KotlinKVariance?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__KotlinKVariance?) -> NaviSDKCore.KotlinKVariance
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__KotlinKVariance
+  public typealias _ObjectiveCType = NaviSDKCore.__KotlinKVariance
+  public static func == (a: NaviSDKCore.KotlinKVariance, b: NaviSDKCore.KotlinKVariance) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.KotlinKVariance]
+  nonisolated public static var allCases: [NaviSDKCore.KotlinKVariance] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.KotlinKVariance {
+  public func toKotlinEnum() -> NaviSDKCore.__KotlinKVariance
+}
+extension NaviSDKCore.__KotlinKVariance {
+  public func toSwiftEnum() -> NaviSDKCore.KotlinKVariance
+}
+@frozen public enum MapTrackingMode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case none
+  case followTrackingNoneDrive
+  case followTrackingDrive
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__MapTrackingMode, result: inout NaviSDKCore.MapTrackingMode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__MapTrackingMode, result: inout NaviSDKCore.MapTrackingMode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__MapTrackingMode?) -> NaviSDKCore.MapTrackingMode
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__MapTrackingMode
+  public typealias _ObjectiveCType = NaviSDKCore.__MapTrackingMode
+  public static func == (a: NaviSDKCore.MapTrackingMode, b: NaviSDKCore.MapTrackingMode) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.MapTrackingMode]
+  nonisolated public static var allCases: [NaviSDKCore.MapTrackingMode] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.MapTrackingMode {
+  public func toKotlinEnum() -> NaviSDKCore.__MapTrackingMode
+}
+extension NaviSDKCore.__MapTrackingMode {
+  public func toSwiftEnum() -> NaviSDKCore.MapTrackingMode
+}
+@frozen public enum MapRenderMode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case noraml
+  case compass
+  case gps
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__MapRenderMode, result: inout NaviSDKCore.MapRenderMode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__MapRenderMode, result: inout NaviSDKCore.MapRenderMode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__MapRenderMode?) -> NaviSDKCore.MapRenderMode
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__MapRenderMode
+  public typealias _ObjectiveCType = NaviSDKCore.__MapRenderMode
+  public static func == (a: NaviSDKCore.MapRenderMode, b: NaviSDKCore.MapRenderMode) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.MapRenderMode]
+  nonisolated public static var allCases: [NaviSDKCore.MapRenderMode] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.MapRenderMode {
+  public func toKotlinEnum() -> NaviSDKCore.__MapRenderMode
+}
+extension NaviSDKCore.__MapRenderMode {
+  public func toSwiftEnum() -> NaviSDKCore.MapRenderMode
+}
+@frozen public enum MapCameraMode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case none
+  case noneCompass
+  case noneGps
+  case tracking
+  case trackingCompass
+  case trackingGps
+  case trackingGpsNorth
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__MapCameraMode, result: inout NaviSDKCore.MapCameraMode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__MapCameraMode, result: inout NaviSDKCore.MapCameraMode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__MapCameraMode?) -> NaviSDKCore.MapCameraMode
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__MapCameraMode
+  public typealias _ObjectiveCType = NaviSDKCore.__MapCameraMode
+  public static func == (a: NaviSDKCore.MapCameraMode, b: NaviSDKCore.MapCameraMode) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.MapCameraMode]
+  nonisolated public static var allCases: [NaviSDKCore.MapCameraMode] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.MapCameraMode {
+  public func toKotlinEnum() -> NaviSDKCore.__MapCameraMode
+}
+extension NaviSDKCore.__MapCameraMode {
+  public func toSwiftEnum() -> NaviSDKCore.MapCameraMode
+}
+@frozen public enum RouteInfoType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case line
+  case arrow
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__RouteInfoType, result: inout NaviSDKCore.RouteInfoType?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__RouteInfoType, result: inout NaviSDKCore.RouteInfoType?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__RouteInfoType?) -> NaviSDKCore.RouteInfoType
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__RouteInfoType
+  public typealias _ObjectiveCType = NaviSDKCore.__RouteInfoType
+  public static func == (a: NaviSDKCore.RouteInfoType, b: NaviSDKCore.RouteInfoType) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.RouteInfoType]
+  nonisolated public static var allCases: [NaviSDKCore.RouteInfoType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.RouteInfoType {
+  public func toKotlinEnum() -> NaviSDKCore.__RouteInfoType
+}
+extension NaviSDKCore.__RouteInfoType {
+  public func toSwiftEnum() -> NaviSDKCore.RouteInfoType
+}
+@frozen public enum Kermit_coreSeverity : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case verbose
+  case debug
+  case info
+  case warn
+  case error
+  case assert
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__Kermit_coreSeverity, result: inout NaviSDKCore.Kermit_coreSeverity?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Kermit_coreSeverity, result: inout NaviSDKCore.Kermit_coreSeverity?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Kermit_coreSeverity?) -> NaviSDKCore.Kermit_coreSeverity
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__Kermit_coreSeverity
+  public typealias _ObjectiveCType = NaviSDKCore.__Kermit_coreSeverity
+  public static func == (a: NaviSDKCore.Kermit_coreSeverity, b: NaviSDKCore.Kermit_coreSeverity) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.Kermit_coreSeverity]
+  nonisolated public static var allCases: [NaviSDKCore.Kermit_coreSeverity] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.Kermit_coreSeverity {
+  public func toKotlinEnum() -> NaviSDKCore.__Kermit_coreSeverity
+}
+extension NaviSDKCore.__Kermit_coreSeverity {
+  public func toSwiftEnum() -> NaviSDKCore.Kermit_coreSeverity
+}
+@frozen public enum DialogButtonType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case none
+  case primary
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__DialogButtonType, result: inout NaviSDKCore.DialogButtonType?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__DialogButtonType, result: inout NaviSDKCore.DialogButtonType?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__DialogButtonType?) -> NaviSDKCore.DialogButtonType
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__DialogButtonType
+  public typealias _ObjectiveCType = NaviSDKCore.__DialogButtonType
+  public static func == (a: NaviSDKCore.DialogButtonType, b: NaviSDKCore.DialogButtonType) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.DialogButtonType]
+  nonisolated public static var allCases: [NaviSDKCore.DialogButtonType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.DialogButtonType {
+  public func toKotlinEnum() -> NaviSDKCore.__DialogButtonType
+}
+extension NaviSDKCore.__DialogButtonType {
+  public func toSwiftEnum() -> NaviSDKCore.DialogButtonType
+}
+@frozen public enum ResponseCode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case success
+  case routeFailed
+  case routeExpansionFailed
+  case noRoadNearStart
+  case noRoadNearDestination
+  case noRoadNearWaypoint
+  case notSupportCountry
+  case notSupportTomtom
+  case serviceNotSupported
+  case authFail
+  case imapsFail
+  case appkeyError
+  case noMatchMember
+  case needIdPasswordConfirm
+  case needEmailConfirm
+  case personalKeyCheckFail
+  case encryptionError
+  case decryptionError
+  case webclientError
+  case dataNotFound
+  case dataIntegrityError
+  case internalServerError
+  case requestError
+  case undefinedError
+  case timeLockError
+  public var description_: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: NaviSDKCore.__ResponseCode.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toExceptionResponse(exception: NaviSDKCore.KotlinException, msg: Swift.String?, toast: Swift.String?, alert: Swift.Bool) -> NaviSDKCore.Response
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toResponse(msg: Swift.String?, toast: Swift.String?, dialog: NaviSDKCore.DialogDto?, alert: Swift.Bool) -> NaviSDKCore.Response
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func toResult(msg: Swift.String?, toast: Swift.String?, dialog: NaviSDKCore.DialogDto?, alert: Swift.Bool) -> NaviSDKCore.Result
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__ResponseCode, result: inout NaviSDKCore.ResponseCode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__ResponseCode, result: inout NaviSDKCore.ResponseCode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__ResponseCode?) -> NaviSDKCore.ResponseCode
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__ResponseCode
+  public typealias _ObjectiveCType = NaviSDKCore.__ResponseCode
+  public typealias Companion = NaviSDKCore.__ResponseCode.Companion
+  public typealias Serializer = NaviSDKCore.__ResponseCode.Serializer
+  public static func == (a: NaviSDKCore.ResponseCode, b: NaviSDKCore.ResponseCode) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.ResponseCode]
+  nonisolated public static var allCases: [NaviSDKCore.ResponseCode] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.ResponseCode {
+  public func toKotlinEnum() -> NaviSDKCore.__ResponseCode
+}
+extension NaviSDKCore.__ResponseCode {
+  public func toSwiftEnum() -> NaviSDKCore.ResponseCode
+}
+@frozen public enum CountryCode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case kr
+  case tw
+  case us
+  case jp
+  case cn
+  case unknown
+  public var alpha2: Swift.String {
+    get
+  }
+  public var alpha3: Swift.String {
+    get
+  }
+  public var koreanName: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: NaviSDKCore.__CountryCode.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__CountryCode, result: inout NaviSDKCore.CountryCode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__CountryCode, result: inout NaviSDKCore.CountryCode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__CountryCode?) -> NaviSDKCore.CountryCode
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__CountryCode
+  public typealias _ObjectiveCType = NaviSDKCore.__CountryCode
+  public typealias Companion = NaviSDKCore.__CountryCode.Companion
+  public static func == (a: NaviSDKCore.CountryCode, b: NaviSDKCore.CountryCode) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.CountryCode]
+  nonisolated public static var allCases: [NaviSDKCore.CountryCode] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.CountryCode {
+  public func toKotlinEnum() -> NaviSDKCore.__CountryCode
+}
+extension NaviSDKCore.__CountryCode {
+  public func toSwiftEnum() -> NaviSDKCore.CountryCode
+}
+@frozen public enum MemberStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case active
+  case suspended
+  case withdrawn
+  public var key: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: NaviSDKCore.__MemberStatus.Companion {
+    get
+  }
+  public func isSuspended() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__MemberStatus, result: inout NaviSDKCore.MemberStatus?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__MemberStatus, result: inout NaviSDKCore.MemberStatus?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__MemberStatus?) -> NaviSDKCore.MemberStatus
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__MemberStatus
+  public typealias _ObjectiveCType = NaviSDKCore.__MemberStatus
+  public typealias Companion = NaviSDKCore.__MemberStatus.Companion
+  public static func == (a: NaviSDKCore.MemberStatus, b: NaviSDKCore.MemberStatus) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.MemberStatus]
+  nonisolated public static var allCases: [NaviSDKCore.MemberStatus] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.MemberStatus {
+  public func toKotlinEnum() -> NaviSDKCore.__MemberStatus
+}
+extension NaviSDKCore.__MemberStatus {
+  public func toSwiftEnum() -> NaviSDKCore.MemberStatus
+}
+@frozen public enum OsType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case android
+  case ios
+  case unknown
+  public var key: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: NaviSDKCore.__OsType.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__OsType, result: inout NaviSDKCore.OsType?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__OsType, result: inout NaviSDKCore.OsType?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__OsType?) -> NaviSDKCore.OsType
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__OsType
+  public typealias _ObjectiveCType = NaviSDKCore.__OsType
+  public typealias Companion = NaviSDKCore.__OsType.Companion
+  public static func == (a: NaviSDKCore.OsType, b: NaviSDKCore.OsType) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.OsType]
+  nonisolated public static var allCases: [NaviSDKCore.OsType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.OsType {
+  public func toKotlinEnum() -> NaviSDKCore.__OsType
+}
+extension NaviSDKCore.__OsType {
+  public func toSwiftEnum() -> NaviSDKCore.OsType
+}
+@frozen public enum Koin_coreLevel : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case debug
+  case info
+  case warning
+  case error
+  case none
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__Koin_coreLevel, result: inout NaviSDKCore.Koin_coreLevel?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Koin_coreLevel, result: inout NaviSDKCore.Koin_coreLevel?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Koin_coreLevel?) -> NaviSDKCore.Koin_coreLevel
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__Koin_coreLevel
+  public typealias _ObjectiveCType = NaviSDKCore.__Koin_coreLevel
+  public static func == (a: NaviSDKCore.Koin_coreLevel, b: NaviSDKCore.Koin_coreLevel) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.Koin_coreLevel]
+  nonisolated public static var allCases: [NaviSDKCore.Koin_coreLevel] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.Koin_coreLevel {
+  public func toKotlinEnum() -> NaviSDKCore.__Koin_coreLevel
+}
+extension NaviSDKCore.__Koin_coreLevel {
+  public func toSwiftEnum() -> NaviSDKCore.Koin_coreLevel
+}
+@frozen public enum Koin_coreKind : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case singleton
+  case factory
+  case scoped
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__Koin_coreKind, result: inout NaviSDKCore.Koin_coreKind?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Koin_coreKind, result: inout NaviSDKCore.Koin_coreKind?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Koin_coreKind?) -> NaviSDKCore.Koin_coreKind
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__Koin_coreKind
+  public typealias _ObjectiveCType = NaviSDKCore.__Koin_coreKind
+  public static func == (a: NaviSDKCore.Koin_coreKind, b: NaviSDKCore.Koin_coreKind) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.Koin_coreKind]
+  nonisolated public static var allCases: [NaviSDKCore.Koin_coreKind] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.Koin_coreKind {
+  public func toKotlinEnum() -> NaviSDKCore.__Koin_coreKind
+}
+extension NaviSDKCore.__Koin_coreKind {
+  public func toSwiftEnum() -> NaviSDKCore.Koin_coreKind
+}
+@frozen public enum Kotlinx_datetimePadding : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case none
+  case zero
+  case space
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_datetimePadding, result: inout NaviSDKCore.Kotlinx_datetimePadding?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_datetimePadding, result: inout NaviSDKCore.Kotlinx_datetimePadding?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_datetimePadding?) -> NaviSDKCore.Kotlinx_datetimePadding
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__Kotlinx_datetimePadding
+  public typealias _ObjectiveCType = NaviSDKCore.__Kotlinx_datetimePadding
+  public static func == (a: NaviSDKCore.Kotlinx_datetimePadding, b: NaviSDKCore.Kotlinx_datetimePadding) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.Kotlinx_datetimePadding]
+  nonisolated public static var allCases: [NaviSDKCore.Kotlinx_datetimePadding] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.Kotlinx_datetimePadding {
+  public func toKotlinEnum() -> NaviSDKCore.__Kotlinx_datetimePadding
+}
+extension NaviSDKCore.__Kotlinx_datetimePadding {
+  public func toSwiftEnum() -> NaviSDKCore.Kotlinx_datetimePadding
+}
+@frozen public enum Kotlinx_datetimeMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case january
+  case february
+  case march
+  case april
+  case may
+  case june
+  case july
+  case august
+  case september
+  case october
+  case november
+  case december
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_datetimeMonth, result: inout NaviSDKCore.Kotlinx_datetimeMonth?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_datetimeMonth, result: inout NaviSDKCore.Kotlinx_datetimeMonth?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_datetimeMonth?) -> NaviSDKCore.Kotlinx_datetimeMonth
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__Kotlinx_datetimeMonth
+  public typealias _ObjectiveCType = NaviSDKCore.__Kotlinx_datetimeMonth
+  public static func == (a: NaviSDKCore.Kotlinx_datetimeMonth, b: NaviSDKCore.Kotlinx_datetimeMonth) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.Kotlinx_datetimeMonth]
+  nonisolated public static var allCases: [NaviSDKCore.Kotlinx_datetimeMonth] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.Kotlinx_datetimeMonth {
+  public func toKotlinEnum() -> NaviSDKCore.__Kotlinx_datetimeMonth
+}
+extension NaviSDKCore.__Kotlinx_datetimeMonth {
+  public func toSwiftEnum() -> NaviSDKCore.Kotlinx_datetimeMonth
+}
+@frozen public enum Kotlinx_datetimeDayOfWeek : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case monday
+  case tuesday
+  case wednesday
+  case thursday
+  case friday
+  case saturday
+  case sunday
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_datetimeDayOfWeek, result: inout NaviSDKCore.Kotlinx_datetimeDayOfWeek?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_datetimeDayOfWeek, result: inout NaviSDKCore.Kotlinx_datetimeDayOfWeek?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_datetimeDayOfWeek?) -> NaviSDKCore.Kotlinx_datetimeDayOfWeek
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__Kotlinx_datetimeDayOfWeek
+  public typealias _ObjectiveCType = NaviSDKCore.__Kotlinx_datetimeDayOfWeek
+  public static func == (a: NaviSDKCore.Kotlinx_datetimeDayOfWeek, b: NaviSDKCore.Kotlinx_datetimeDayOfWeek) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.Kotlinx_datetimeDayOfWeek]
+  nonisolated public static var allCases: [NaviSDKCore.Kotlinx_datetimeDayOfWeek] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.Kotlinx_datetimeDayOfWeek {
+  public func toKotlinEnum() -> NaviSDKCore.__Kotlinx_datetimeDayOfWeek
+}
+extension NaviSDKCore.__Kotlinx_datetimeDayOfWeek {
+  public func toSwiftEnum() -> NaviSDKCore.Kotlinx_datetimeDayOfWeek
+}
+@frozen public enum Kotlinx_serialization_jsonClassDiscriminatorMode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case none
+  case allJsonObjects
+  case polymorphic
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_serialization_jsonClassDiscriminatorMode, result: inout NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_serialization_jsonClassDiscriminatorMode, result: inout NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Kotlinx_serialization_jsonClassDiscriminatorMode?) -> NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__Kotlinx_serialization_jsonClassDiscriminatorMode
+  public typealias _ObjectiveCType = NaviSDKCore.__Kotlinx_serialization_jsonClassDiscriminatorMode
+  public static func == (a: NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode, b: NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode]
+  nonisolated public static var allCases: [NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode {
+  public func toKotlinEnum() -> NaviSDKCore.__Kotlinx_serialization_jsonClassDiscriminatorMode
+}
+extension NaviSDKCore.__Kotlinx_serialization_jsonClassDiscriminatorMode {
+  public func toSwiftEnum() -> NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode
+}
+@frozen public enum Ktor_utilsMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case january
+  case february
+  case march
+  case april
+  case may
+  case june
+  case july
+  case august
+  case september
+  case october
+  case november
+  case december
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: NaviSDKCore.__Ktor_utilsMonth.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__Ktor_utilsMonth, result: inout NaviSDKCore.Ktor_utilsMonth?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Ktor_utilsMonth, result: inout NaviSDKCore.Ktor_utilsMonth?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Ktor_utilsMonth?) -> NaviSDKCore.Ktor_utilsMonth
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__Ktor_utilsMonth
+  public typealias _ObjectiveCType = NaviSDKCore.__Ktor_utilsMonth
+  public typealias Companion = NaviSDKCore.__Ktor_utilsMonth.Companion
+  public static func == (a: NaviSDKCore.Ktor_utilsMonth, b: NaviSDKCore.Ktor_utilsMonth) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.Ktor_utilsMonth]
+  nonisolated public static var allCases: [NaviSDKCore.Ktor_utilsMonth] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.Ktor_utilsMonth {
+  public func toKotlinEnum() -> NaviSDKCore.__Ktor_utilsMonth
+}
+extension NaviSDKCore.__Ktor_utilsMonth {
+  public func toSwiftEnum() -> NaviSDKCore.Ktor_utilsMonth
+}
+@frozen public enum Ktor_utilsWeekDay : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case monday
+  case tuesday
+  case wednesday
+  case thursday
+  case friday
+  case saturday
+  case sunday
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: NaviSDKCore.__Ktor_utilsWeekDay.Companion {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__Ktor_utilsWeekDay, result: inout NaviSDKCore.Ktor_utilsWeekDay?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Ktor_utilsWeekDay, result: inout NaviSDKCore.Ktor_utilsWeekDay?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__Ktor_utilsWeekDay?) -> NaviSDKCore.Ktor_utilsWeekDay
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__Ktor_utilsWeekDay
+  public typealias _ObjectiveCType = NaviSDKCore.__Ktor_utilsWeekDay
+  public typealias Companion = NaviSDKCore.__Ktor_utilsWeekDay.Companion
+  public static func == (a: NaviSDKCore.Ktor_utilsWeekDay, b: NaviSDKCore.Ktor_utilsWeekDay) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.Ktor_utilsWeekDay]
+  nonisolated public static var allCases: [NaviSDKCore.Ktor_utilsWeekDay] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.Ktor_utilsWeekDay {
+  public func toKotlinEnum() -> NaviSDKCore.__Ktor_utilsWeekDay
+}
+extension NaviSDKCore.__Ktor_utilsWeekDay {
+  public func toSwiftEnum() -> NaviSDKCore.Ktor_utilsWeekDay
+}
+@frozen public enum PermissionsPermissionState : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case notDetermined
+  case notGranted
+  case granted
+  case denied
+  case deniedAlways
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _forceBridgeFromObjectiveC(_ source: NaviSDKCore.__PermissionsPermissionState, result: inout NaviSDKCore.PermissionsPermissionState?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _conditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__PermissionsPermissionState, result: inout NaviSDKCore.PermissionsPermissionState?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: NaviSDKCore.__PermissionsPermissionState?) -> NaviSDKCore.PermissionsPermissionState
+  #endif
+  public func _bridgeToObjectiveC() -> NaviSDKCore.__PermissionsPermissionState
+  public typealias _ObjectiveCType = NaviSDKCore.__PermissionsPermissionState
+  public static func == (a: NaviSDKCore.PermissionsPermissionState, b: NaviSDKCore.PermissionsPermissionState) -> Swift.Bool
+  public typealias AllCases = [NaviSDKCore.PermissionsPermissionState]
+  nonisolated public static var allCases: [NaviSDKCore.PermissionsPermissionState] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension NaviSDKCore.PermissionsPermissionState {
+  public func toKotlinEnum() -> NaviSDKCore.__PermissionsPermissionState
+}
+extension NaviSDKCore.__PermissionsPermissionState {
+  public func toSwiftEnum() -> NaviSDKCore.PermissionsPermissionState
+}
+extension NaviSDKCore.Skie.Model.ImageSource {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case fileName(NaviSDKCore.ImageSource.FileName)
+    case imageData(NaviSDKCore.ImageSource.ImageData)
+    case resourceId(NaviSDKCore.ImageSource.ResourceId)
+    public static func == (a: NaviSDKCore.Skie.Model.ImageSource.__Sealed, b: NaviSDKCore.Skie.Model.ImageSource.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.ImageSource.__Sealed where __Sealed : NaviSDKCore.ImageSource
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.ImageSource.__Sealed? where __Sealed : NaviSDKCore.ImageSource
+#endif
+extension NaviSDKCore.Skie.Model.LocationInfo {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case naviLocation(NaviSDKCore.LocationInfo.NaviLocation)
+    case point(NaviSDKCore.LocationInfo.Point)
+    case routePtItem(NaviSDKCore.LocationInfo.RoutePtItem)
+    case searchItem(NaviSDKCore.LocationInfo.SearchItem)
+    public static func == (a: NaviSDKCore.Skie.Model.LocationInfo.__Sealed, b: NaviSDKCore.Skie.Model.LocationInfo.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.LocationInfo.__Sealed where __Sealed : NaviSDKCore.LocationInfo
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.LocationInfo.__Sealed? where __Sealed : NaviSDKCore.LocationInfo
+#endif
+extension NaviSDKCore.Skie.Model.ReRouteType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case escape(NaviSDKCore.ReRouteType.Escape)
+    case manual(NaviSDKCore.ReRouteType.Manual)
+    case pERIOD(NaviSDKCore.ReRouteType.PERIOD)
+    public static func == (a: NaviSDKCore.Skie.Model.ReRouteType.__Sealed, b: NaviSDKCore.Skie.Model.ReRouteType.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.ReRouteType.__Sealed where __Sealed : NaviSDKCore.ReRouteType
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.ReRouteType.__Sealed? where __Sealed : NaviSDKCore.ReRouteType
+#endif
+extension NaviSDKCore.Skie.Model.ReqBase {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case formData(NaviSDKCore.ReqBase.FormData)
+    case reqATL(NaviSDKCore.ReqBase.ReqATL)
+    case reqClauseAgree(NaviSDKCore.ReqBase.ReqClauseAgree)
+    case reqDataSetInfo(NaviSDKCore.ReqBase.ReqDataSetInfo)
+    case reqFindMultiRoute(NaviSDKCore.ReqBase.ReqFindMultiRoute)
+    case reqGP(NaviSDKCore.ReqBase.ReqGP)
+    case reqGeocoding(NaviSDKCore.ReqBase.ReqGeocoding)
+    case reqMapDownInfo(NaviSDKCore.ReqBase.ReqMapDownInfo)
+    case reqOrbisMapPath(NaviSDKCore.ReqBase.ReqOrbisMapPath)
+    case reqSearchBase(NaviSDKCore.ReqBase.ReqSearchBase)
+    case reqServiceGate(NaviSDKCore.ReqBase.ReqServiceGate)
+    case reqSQE(NaviSDKCore.ReqSQE)
+    public static func == (a: NaviSDKCore.Skie.Model.ReqBase.__Sealed, b: NaviSDKCore.Skie.Model.ReqBase.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.ReqBase.__Sealed where __Sealed : NaviSDKCore.ReqBase
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.ReqBase.__Sealed? where __Sealed : NaviSDKCore.ReqBase
+#endif
+extension NaviSDKCore.Skie.Model.OrbismapException {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case accessTokenExpiredException(NaviSDKCore.AccessTokenExpiredException)
+    case appKeyException(NaviSDKCore.AppKeyException)
+    case decryptException(NaviSDKCore.DecryptException)
+    case encryptException(NaviSDKCore.EncryptException)
+    case imapsException(NaviSDKCore.ImapsException)
+    case memberLogOutException(NaviSDKCore.MemberLogOutException)
+    case memberNotFoundException(NaviSDKCore.MemberNotFoundException)
+    case noRoadNearDestinationException(NaviSDKCore.NoRoadNearDestinationException)
+    case noRoadNearStartException(NaviSDKCore.NoRoadNearStartException)
+    case noRoadNearWaypointException(NaviSDKCore.NoRoadNearWaypointException)
+    case notSupportCountryException(NaviSDKCore.NotSupportCountryException)
+    case notSupportTomTomException(NaviSDKCore.NotSupportTomTomException)
+    case routeException(NaviSDKCore.RouteException)
+    case routeExpansionFailedException(NaviSDKCore.RouteExpansionFailedException)
+    case serviceUnavailableException(NaviSDKCore.ServiceUnavailableException)
+    case webclientException(NaviSDKCore.WebclientException)
+    public static func == (a: NaviSDKCore.Skie.Model.OrbismapException.__Sealed, b: NaviSDKCore.Skie.Model.OrbismapException.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.OrbismapException.__Sealed where __Sealed : NaviSDKCore.OrbismapException
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.OrbismapException.__Sealed? where __Sealed : NaviSDKCore.OrbismapException
+#endif
+extension NaviSDKCore.Skie.Model.TomTomSearchRequest {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case tomTomReverseGeocodeRequest(NaviSDKCore.TomTomReverseGeocodeRequest)
+    case tomTomSafetyCameraRequest(NaviSDKCore.TomTomSafetyCameraRequest)
+    case tomTomSearchCommonRequest(NaviSDKCore.TomTomSearchCommonRequest)
+    public static func == (a: NaviSDKCore.Skie.Model.TomTomSearchRequest.__Sealed, b: NaviSDKCore.Skie.Model.TomTomSearchRequest.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.TomTomSearchRequest.__Sealed where __Sealed : NaviSDKCore.TomTomSearchRequest
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.TomTomSearchRequest.__Sealed? where __Sealed : NaviSDKCore.TomTomSearchRequest
+#endif
+extension NaviSDKCore.Skie.Model.InitStatus {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case clauseJsonParsingError(NaviSDKCore.InitStatus.ClauseJsonParsingError)
+    case error(NaviSDKCore.InitStatus.Error)
+    case mapDownloadError(NaviSDKCore.InitStatus.MapDownloadError)
+    case none(NaviSDKCore.InitStatus.None)
+    case sDKAuthJsonParsingError(NaviSDKCore.InitStatus.SDKAuthJsonParsingError)
+    case sDKAuthKeyEmptyError(NaviSDKCore.InitStatus.SDKAuthKeyEmptyError)
+    case serviceGateJsonParsingError(NaviSDKCore.InitStatus.ServiceGateJsonParsingError)
+    case serviceGateUpdateFailError(NaviSDKCore.InitStatus.ServiceGateUpdateFailError)
+    case success(NaviSDKCore.InitStatus.Success)
+    case uniqueKeyEmptyError(NaviSDKCore.InitStatus.UniqueKeyEmptyError)
+    case uniqueKeyLengthError(NaviSDKCore.InitStatus.UniqueKeyLengthError)
+    public static func == (a: NaviSDKCore.Skie.Model.InitStatus.__Sealed, b: NaviSDKCore.Skie.Model.InitStatus.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.InitStatus.__Sealed where __Sealed : NaviSDKCore.InitStatus
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.InitStatus.__Sealed? where __Sealed : NaviSDKCore.InitStatus
+#endif
+extension NaviSDKCore.Skie.Model.ResultEvent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case fail(NaviSDKCore.ResultEvent.Fail)
+    case success(NaviSDKCore.ResultEvent.Success)
+    public static func == (a: NaviSDKCore.Skie.Model.ResultEvent.__Sealed, b: NaviSDKCore.Skie.Model.ResultEvent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.ResultEvent.__Sealed where __Sealed : NaviSDKCore.ResultEvent
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.ResultEvent.__Sealed? where __Sealed : NaviSDKCore.ResultEvent
+#endif
+extension NaviSDKCore.Skie.Model.NetworkResponse {
+  @frozen public enum __Sealed<T> : Swift.Hashable where T : AnyObject {
+    case failure(NaviSDKCore.NetworkResponseFailure<T>)
+    case success(NaviSDKCore.NetworkResponseSuccess<T>)
+    public static func == (a: NaviSDKCore.Skie.Model.NetworkResponse.__Sealed<T>, b: NaviSDKCore.Skie.Model.NetworkResponse.__Sealed<T>) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<T, __Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.NetworkResponse.__Sealed<T> where T : AnyObject, __Sealed : NaviSDKCore.NetworkResponse<T>
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<T, __Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.NetworkResponse.__Sealed<T>? where T : AnyObject, __Sealed : NaviSDKCore.NetworkResponse<T>
+#endif
+extension NaviSDKCore.Skie.Model.ResOrbisBase {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case orbisMMCRouteInfo(NaviSDKCore.OrbisMMCRouteInfo)
+    public static func == (a: NaviSDKCore.Skie.Model.ResOrbisBase.__Sealed, b: NaviSDKCore.Skie.Model.ResOrbisBase.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.ResOrbisBase.__Sealed where __Sealed : NaviSDKCore.ResOrbisBase
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.ResOrbisBase.__Sealed? where __Sealed : NaviSDKCore.ResOrbisBase
+#endif
+extension NaviSDKCore.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(NaviSDKCore.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(NaviSDKCore.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(NaviSDKCore.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(NaviSDKCore.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(NaviSDKCore.Kotlinx_serialization_coreStructureKind)
+    public static func == (a: NaviSDKCore.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: NaviSDKCore.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : NaviSDKCore.Kotlinx_serialization_coreSerialKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_serialization_coreSerialKind
+#endif
+extension NaviSDKCore.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: NaviSDKCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : NaviSDKCore.Kotlinx_serialization_coreSerializersModule
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_serialization_coreSerializersModule
+#endif
+extension NaviSDKCore.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(NaviSDKCore.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(NaviSDKCore.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public static func == (a: NaviSDKCore.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: NaviSDKCore.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : NaviSDKCore.Kotlinx_serialization_corePolymorphicKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_serialization_corePolymorphicKind
+#endif
+extension NaviSDKCore.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(NaviSDKCore.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(NaviSDKCore.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(NaviSDKCore.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(NaviSDKCore.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(NaviSDKCore.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(NaviSDKCore.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(NaviSDKCore.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(NaviSDKCore.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(NaviSDKCore.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public static func == (a: NaviSDKCore.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: NaviSDKCore.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : NaviSDKCore.Kotlinx_serialization_corePrimitiveKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_serialization_corePrimitiveKind
+#endif
+extension NaviSDKCore.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(NaviSDKCore.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(NaviSDKCore.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(NaviSDKCore.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(NaviSDKCore.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public static func == (a: NaviSDKCore.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: NaviSDKCore.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : NaviSDKCore.Kotlinx_serialization_coreStructureKind
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_serialization_coreStructureKind
+#endif
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause0 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed, b: NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed where __Sealed : NaviSDKCore.Kotlinx_coroutines_coreSelectClause0
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_coroutines_coreSelectClause0
+#endif
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause {
+  @frozen public enum __Sealed {
+    case selectClause0(any NaviSDKCore.Kotlinx_coroutines_coreSelectClause0)
+    case selectClause1(any NaviSDKCore.Kotlinx_coroutines_coreSelectClause1)
+    case selectClause2(any NaviSDKCore.Kotlinx_coroutines_coreSelectClause2)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed where __Sealed : NaviSDKCore.Kotlinx_coroutines_coreSelectClause
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_coroutines_coreSelectClause
+#endif
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectInstance {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed, b: NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed where __Sealed : NaviSDKCore.Kotlinx_coroutines_coreSelectInstance
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_coroutines_coreSelectInstance
+#endif
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause1 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed, b: NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed where __Sealed : NaviSDKCore.Kotlinx_coroutines_coreSelectClause1
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_coroutines_coreSelectClause1
+#endif
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause2 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed, b: NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed where __Sealed : NaviSDKCore.Kotlinx_coroutines_coreSelectClause2
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_coroutines_coreSelectClause2
+#endif
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormat {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormat.__Sealed, b: NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormat.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormat.__Sealed where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormat
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormat.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormat
+#endif
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder {
+  @frozen public enum __Sealed {
+    case withDate(any NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDate)
+    case withTime(any NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithTime)
+    case withUtcOffset(any NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithUtcOffset)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.__Sealed where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilder
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilder
+#endif
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithTime {
+  @frozen public enum __Sealed {
+    case withDateTime(any NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDateTime)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithTime.__Sealed where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithTime
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithTime.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithTime
+#endif
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDate {
+  @frozen public enum __Sealed {
+    case withDateTime(any NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDateTime)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDate.__Sealed where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDate
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDate.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDate
+#endif
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTime {
+  @frozen public enum __Sealed {
+    case withDateTimeComponents(any NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTime.__Sealed where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDateTime
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTime.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDateTime
+#endif
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithUtcOffset {
+  @frozen public enum __Sealed {
+    case withDateTimeComponents(any NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithUtcOffset.__Sealed where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithUtcOffset
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithUtcOffset.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithUtcOffset
+#endif
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed, b: NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents
+#endif
+extension NaviSDKCore.Skie.KotlinxSerializationJson.Json {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `default`(NaviSDKCore.Kotlinx_serialization_jsonJson.Default)
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxSerializationJson.Json.__Sealed, b: NaviSDKCore.Skie.KotlinxSerializationJson.Json.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxSerializationJson.Json.__Sealed where __Sealed : NaviSDKCore.Kotlinx_serialization_jsonJson
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxSerializationJson.Json.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_serialization_jsonJson
+#endif
+extension NaviSDKCore.Skie.KotlinxSerializationJson.JsonElement {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonPrimitive(NaviSDKCore.Kotlinx_serialization_jsonJsonPrimitive)
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxSerializationJson.JsonElement.__Sealed, b: NaviSDKCore.Skie.KotlinxSerializationJson.JsonElement.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxSerializationJson.JsonElement.__Sealed where __Sealed : NaviSDKCore.Kotlinx_serialization_jsonJsonElement
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxSerializationJson.JsonElement.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_serialization_jsonJsonElement
+#endif
+extension NaviSDKCore.Skie.KotlinxSerializationJson.JsonPrimitive {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonNull(NaviSDKCore.Kotlinx_serialization_jsonJsonNull)
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed, b: NaviSDKCore.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed where __Sealed : NaviSDKCore.Kotlinx_serialization_jsonJsonPrimitive
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_serialization_jsonJsonPrimitive
+#endif
+extension NaviSDKCore.Skie.Runtime.TransacterBase {
+  @frozen public enum __Sealed {
+    case suspendingTransacter(any NaviSDKCore.RuntimeSuspendingTransacter)
+    case transacter(any NaviSDKCore.RuntimeTransacter)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Runtime.TransacterBase.__Sealed where __Sealed : NaviSDKCore.RuntimeTransacterBase
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Runtime.TransacterBase.__Sealed? where __Sealed : NaviSDKCore.RuntimeTransacterBase
+#endif
+extension NaviSDKCore.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(NaviSDKCore.Skie_SuspendResult.Canceled)
+    case error(NaviSDKCore.Skie_SuspendResult.Error)
+    case success(NaviSDKCore.Skie_SuspendResult.Success)
+    public static func == (a: NaviSDKCore.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: NaviSDKCore.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : NaviSDKCore.Skie_SuspendResult
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : NaviSDKCore.Skie_SuspendResult
+#endif
+extension NaviSDKCore.Skie.Core.VisibilityState {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case gone(NaviSDKCore.VisibilityState.Gone)
+    case invisible(NaviSDKCore.VisibilityState.Invisible)
+    case visible(NaviSDKCore.VisibilityState.Visible)
+    public static func == (a: NaviSDKCore.Skie.Core.VisibilityState.__Sealed, b: NaviSDKCore.Skie.Core.VisibilityState.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Core.VisibilityState.__Sealed where __Sealed : NaviSDKCore.VisibilityState
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Core.VisibilityState.__Sealed? where __Sealed : NaviSDKCore.VisibilityState
+#endif
+extension NaviSDKCore.Skie.Core.MapClickEvent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case mapClick(NaviSDKCore.MapClickEvent.MapClick)
+    case mapLongClick(NaviSDKCore.MapClickEvent.MapLongClick)
+    case mapMove(NaviSDKCore.MapClickEvent.MapMove)
+    case mapZoomIn(NaviSDKCore.MapClickEvent.MapZoomIn)
+    case mapZoomOut(NaviSDKCore.MapClickEvent.MapZoomOut)
+    public static func == (a: NaviSDKCore.Skie.Core.MapClickEvent.__Sealed, b: NaviSDKCore.Skie.Core.MapClickEvent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Core.MapClickEvent.__Sealed where __Sealed : NaviSDKCore.MapClickEvent
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Core.MapClickEvent.__Sealed? where __Sealed : NaviSDKCore.MapClickEvent
+#endif
+extension NaviSDKCore.Skie.Core.RouteResultUiState {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case empty(NaviSDKCore.RouteResultUiState.Empty)
+    case loading(NaviSDKCore.RouteResultUiState.Loading)
+    case success(NaviSDKCore.RouteResultUiState.Success)
+    public static func == (a: NaviSDKCore.Skie.Core.RouteResultUiState.__Sealed, b: NaviSDKCore.Skie.Core.RouteResultUiState.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Core.RouteResultUiState.__Sealed where __Sealed : NaviSDKCore.RouteResultUiState
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Core.RouteResultUiState.__Sealed? where __Sealed : NaviSDKCore.RouteResultUiState
+#endif
+extension NaviSDKCore.Skie.Core.RouteEvent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case closeFragment(NaviSDKCore.RouteEvent.CloseFragment)
+    case guideStart(NaviSDKCore.RouteEvent.GuideStart)
+    case runSimulate(NaviSDKCore.RouteEvent.RunSimulate)
+    case showError(NaviSDKCore.RouteEvent.ShowError)
+    case showExistRoutePopup(NaviSDKCore.RouteEvent.ShowExistRoutePopup)
+    public static func == (a: NaviSDKCore.Skie.Core.RouteEvent.__Sealed, b: NaviSDKCore.Skie.Core.RouteEvent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Core.RouteEvent.__Sealed where __Sealed : NaviSDKCore.RouteEvent
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Core.RouteEvent.__Sealed? where __Sealed : NaviSDKCore.RouteEvent
+#endif
+extension NaviSDKCore.Skie.KtorHttp.OutgoingContent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case byteArrayContent(NaviSDKCore.Ktor_httpOutgoingContent.ByteArrayContent)
+    case contentWrapper(NaviSDKCore.Ktor_httpOutgoingContent.ContentWrapper)
+    case noContent(NaviSDKCore.Ktor_httpOutgoingContent.NoContent)
+    case protocolUpgrade(NaviSDKCore.Ktor_httpOutgoingContent.ProtocolUpgrade)
+    case readChannelContent(NaviSDKCore.Ktor_httpOutgoingContent.ReadChannelContent)
+    case writeChannelContent(NaviSDKCore.Ktor_httpOutgoingContent.WriteChannelContent)
+    public static func == (a: NaviSDKCore.Skie.KtorHttp.OutgoingContent.__Sealed, b: NaviSDKCore.Skie.KtorHttp.OutgoingContent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KtorHttp.OutgoingContent.__Sealed where __Sealed : NaviSDKCore.Ktor_httpOutgoingContent
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KtorHttp.OutgoingContent.__Sealed? where __Sealed : NaviSDKCore.Ktor_httpOutgoingContent
+#endif
+extension NaviSDKCore.Skie.KotlinxIoCore.Source {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case buffer(NaviSDKCore.Kotlinx_io_coreBuffer)
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxIoCore.Source.__Sealed, b: NaviSDKCore.Skie.KotlinxIoCore.Source.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxIoCore.Source.__Sealed where __Sealed : NaviSDKCore.Kotlinx_io_coreSource
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxIoCore.Source.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_io_coreSource
+#endif
+extension NaviSDKCore.Skie.KotlinxIoCore.Sink {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case buffer(NaviSDKCore.Kotlinx_io_coreBuffer)
+    case `else`
+    public static func == (a: NaviSDKCore.Skie.KotlinxIoCore.Sink.__Sealed, b: NaviSDKCore.Skie.KotlinxIoCore.Sink.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.KotlinxIoCore.Sink.__Sealed where __Sealed : NaviSDKCore.Kotlinx_io_coreSink
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.KotlinxIoCore.Sink.__Sealed? where __Sealed : NaviSDKCore.Kotlinx_io_coreSink
+#endif
+public var MapScope: any NaviSDKCore.Kotlinx_coroutines_coreCoroutineScope {
+  get
+}
+public var orbisModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public func getNaviMapView() -> any NaviSDKCore.MapIF
+public func getCameraController() -> any NaviSDKCore.CameraController
+public func getGestureController() -> any NaviSDKCore.GestureController
+public func getLocationController() -> any NaviSDKCore.LocationController
+public func getMarkerController() -> any NaviSDKCore.MarkerController
+public func getRouteController() -> any NaviSDKCore.RouteController
+public func getUIController() -> any NaviSDKCore.UIController
+public func currentTimeZone() -> NaviSDKCore.Kotlinx_datetimeTimeZone
+public func localDate(timeMs: Swift.Int64, timeZone: NaviSDKCore.Kotlinx_datetimeTimeZone) -> NaviSDKCore.Kotlinx_datetimeLocalDateTime
+public func localDate(timeStr: Swift.String) -> NaviSDKCore.Kotlinx_datetimeLocalDateTime
+public func timeInstant(timeMs: Swift.Int64) -> NaviSDKCore.Kotlinx_datetimeInstant
+public func timeInstant(timeStr: Swift.String) -> NaviSDKCore.Kotlinx_datetimeInstant
+public func timeInstantNow() -> NaviSDKCore.Kotlinx_datetimeInstant
+public func getLanguageCodeStr() -> Swift.String
+public func getLanguageType() -> NaviSDKCore.LanguageType
+public var jsonInstance_: NaviSDKCore.Kotlinx_serialization_jsonJson {
+  get
+}
+public func getSpeedDigitImageResources(speed: Swift.Int32) -> [Any]
+#if compiler(>=5.3) && $NonescapableTypes
+public func getSpeedLimitResource(limitSpeed: Swift.Int32, isOverSpeed: Swift.Bool) -> NaviSDKCore.ResourcesImageResource?
+#endif
+public func makeMapMatchInfoToLocationInfo(matchInfoData: NaviSDKCore.MatchInfoData) -> NaviSDKCore.INaviLocationInfo
+#if compiler(>=5.3) && $NonescapableTypes
+public func formatAddress(address: NaviSDKCore.Address?, languageType: NaviSDKCore.LanguageType) -> Swift.String
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+public func mapSearchResultToSearchItem(searchResult: NaviSDKCore.SearchResult?) -> NaviSDKCore.LocationInfo.SearchItem?
+#endif
+extension NaviSDKCore.Kotlinx_coroutines_coreCoroutineScope {
+  public func scheduleAtFixedRate(initialDelayMillis: Swift.Int64, intervalMillis: Swift.Int64, action: @escaping () -> Swift.Void) -> any NaviSDKCore.Kotlinx_coroutines_coreJob
+}
+extension Swift.Int32 {
+  public func toFormatTimeText() -> Swift.String
+  public func toHourString(useAmPm: Swift.Bool, zeroFormat: Swift.Bool) -> Swift.String
+  public func toMinString(zeroFormat: Swift.Bool) -> Swift.String
+}
+public func is24HourFormat() -> Swift.Bool
+public func getCurrentLanguageCode() -> Swift.String
+public func getCurrentLocaleIdentifier() -> Swift.String
+public func getCurrentRegionCode() -> Swift.String
+public func getDeviceInfo() -> any NaviSDKCore.DeviceInfo
+public func getDeviceTimeZoneId() -> Swift.String
+public func routeIDMaker() -> Swift.String
+extension Swift.String {
+  public func toAsciiString() -> Swift.String
+  public func toUIColor() -> UIKit.UIColor
+}
+public func cPointerToIntArray(cPointer: Swift.UnsafeMutableRawPointer, size: Swift.Int32) -> NaviSDKCore.KotlinIntArray
+public func intArrayToCPointer(intArray: NaviSDKCore.KotlinIntArray) -> Swift.UnsafeMutableRawPointer
+extension Foundation.Data {
+  public func toByteArray() -> NaviSDKCore.KotlinByteArray
+}
+public func threadName() -> Swift.String
+public func convertFormatString(format: Swift.String, args: NaviSDKCore.KotlinArray<Swift.AnyObject>) -> Swift.String
+public func decodeBytesToString(bytes: NaviSDKCore.KotlinByteArray, encoding: Swift.String) -> Swift.String
+public func getLocalString(stringResource: NaviSDKCore.ResourcesStringResource) -> Swift.String
+public func getResourceString(stringType: NaviSDKCore.StringType) -> Swift.String
+public func showToast(message: Swift.String)
+public func randomUUID() -> Swift.String
+public func wrtieDriveLogToFile(path: Swift.String, type: NaviSDKCore.AssetType)
+public var searchResultTypeAdapter: any NaviSDKCore.RuntimeColumnAdapter {
+  get
+}
+public func createOrbisMapMatcher(context: Any, fileManager: NaviSDKCore.FileManager) -> NaviSDKCore.OrbisMapMatcher
+public func getGPSEnabled() -> Swift.Bool
+public func getOrbisRouteLoader() -> any NaviSDKCore.OrbisRouteLoader
+#if compiler(>=5.3) && $NonescapableTypes
+public func getOrbisRoute() -> (any NaviSDKCore.OrbisRouteIF)?
+#endif
+public var apiModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public var databaseModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public var engineModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public var entity: NaviSDKCore.Koin_coreModule {
+  get
+}
+public var naviCommonModules: [NaviSDKCore.Koin_coreModule] {
+  get
+}
+public var repositoryModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public var sourceModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public var storeModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public var usecaseModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public var utilityModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public var iosModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public var platformModule: NaviSDKCore.Koin_coreModule {
+  get
+}
+public func startKoin()
+public func decodeGzipToJstr(bytes: NaviSDKCore.KotlinByteArray) -> Swift.String
+extension NaviSDKCore.Skie.Runtime.QueryResult.__Sealed : Swift.Sendable {}
+extension NaviSDKCore.Skie.Runtime.QueryResult.__Sealed : Swift.BitwiseCopyable {}
+extension NaviSDKCore.KotlinLazyThreadSafetyMode : Swift.Sendable {}
+extension NaviSDKCore.KotlinLazyThreadSafetyMode : Swift.BitwiseCopyable {}
+extension NaviSDKCore.KotlinKVariance : Swift.Sendable {}
+extension NaviSDKCore.KotlinKVariance : Swift.BitwiseCopyable {}
+extension NaviSDKCore.MapTrackingMode : Swift.Sendable {}
+extension NaviSDKCore.MapTrackingMode : Swift.BitwiseCopyable {}
+extension NaviSDKCore.MapRenderMode : Swift.Sendable {}
+extension NaviSDKCore.MapRenderMode : Swift.BitwiseCopyable {}
+extension NaviSDKCore.MapCameraMode : Swift.Sendable {}
+extension NaviSDKCore.MapCameraMode : Swift.BitwiseCopyable {}
+extension NaviSDKCore.RouteInfoType : Swift.Sendable {}
+extension NaviSDKCore.RouteInfoType : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Kermit_coreSeverity : Swift.Sendable {}
+extension NaviSDKCore.Kermit_coreSeverity : Swift.BitwiseCopyable {}
+extension NaviSDKCore.DialogButtonType : Swift.Sendable {}
+extension NaviSDKCore.DialogButtonType : Swift.BitwiseCopyable {}
+extension NaviSDKCore.ResponseCode : Swift.Sendable {}
+extension NaviSDKCore.ResponseCode : Swift.BitwiseCopyable {}
+extension NaviSDKCore.CountryCode : Swift.Sendable {}
+extension NaviSDKCore.CountryCode : Swift.BitwiseCopyable {}
+extension NaviSDKCore.MemberStatus : Swift.Sendable {}
+extension NaviSDKCore.MemberStatus : Swift.BitwiseCopyable {}
+extension NaviSDKCore.OsType : Swift.Sendable {}
+extension NaviSDKCore.OsType : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Koin_coreLevel : Swift.Sendable {}
+extension NaviSDKCore.Koin_coreLevel : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Koin_coreKind : Swift.Sendable {}
+extension NaviSDKCore.Koin_coreKind : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Kotlinx_datetimePadding : Swift.Sendable {}
+extension NaviSDKCore.Kotlinx_datetimePadding : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Kotlinx_datetimeMonth : Swift.Sendable {}
+extension NaviSDKCore.Kotlinx_datetimeMonth : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Kotlinx_datetimeDayOfWeek : Swift.Sendable {}
+extension NaviSDKCore.Kotlinx_datetimeDayOfWeek : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode : Swift.Sendable {}
+extension NaviSDKCore.Kotlinx_serialization_jsonClassDiscriminatorMode : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Ktor_utilsMonth : Swift.Sendable {}
+extension NaviSDKCore.Ktor_utilsMonth : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Ktor_utilsWeekDay : Swift.Sendable {}
+extension NaviSDKCore.Ktor_utilsWeekDay : Swift.BitwiseCopyable {}
+extension NaviSDKCore.PermissionsPermissionState : Swift.Sendable {}
+extension NaviSDKCore.PermissionsPermissionState : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}
+extension NaviSDKCore.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.Sendable {}
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.Sendable {}
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.Sendable {}
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.Sendable {}
+extension NaviSDKCore.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormat.__Sealed : Swift.Sendable {}
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormat.__Sealed : Swift.BitwiseCopyable {}
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed : Swift.Sendable {}
+extension NaviSDKCore.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed : Swift.BitwiseCopyable {}
