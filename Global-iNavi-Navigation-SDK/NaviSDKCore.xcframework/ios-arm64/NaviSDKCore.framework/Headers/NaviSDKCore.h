@@ -5420,7 +5420,7 @@ __attribute__((swift_name("SDKInitializeUseCase")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)invokeUniqueID:(NSString *)uniqueID completionHandler:(void (^)(NSDKCResultEvent * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(uniqueID:completionHandler:)")));
+- (void)invokeWithCompletionHandler:(void (^)(NSDKCResultEvent * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(completionHandler:)")));
 @end
 
 
@@ -7707,6 +7707,7 @@ __attribute__((swift_name("InvErrorCode")))
 @property (class, readonly) NSDKCInvErrorCode *invalidUniqueKeyEmpty __attribute__((swift_name("invalidUniqueKeyEmpty")));
 @property (class, readonly) NSDKCInvErrorCode *invalidUniqueKeyOver __attribute__((swift_name("invalidUniqueKeyOver")));
 @property (class, readonly) NSDKCInvErrorCode *invalidAppKeyEmpty __attribute__((swift_name("invalidAppKeyEmpty")));
+@property (class, readonly) NSDKCInvErrorCode *failInitSdk __attribute__((swift_name("failInitSdk")));
 @property (class, readonly) NSDKCInvErrorCode *permissionDenied __attribute__((swift_name("permissionDenied")));
 @property (class, readonly) NSDKCInvErrorCode *permissionDeniedAlways __attribute__((swift_name("permissionDeniedAlways")));
 @property (class, readonly) NSDKCInvErrorCode *permissionRequestFailed __attribute__((swift_name("permissionRequestFailed")));
@@ -14171,6 +14172,7 @@ __attribute__((swift_name("DataStore")))
 @property NSString * _Nullable accessToken __attribute__((swift_name("accessToken")));
 @property NSDKCCountry *currentCountry __attribute__((swift_name("currentCountry")));
 @property NSString * _Nullable currentRouteID __attribute__((swift_name("currentRouteID")));
+@property BOOL isInitialized __attribute__((swift_name("isInitialized")));
 @property (readonly) id<NSDKCKotlinx_coroutines_coreStateFlow> isNightMode __attribute__((swift_name("isNightMode")));
 @property NSDKCLocationInfoSearchItem * _Nullable lastSearchRouteItem __attribute__((swift_name("lastSearchRouteItem")));
 @property (readonly) NSDictionary<NSString *, NSString *> *orbisServiceGateHeader __attribute__((swift_name("orbisServiceGateHeader")));
@@ -16093,7 +16095,7 @@ __attribute__((swift_name("__SkieSuspendWrappersKt")))
 + (void)Skie_Suspend__8__awaitDispatchReceiver:(id<NSDKCRuntimeQueryResult>)dispatchReceiver suspendHandler:(NSDKCSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__8__await(dispatchReceiver:suspendHandler:)")));
 + (void)Skie_Suspend__90__providePermissionDispatchReceiver:(id<NSDKCPermissionsPermissionDelegate>)dispatchReceiver suspendHandler:(NSDKCSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__90__providePermission(dispatchReceiver:suspendHandler:)")));
 + (void)Skie_Suspend__91__invokeDispatchReceiver:(NSDKCPermissionRequestUseCase *)dispatchReceiver activity:(id _Nullable)activity suspendHandler:(NSDKCSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__91__invoke(dispatchReceiver:activity:suspendHandler:)")));
-+ (void)Skie_Suspend__92__invokeDispatchReceiver:(NSDKCSDKInitializeUseCase *)dispatchReceiver uniqueID:(NSString *)uniqueID suspendHandler:(NSDKCSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__92__invoke(dispatchReceiver:uniqueID:suspendHandler:)")));
++ (void)Skie_Suspend__92__invokeDispatchReceiver:(NSDKCSDKInitializeUseCase *)dispatchReceiver suspendHandler:(NSDKCSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__92__invoke(dispatchReceiver:suspendHandler:)")));
 + (void)Skie_Suspend__93__onSpeedChangedDispatchReceiver:(NSDKCChangeMapZoomUseCase *)dispatchReceiver speed:(float)speed currentMapLevel:(float)currentMapLevel currentTimeMs:(int64_t)currentTimeMs suspendHandler:(NSDKCSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__93__onSpeedChanged(dispatchReceiver:speed:currentMapLevel:currentTimeMs:suspendHandler:)")));
 + (void)Skie_Suspend__94__transactionDispatchReceiver:(id<NSDKCRuntimeSuspendingTransacter>)dispatchReceiver noEnclosing:(BOOL)noEnclosing body:(id<NSDKCKotlinSuspendFunction1>)body suspendHandler:(NSDKCSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__94__transaction(dispatchReceiver:noEnclosing:body:suspendHandler:)")));
 + (void)Skie_Suspend__95__transactionWithResultDispatchReceiver:(id<NSDKCRuntimeSuspendingTransacter>)dispatchReceiver noEnclosing:(BOOL)noEnclosing bodyWithReturn:(id<NSDKCKotlinSuspendFunction1>)bodyWithReturn suspendHandler:(NSDKCSkie_SuspendHandler *)suspendHandler __attribute__((swift_name("Skie_Suspend__95__transactionWithResult(dispatchReceiver:noEnclosing:bodyWithReturn:suspendHandler:)")));

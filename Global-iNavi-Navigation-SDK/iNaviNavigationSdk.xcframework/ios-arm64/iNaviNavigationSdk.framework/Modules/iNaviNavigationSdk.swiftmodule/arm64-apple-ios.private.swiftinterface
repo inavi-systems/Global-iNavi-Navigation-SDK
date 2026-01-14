@@ -29,6 +29,28 @@ public enum InitStatus {
   case onMapReady(Any?)
 }
 public struct InvAddress {
+  public let streetNumber: Swift.String?
+  public let streetName: Swift.String?
+  public let municipalitySubdivision: Swift.String?
+  public let municipalitySecondarySubdivision: Swift.String?
+  public let neighbourhood: Swift.String?
+  public let municipality: Swift.String?
+  public let countrySecondarySubdivision: Swift.String?
+  public let countryTertiarySubdivision: Swift.String?
+  public let countrySubdivision: Swift.String?
+  public let postalCode: Swift.String?
+  public let postalName: Swift.String?
+  public let extendedPostalCode: Swift.String?
+  public let countryCode: Swift.String?
+  public let country: Swift.String?
+  public let countryCodeISO3: Swift.String?
+  public let freeformAddress: Swift.String?
+  public let countrySubdivisionName: Swift.String?
+  public let countrySubdivisionCode: Swift.String?
+  public let localName: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(streetNumber: Swift.String? = nil, streetName: Swift.String? = nil, municipalitySubdivision: Swift.String? = nil, municipalitySecondarySubdivision: Swift.String? = nil, neighbourhood: Swift.String? = nil, municipality: Swift.String? = nil, countrySecondarySubdivision: Swift.String? = nil, countryTertiarySubdivision: Swift.String? = nil, countrySubdivision: Swift.String? = nil, postalCode: Swift.String? = nil, postalName: Swift.String? = nil, extendedPostalCode: Swift.String? = nil, countryCode: Swift.String? = nil, country: Swift.String? = nil, countryCodeISO3: Swift.String? = nil, freeformAddress: Swift.String? = nil, countrySubdivisionName: Swift.String? = nil, countrySubdivisionCode: Swift.String? = nil, localName: Swift.String? = nil)
+  #endif
 }
 public enum InvBottomBtnEvent : Swift.Int, Swift.CaseIterable {
   case reroute
@@ -57,6 +79,11 @@ public enum InvBottomBtnEvent : Swift.Int, Swift.CaseIterable {
   }
 }
 public struct InvBoundingBox {
+  public let topLeftPoint: iNaviNavigationSdk.InvCoordinate?
+  public let btmRightPoint: iNaviNavigationSdk.InvCoordinate?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(topLeftPoint: iNaviNavigationSdk.InvCoordinate? = nil, btmRightPoint: iNaviNavigationSdk.InvCoordinate? = nil)
+  #endif
 }
 public struct InvCoordinate {
   public let wgsLon: Swift.Double
@@ -64,10 +91,23 @@ public struct InvCoordinate {
   public init(wgsLon: Swift.Double, wgsLat: Swift.Double)
 }
 public struct InvGeocode {
+  public let summary: iNaviNavigationSdk.InvSummary?
+  public let results: [iNaviNavigationSdk.InvSearchResult]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(summary: iNaviNavigationSdk.InvSummary? = nil, results: [iNaviNavigationSdk.InvSearchResult]? = nil)
+  #endif
 }
 public struct InvMapCode {
+  public let type: Swift.String?
+  public let fullMapcode: Swift.String?
+  public let territory: Swift.String?
+  public let code: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(type: Swift.String?, fullMapcode: Swift.String?, territory: Swift.String?, code: Swift.String?)
+  #endif
 }
 public struct InvMapMarkerOption {
+  public var id: Swift.String
   public var coordinate: iNaviNavigationSdk.InvCoordinate?
   public var iconImage: UIKit.UIImage?
   public init()
@@ -131,6 +171,7 @@ public struct InvNaviLocation {
 public struct InvReqSearch {
   public var query: Swift.String
   public var coordinate: iNaviNavigationSdk.InvCoordinate
+  public init(query: Swift.String, coordinate: iNaviNavigationSdk.InvCoordinate)
 }
 public enum InvReRouteType {
   case manual
@@ -143,6 +184,34 @@ public enum InvReRouteType {
   }
 }
 public struct InvReverseGeocode {
+  public let summary: iNaviNavigationSdk.InvSummary?
+  public let addresses: [iNaviNavigationSdk.InvReverseGeocodeAddress]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(summary: iNaviNavigationSdk.InvSummary? = nil, addresses: [iNaviNavigationSdk.InvReverseGeocodeAddress]? = nil)
+  #endif
+}
+public struct InvReverseGeocodeAddress {
+  public let address: iNaviNavigationSdk.InvAddress?
+  public let position: Swift.String?
+  public let id: Swift.String?
+  public let matchType: Swift.String?
+  public let distance: Swift.Double?
+  public let mapcodes: [iNaviNavigationSdk.InvMapCode]?
+  public let intersection: iNaviNavigationSdk.InvIntersectionDetail?
+  public let speedLimit: Swift.String?
+  public let roadUse: [Swift.String]?
+  public let entityType: Swift.String?
+  public let boundingBox: iNaviNavigationSdk.InvBoundingBox?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(address: iNaviNavigationSdk.InvAddress? = nil, position: Swift.String? = nil, id: Swift.String? = nil, matchType: Swift.String? = nil, distance: Swift.Double? = nil, mapcodes: [iNaviNavigationSdk.InvMapCode]? = nil, intersection: iNaviNavigationSdk.InvIntersectionDetail? = nil, speedLimit: Swift.String? = nil, roadUse: [Swift.String]? = nil, entityType: Swift.String? = nil, boundingBox: iNaviNavigationSdk.InvBoundingBox? = nil)
+  #endif
+}
+public struct InvIntersectionDetail {
+  public let streets: [Swift.String]?
+  public let type: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(streets: [Swift.String]? = nil, type: Swift.String? = nil)
+  #endif
 }
 public struct InvRoutePtItem {
   public var name: Swift.String
@@ -168,51 +237,186 @@ public struct InvSearchItem {
   #endif
 }
 public struct InvSearchResult {
+  public let type: Swift.String?
+  public let id: Swift.String?
+  public let score: Swift.Double?
+  public let dist: Swift.Double?
+  public let info: Swift.String?
+  public let entityType: Swift.String?
+  public let poi: iNaviNavigationSdk.InvPoi?
+  public let relatedPois: [iNaviNavigationSdk.RelatedPoi]?
+  public let address: iNaviNavigationSdk.InvAddress?
+  public let position: iNaviNavigationSdk.InvCoordinate?
+  public let mapcodes: [iNaviNavigationSdk.InvMapCode]?
+  public let viewport: iNaviNavigationSdk.InvViewport?
+  public let boundingBox: iNaviNavigationSdk.InvBoundingBox?
+  public let entryPoints: [iNaviNavigationSdk.InvEntryPoint]?
+  public let addressRanges: iNaviNavigationSdk.InvAddressRanges?
+  public let chargingPark: iNaviNavigationSdk.InvChargingPark?
+  public let vehicleConstraint: [iNaviNavigationSdk.InvBrand]?
+  public let dataSources: iNaviNavigationSdk.InvDataSources?
+  public let fuelTypes: [Swift.String]?
+  public let vehicleTypes: [Swift.String]?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(type: Swift.String?, id: Swift.String?, score: Swift.Double?, dist: Swift.Double?, info: Swift.String?, entityType: Swift.String?, poi: iNaviNavigationSdk.InvPoi?, relatedPois: [iNaviNavigationSdk.RelatedPoi]?, address: iNaviNavigationSdk.InvAddress?, position: iNaviNavigationSdk.InvCoordinate?, mapcodes: [iNaviNavigationSdk.InvMapCode]?, viewport: iNaviNavigationSdk.InvViewport?, boundingBox: iNaviNavigationSdk.InvBoundingBox?, entryPoints: [iNaviNavigationSdk.InvEntryPoint]?, addressRanges: iNaviNavigationSdk.InvAddressRanges?, chargingPark: iNaviNavigationSdk.InvChargingPark?, vehicleConstraint: [iNaviNavigationSdk.InvBrand]?, dataSources: iNaviNavigationSdk.InvDataSources?, fuelTypes: [Swift.String]?, vehicleTypes: [Swift.String]?)
+  public init(type: Swift.String? = nil, id: Swift.String? = nil, score: Swift.Double? = nil, dist: Swift.Double? = nil, info: Swift.String? = nil, entityType: Swift.String? = nil, poi: iNaviNavigationSdk.InvPoi? = nil, relatedPois: [iNaviNavigationSdk.RelatedPoi]? = nil, address: iNaviNavigationSdk.InvAddress? = nil, position: iNaviNavigationSdk.InvCoordinate? = nil, mapcodes: [iNaviNavigationSdk.InvMapCode]? = nil, viewport: iNaviNavigationSdk.InvViewport? = nil, boundingBox: iNaviNavigationSdk.InvBoundingBox? = nil, entryPoints: [iNaviNavigationSdk.InvEntryPoint]? = nil, addressRanges: iNaviNavigationSdk.InvAddressRanges? = nil, chargingPark: iNaviNavigationSdk.InvChargingPark? = nil, vehicleConstraint: [iNaviNavigationSdk.InvBrand]? = nil, dataSources: iNaviNavigationSdk.InvDataSources? = nil, fuelTypes: [Swift.String]? = nil, vehicleTypes: [Swift.String]? = nil)
   #endif
 }
 public struct RelatedPoi : Swift.Codable {
+  public let relationType: Swift.String?
+  public let id: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(relationType: Swift.String? = nil, id: Swift.String? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct InvViewport {
+  public let topLeftPoint: iNaviNavigationSdk.InvCoordinate?
+  public let btmRightPoint: iNaviNavigationSdk.InvCoordinate?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(topLeftPoint: iNaviNavigationSdk.InvCoordinate? = nil, btmRightPoint: iNaviNavigationSdk.InvCoordinate? = nil)
+  #endif
 }
 public struct InvEntryPoint {
+  public let type: Swift.String?
+  public let functions: [Swift.String]?
+  public let position: iNaviNavigationSdk.InvCoordinate?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(type: Swift.String? = nil, functions: [Swift.String]? = nil, position: iNaviNavigationSdk.InvCoordinate? = nil)
+  #endif
 }
 public struct InvAddressRanges {
+  public let rangeLeft: Swift.String?
+  public let rangeRight: Swift.String?
+  public let from: iNaviNavigationSdk.InvCoordinate?
+  public let to: iNaviNavigationSdk.InvCoordinate?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(rangeLeft: Swift.String? = nil, rangeRight: Swift.String? = nil, from: iNaviNavigationSdk.InvCoordinate? = nil, to: iNaviNavigationSdk.InvCoordinate? = nil)
+  #endif
 }
 public struct InvChargingPark {
+  public let connectors: [iNaviNavigationSdk.InvConnector]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(connectors: [iNaviNavigationSdk.InvConnector]? = nil)
+  #endif
 }
 public struct InvConnector {
+  public let connectorType: Swift.String?
+  public let ratedPowerKW: Swift.Double?
+  public let currentA: Swift.Int?
+  public let currentType: Swift.String?
+  public let voltageV: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(connectorType: Swift.String? = nil, ratedPowerKW: Swift.Double? = nil, currentA: Swift.Int? = nil, currentType: Swift.String? = nil, voltageV: Swift.Int? = nil)
+  #endif
 }
 public struct InvDataSources {
+  public let chargingAvailability: iNaviNavigationSdk.InvDataSourceInfo?
+  public let parkingAvailability: iNaviNavigationSdk.InvDataSourceInfo?
+  public let fuelPrice: iNaviNavigationSdk.InvDataSourceInfo?
+  public let geometry: iNaviNavigationSdk.InvGeometryInfo?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(chargingAvailability: iNaviNavigationSdk.InvDataSourceInfo? = nil, parkingAvailability: iNaviNavigationSdk.InvDataSourceInfo? = nil, fuelPrice: iNaviNavigationSdk.InvDataSourceInfo? = nil, geometry: iNaviNavigationSdk.InvGeometryInfo? = nil)
+  #endif
 }
 public struct InvDataSourceInfo {
+  public let id: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(id: Swift.String? = nil)
+  #endif
 }
 public struct InvGeometryInfo {
+  public let id: Swift.String?
+  public let sourceName: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(id: Swift.String? = nil, sourceName: Swift.String? = nil)
+  #endif
 }
 public struct InvPoi {
+  public let name: Swift.String?
+  public let phone: Swift.String?
+  public let brands: [iNaviNavigationSdk.InvBrand]?
+  public let categorySet: [iNaviNavigationSdk.InvCategory]?
+  public let url: Swift.String?
+  public let categories: [Swift.String]?
+  public let openingHours: iNaviNavigationSdk.InvOpeningHours?
+  public let classifications: [iNaviNavigationSdk.InvClassification]?
+  public let timeZone: iNaviNavigationSdk.InvTimeZoneInfo?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String? = nil, phone: Swift.String? = nil, brands: [iNaviNavigationSdk.InvBrand]? = nil, categorySet: [iNaviNavigationSdk.InvCategory]? = nil, url: Swift.String? = nil, categories: [Swift.String]? = nil, openingHours: iNaviNavigationSdk.InvOpeningHours? = nil, classifications: [iNaviNavigationSdk.InvClassification]? = nil, timeZone: iNaviNavigationSdk.InvTimeZoneInfo? = nil)
+  #endif
 }
 public struct InvBrand {
+  public let name: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String? = nil)
+  #endif
 }
 public struct InvCategory {
+  public let id: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(id: Swift.Int? = nil)
+  #endif
 }
 public struct InvOpeningHours {
+  public let mode: Swift.String?
+  public let timeRanges: [iNaviNavigationSdk.InvTimeRange]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(mode: Swift.String? = nil, timeRanges: [iNaviNavigationSdk.InvTimeRange]? = nil)
+  #endif
 }
 public struct InvClassification {
+  public let code: Swift.String?
+  public let names: [iNaviNavigationSdk.InvNameLocale]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(code: Swift.String? = nil, names: [iNaviNavigationSdk.InvNameLocale]? = nil)
+  #endif
 }
 public struct InvTimeZoneInfo {
+  public let ianaId: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(ianaId: Swift.String? = nil)
+  #endif
 }
 public struct InvQueryIntent {
+  public let type: Swift.String?
+  public let details: iNaviNavigationSdk.InvQueryIntentDetails?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(type: Swift.String? = nil, details: iNaviNavigationSdk.InvQueryIntentDetails? = nil)
+  #endif
 }
 public struct InvQueryIntentDetails {
+  public let lat: Swift.Float?
+  public let lon: Swift.Float?
+  public let query: Swift.String?
+  public let text: Swift.String?
+  public let address: Swift.String?
+  public let bookmark: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(lat: Swift.Float? = nil, lon: Swift.Float? = nil, query: Swift.String? = nil, text: Swift.String? = nil, address: Swift.String? = nil, bookmark: Swift.String? = nil)
+  #endif
 }
 public struct InvTimeRange {
+  public let startTime: iNaviNavigationSdk.InvTimePoint?
+  public let endTime: iNaviNavigationSdk.InvTimePoint?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(startTime: iNaviNavigationSdk.InvTimePoint? = nil, endTime: iNaviNavigationSdk.InvTimePoint? = nil)
+  #endif
 }
 public struct InvNameLocale {
+  public let nameLocale: Swift.String?
+  public let name: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(nameLocale: Swift.String? = nil, name: Swift.String? = nil)
+  #endif
 }
 public struct InvTimePoint {
+  public let date: Swift.String?
+  public let hour: Swift.Int?
+  public let minute: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(date: Swift.String? = nil, hour: Swift.Int? = nil, minute: Swift.Int? = nil)
+  #endif
 }
 public enum InvSearchResultType : Swift.Int, Swift.CaseIterable {
   case poi
@@ -233,8 +437,17 @@ public enum InvSearchResultType : Swift.Int, Swift.CaseIterable {
   }
 }
 public struct InvSummary {
+  public let query: Swift.String?
+  public let queryType: Swift.String?
+  public let queryTime: Swift.Int?
+  public let numResults: Swift.Int?
+  public let offset: Swift.Int?
+  public let totalResults: Swift.Int?
+  public let fuzzyLevel: Swift.Int?
+  public let geoBias: iNaviNavigationSdk.InvCoordinate?
+  public let queryIntent: [iNaviNavigationSdk.InvQueryIntent]?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(query: Swift.String?, queryType: Swift.String?, queryTime: Swift.Int?, numResults: Swift.Int?, offset: Swift.Int?, totalResults: Swift.Int?, fuzzyLevel: Swift.Int?, geoBias: iNaviNavigationSdk.InvCoordinate?, queryIntent: [iNaviNavigationSdk.InvQueryIntent]?)
+  public init(query: Swift.String? = nil, queryType: Swift.String? = nil, queryTime: Swift.Int? = nil, numResults: Swift.Int? = nil, offset: Swift.Int? = nil, totalResults: Swift.Int? = nil, fuzzyLevel: Swift.Int? = nil, geoBias: iNaviNavigationSdk.InvCoordinate? = nil, queryIntent: [iNaviNavigationSdk.InvQueryIntent]? = nil)
   #endif
 }
 public enum InvUIComponent : Swift.Int, Swift.CaseIterable {

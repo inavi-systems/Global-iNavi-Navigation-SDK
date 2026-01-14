@@ -855,7 +855,7 @@ extension NaviSDKCore.PermissionRequestUseCase {
 }
 extension NaviSDKCore.SDKInitializeUseCase {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func invoke(uniqueID: Swift.String) async throws -> NaviSDKCore.ResultEvent
+  public func invoke() async throws -> NaviSDKCore.ResultEvent
 }
 extension NaviSDKCore.ChangeMapZoomUseCase {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)

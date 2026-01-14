@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m9dCh3W7kzKtr+xSt8fJtsmaT8Q=
+		fmeJ42wy5tPsMYr5B9SjewmM53E=
 		</data>
 		<key>InvBottomView.nib</key>
 		<data>
@@ -90,27 +90,27 @@
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		9mgWD/NNn1YgvTp5CgcEM/Rh/Ng=
+		O018k2XVwxdG51DNTbAC5xp8/Q8=
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		wOyXRYPVqfEimJXE9SUdQFe6kkw=
+		vbDKlvCjVWcymMB8NrZTe3Bz5co=
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		BIkwPidFAhMkuqIFmYPjzqz+ni8=
+		GGGTWhJ3sOuNzmJsRtAERR0AP5A=
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		O5UCs3RynOyHVszbR4wuUIA8TDw=
+		T1hkRDv6mnyTEvaB6TzVnEwlGg4=
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		BIkwPidFAhMkuqIFmYPjzqz+ni8=
+		GGGTWhJ3sOuNzmJsRtAERR0AP5A=
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		jUBfBgIklG50lOCO3mibIm04PKg=
+		VpkVk79Ercg5WeWX9Tzc+UJPRD8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -392,42 +392,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+WRJYFonk31s70ZxQBfhN2ya+Pjv6e5C7twTc98uqCs=
+			xdaKR8jm1T56hXIxSF6PhYRxWE61+hc+mUrY6RqE/AE=
 			</data>
 		</dict>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5zfbf70Meo0zLKufCCShd6CaNWhsb5Y5e+33X3//WNg=
+			MPhjBDeOkcNXDzh4d1UoEpws8zBKx4FI38xZsCgJtcc=
 			</data>
 		</dict>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AXa33o+TBEHrLwMNv6t2jfibaPKXbVwN5+gyLG7wlxU=
+			vvknBWG8/ZF8BI90OSCwCkkiAh58vN24jpJtjqmojk4=
 			</data>
 		</dict>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZCcaZOqmH2ZR0J77IDLE3b3pd9s9KofQZA4qrqrI2Yk=
+			NryvLIOMWpiEZSb4vyFg4fa6GgrQNrJD0v6xcwvnVyU=
 			</data>
 		</dict>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AXa33o+TBEHrLwMNv6t2jfibaPKXbVwN5+gyLG7wlxU=
+			vvknBWG8/ZF8BI90OSCwCkkiAh58vN24jpJtjqmojk4=
 			</data>
 		</dict>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hK5zDVAMtNx8THejSS89tYJuEwh16rh3pQICGHiyaOo=
+			jJ8T+bYz5KM1JtVbGqoOez3m18Ll1hnjy75CXE4GPW0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

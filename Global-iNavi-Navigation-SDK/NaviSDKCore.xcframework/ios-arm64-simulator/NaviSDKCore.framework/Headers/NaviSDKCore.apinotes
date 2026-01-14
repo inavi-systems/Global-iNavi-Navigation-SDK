@@ -10804,6 +10804,10 @@ Classes:
     PropertyKind: "Class"
     SwiftName: "invalidAppKeyEmpty"
     Type: "NSDKCInvErrorCode * _Nonnull"
+  - Name: "failInitSdk"
+    PropertyKind: "Class"
+    SwiftName: "failInitSdk"
+    Type: "NSDKCInvErrorCode * _Nonnull"
   - Name: "permissionDenied"
     PropertyKind: "Class"
     SwiftName: "permissionDenied"
@@ -32319,6 +32323,10 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "currentRouteID"
     Type: "NSString * _Nullable"
+  - Name: "isInitialized"
+    PropertyKind: "Instance"
+    SwiftName: "isInitialized"
+    Type: "BOOL"
   - Name: "isNightMode"
     PropertyKind: "Instance"
     SwiftName: "isNightMode"
@@ -40104,15 +40112,13 @@ Classes:
       Type: "NSDKCGetTomTomAPIKeyUseCase * _Nonnull"
     - Position: 2
       Type: "NSDKCGetSDKAuthUseCase * _Nonnull"
-  - Selector: "invokeUniqueID:completionHandler:"
+  - Selector: "invokeWithCompletionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__invoke(uniqueID:completionHandler:)"
+    SwiftName: "__invoke(completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
       Type: "void (^ _Nonnull)(NSDKCResultEvent * _Nullable, NSError * _Nullable)"
   - Selector: "Result:"
     MethodKind: "Instance"
@@ -44229,17 +44235,15 @@ Classes:
       Type: "id _Nullable"
     - Position: 2
       Type: "NSDKCSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__92__invokeDispatchReceiver:uniqueID:suspendHandler:"
+  - Selector: "Skie_Suspend__92__invokeDispatchReceiver:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__92__invoke(dispatchReceiver:uniqueID:suspendHandler:)"
+    SwiftName: "Skie_Suspend__92__invoke(dispatchReceiver:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
     - Position: 0
       Type: "NSDKCSDKInitializeUseCase * _Nonnull"
     - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
       Type: "NSDKCSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__93__onSpeedChangedDispatchReceiver:speed:currentMapLevel:currentTimeMs:suspendHandler:"
     MethodKind: "Class"
