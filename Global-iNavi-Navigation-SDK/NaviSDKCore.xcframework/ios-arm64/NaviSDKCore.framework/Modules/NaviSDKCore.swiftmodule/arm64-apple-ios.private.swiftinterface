@@ -2733,9 +2733,11 @@ public func getUIController() -> any NaviSDKCore.UIController
 public func currentTimeZone() -> NaviSDKCore.Kotlinx_datetimeTimeZone
 public func localDate(timeMs: Swift.Int64, timeZone: NaviSDKCore.Kotlinx_datetimeTimeZone) -> NaviSDKCore.Kotlinx_datetimeLocalDateTime
 public func localDate(timeStr: Swift.String) -> NaviSDKCore.Kotlinx_datetimeLocalDateTime
+public func timeInUnits() -> Swift.Int32
 public func timeInstant(timeMs: Swift.Int64) -> NaviSDKCore.Kotlinx_datetimeInstant
 public func timeInstant(timeStr: Swift.String) -> NaviSDKCore.Kotlinx_datetimeInstant
 public func timeInstantNow() -> NaviSDKCore.Kotlinx_datetimeInstant
+public func timeMillis() -> Swift.Int64
 public func getLanguageCodeStr() -> Swift.String
 public func getLanguageType() -> NaviSDKCore.LanguageType
 public var jsonInstance_: NaviSDKCore.Kotlinx_serialization_jsonJson {
@@ -2760,6 +2762,7 @@ extension Swift.Int32 {
   public func toHourString(useAmPm: Swift.Bool, zeroFormat: Swift.Bool) -> Swift.String
   public func toMinString(zeroFormat: Swift.Bool) -> Swift.String
 }
+public func getNanoTime() -> Swift.Int64
 public func is24HourFormat() -> Swift.Bool
 public func getCurrentLanguageCode() -> Swift.String
 public func getCurrentLocaleIdentifier() -> Swift.String

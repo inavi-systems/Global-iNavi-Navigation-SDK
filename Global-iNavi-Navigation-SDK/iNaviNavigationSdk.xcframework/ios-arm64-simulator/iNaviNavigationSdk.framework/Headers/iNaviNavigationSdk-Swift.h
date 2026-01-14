@@ -318,8 +318,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) InaviControl
 @class NSCoder;
 SWIFT_CLASS("_TtC18iNaviNavigationSdk10InvMapView")
 @interface InvMapView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class MLNMapView;

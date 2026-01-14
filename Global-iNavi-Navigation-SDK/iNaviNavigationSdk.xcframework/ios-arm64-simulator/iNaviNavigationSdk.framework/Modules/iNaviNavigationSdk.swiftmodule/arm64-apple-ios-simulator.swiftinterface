@@ -19,6 +19,16 @@ extension ObjectiveC.NSObject {
     get
   }
 }
+public typealias InvInitListener = (iNaviNavigationSdk.InitStatus) -> Swift.Void
+public typealias InvStatusListener = (iNaviNavigationSdk.MapModeStatus) -> Swift.Void
+public typealias InvLonLatListener = (_ lat: Swift.Double, _ lon: Swift.Double) -> Swift.Void
+public typealias InvMapMoveListener = (iNaviNavigationSdk.MapMoveStatus) -> Swift.Void
+public typealias InvCoordinateListener = (iNaviNavigationSdk.InvCoordinate) -> Swift.Void
+public typealias InvSearchListener = (iNaviNavigationSdk.SearchStatus) -> Swift.Void
+public typealias InvRouteListener = (iNaviNavigationSdk.RouteStatus) -> Swift.Void
+public typealias InvBottomEventListener = (iNaviNavigationSdk.InvBottomBtnEvent) -> Swift.Void
+public typealias InvGeocodingListener = (iNaviNavigationSdk.GeocodingStatus) -> Swift.Void
+public typealias InvReverseGeocodingListener = (iNaviNavigationSdk.ReverseGeocodingStatus) -> Swift.Void
 public enum GeocodingStatus {
   case success(geocodeResponse: iNaviNavigationSdk.InvGeocode)
   case failure(errorCode: Swift.Int, errorMsg: Swift.String)
@@ -507,7 +517,28 @@ public enum SearchStatus {
 public enum ShapeIDHelper {
   public static func nextID() -> Swift.UInt
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class InvMapView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class InvMapView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public func changeMapStyle(styleUrl: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func setMapClickListener(listener: @escaping iNaviNavigationSdk.InvLonLatListener)
+  @_Concurrency.MainActor @preconcurrency public func setMapLongClickListener(listener: @escaping iNaviNavigationSdk.InvLonLatListener)
+  @_Concurrency.MainActor @preconcurrency public func setMapMoveListener(listener: @escaping iNaviNavigationSdk.InvMapMoveListener)
+  @_Concurrency.MainActor @preconcurrency public func updateCarLocation(longitude: Swift.Double, latitude: Swift.Double, angle: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func setMapCenter(longitude: Swift.Double, latitude: Swift.Double, zoom: Swift.Double = 15.0, tilt: Swift.Double = 0.0, bearing: Swift.Double = 0.0, animated: Swift.Bool = true, durationMs: Swift.Int = 500)
+  @_Concurrency.MainActor @preconcurrency public func zoomToFit(orbisPadding: Swift.Int, delay: Swift.Int = 500)
+  @_Concurrency.MainActor @preconcurrency public func removeAllRouteLines()
+  @_Concurrency.MainActor @preconcurrency public func removeAllMarkers()
+  @_Concurrency.MainActor @preconcurrency public func setCompassButtonVisible(_ visible: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func zoomIn(durationMs: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func zoomOut(durationMs: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func clearMap()
+  @_Concurrency.MainActor @preconcurrency public func updateRouteLine(progress: Swift.Double)
+  @_Concurrency.MainActor @preconcurrency public func setPadding(bottom: Swift.Int, top: Swift.Int, left: Swift.Int, right: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func addMarker(mapMarkerOption: iNaviNavigationSdk.InvMapMarkerOption)
+  @_Concurrency.MainActor @preconcurrency public func removeMarker(markerId: Swift.String)
   @objc deinit
 }
 extension iNaviNavigationSdk.InvMapView : MapLibre.MLNMapViewDelegate {

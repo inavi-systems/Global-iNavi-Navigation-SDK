@@ -29176,46 +29176,6 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSDKCCoordinate * _Nonnull"
-- Name: "NSDKCTimeManager"
-  SwiftName: "TimeManager"
-  Methods:
-  - Selector: "init"
-    MethodKind: "Instance"
-    SwiftName: "init()"
-  - Selector: "formatLocationTimeStampLocationTimeStamp:"
-    MethodKind: "Instance"
-    SwiftName: "formatLocationTimeStamp(locationTimeStamp:)"
-    ResultType: "NSDKCKotlinArray<NSDKCInt *> * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-  - Selector: "getCurrentTimeInUnits"
-    MethodKind: "Instance"
-    SwiftName: "getCurrentTimeInUnits()"
-    ResultType: "int32_t"
-  - Selector: "getCurrentTimeMillis"
-    MethodKind: "Instance"
-    SwiftName: "getCurrentTimeMillis()"
-    ResultType: "int64_t"
-  - Selector: "getDateStringTimeZone:simpleDateFormat:timeStamp:"
-    MethodKind: "Instance"
-    SwiftName: "getDateString(timeZone:simpleDateFormat:timeStamp:)"
-    ResultType: "NSString * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "NSString * _Nonnull"
-    - Position: 1
-      Type: "NSString * _Nonnull"
-    - Position: 2
-      Type: "int64_t"
-  - Selector: "getDeviceTimeZoneId"
-    MethodKind: "Instance"
-    SwiftName: "getDeviceTimeZoneId()"
-    ResultType: "NSString * _Nonnull"
-  - Selector: "getNanoTime"
-    MethodKind: "Instance"
-    SwiftName: "getNanoTime()"
-    ResultType: "int64_t"
 - Name: "NSDKCSharedRes"
   SwiftName: "SharedRes"
 - Name: "NSDKCSharedResStrings"
@@ -33286,17 +33246,15 @@ Classes:
 - Name: "NSDKCRecentSearchRepositoryImpl"
   SwiftName: "RecentSearchRepositoryImpl"
   Methods:
-  - Selector: "initWithDatabase:timeManager:dbDispatcher:maxSize:"
+  - Selector: "initWithDatabase:dbDispatcher:maxSize:"
     MethodKind: "Instance"
-    SwiftName: "init(database:timeManager:dbDispatcher:maxSize:)"
+    SwiftName: "init(database:dbDispatcher:maxSize:)"
     Parameters:
     - Position: 0
       Type: "id<NSDKCRecentSearch> _Nonnull"
     - Position: 1
-      Type: "NSDKCTimeManager * _Nonnull"
-    - Position: 2
       Type: "NSDKCKotlinx_coroutines_coreCoroutineDispatcher * _Nonnull"
-    - Position: 3
+    - Position: 2
       Type: "int32_t"
   - Selector: "addSearchSearchItem:completionHandler:"
     MethodKind: "Instance"
@@ -33369,6 +33327,10 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+  - Selector: "timeInUnits"
+    MethodKind: "Class"
+    SwiftName: "timeInUnits()"
+    ResultType: "int32_t"
   - Selector: "timeInstantTimeMs:"
     MethodKind: "Class"
     SwiftName: "timeInstant(timeMs:)"
@@ -33387,6 +33349,10 @@ Classes:
     MethodKind: "Class"
     SwiftName: "timeInstantNow()"
     ResultType: "NSDKCKotlinx_datetimeInstant * _Nonnull"
+  - Selector: "timeMillis"
+    MethodKind: "Class"
+    SwiftName: "timeMillis()"
+    ResultType: "int64_t"
 - Name: "NSDKCDeviceInfoKt"
   SwiftName: "DeviceInfoKt"
   Methods:
@@ -33499,6 +33465,10 @@ Classes:
 - Name: "NSDKCDateTime_iosKt"
   SwiftName: "DateTime_iosKt"
   Methods:
+  - Selector: "getNanoTime"
+    MethodKind: "Class"
+    SwiftName: "getNanoTime()"
+    ResultType: "int64_t"
   - Selector: "is24HourFormat"
     MethodKind: "Class"
     SwiftName: "is24HourFormat()"
@@ -33681,18 +33651,10 @@ Classes:
       Type: "NSArray<NSDKCTTSText *> * _Nonnull"
 - Name: "NSDKCIOSAudiosService"
   SwiftName: "IOSAudiosService"
-  Properties:
-  - Name: "timeManager"
-    PropertyKind: "Instance"
-    SwiftName: "timeManager"
-    Type: "NSDKCTimeManager * _Nonnull"
   Methods:
-  - Selector: "initWithTimeManager:"
+  - Selector: "init"
     MethodKind: "Instance"
-    SwiftName: "init(timeManager:)"
-    Parameters:
-    - Position: 0
-      Type: "NSDKCTimeManager * _Nonnull"
+    SwiftName: "init()"
   - Selector: "initializeContext:"
     MethodKind: "Instance"
     SwiftName: "initialize(context:)"
@@ -39302,17 +39264,15 @@ Classes:
     SwiftName: "simulSpeedLevel"
     Type: "NSDKCSkieKotlinStateFlow<NSDKCSimulSpeed *> * _Nonnull"
   Methods:
-  - Selector: "initWithUiGuideRepository:naviMapView:timeManager:configManager:"
+  - Selector: "initWithUiGuideRepository:naviMapView:configManager:"
     MethodKind: "Instance"
-    SwiftName: "init(uiGuideRepository:naviMapView:timeManager:configManager:)"
+    SwiftName: "init(uiGuideRepository:naviMapView:configManager:)"
     Parameters:
     - Position: 0
       Type: "id<NSDKCUIGuideRepository> _Nonnull"
     - Position: 1
       Type: "NSDKCNaviMapView * _Nonnull"
     - Position: 2
-      Type: "NSDKCTimeManager * _Nonnull"
-    - Position: 3
       Type: "NSDKCConfigManager * _Nonnull"
   - Selector: "btnClickEventBtnEvent:"
     MethodKind: "Instance"
@@ -39803,15 +39763,13 @@ Classes:
     SwiftName: "routeResultUiState"
     Type: "NSDKCSkieKotlinStateFlow<NSDKCRouteResultUiState *> * _Nonnull"
   Methods:
-  - Selector: "initWithTimeManager:routeStore:orbisGuidanceAdapter:"
+  - Selector: "initWithRouteStore:orbisGuidanceAdapter:"
     MethodKind: "Instance"
-    SwiftName: "init(timeManager:routeStore:orbisGuidanceAdapter:)"
+    SwiftName: "init(routeStore:orbisGuidanceAdapter:)"
     Parameters:
     - Position: 0
-      Type: "NSDKCTimeManager * _Nonnull"
-    - Position: 1
       Type: "NSDKCRouteStore * _Nonnull"
-    - Position: 2
+    - Position: 1
       Type: "NSDKCOrbisGuidanceAdapter * _Nonnull"
   - Selector: "orbisGuideStartIndex:"
     MethodKind: "Instance"

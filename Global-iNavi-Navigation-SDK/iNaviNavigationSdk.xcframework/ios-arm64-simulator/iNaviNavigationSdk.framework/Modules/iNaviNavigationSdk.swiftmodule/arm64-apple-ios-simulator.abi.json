@@ -19035,6 +19035,680 @@
         "printedName": "InvMapView",
         "children": [
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InvMapView",
+                "printedName": "iNaviNavigationSdk.InvMapView",
+                "usr": "c:@M@iNaviNavigationSdk@objc(cs)InvMapView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@iNaviNavigationSdk@objc(cs)InvMapView(im)initWithFrame:",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "iNaviNavigationSdk",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "iNaviNavigationSdk.InvMapView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InvMapView",
+                    "printedName": "iNaviNavigationSdk.InvMapView",
+                    "usr": "c:@M@iNaviNavigationSdk@objc(cs)InvMapView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@iNaviNavigationSdk@objc(cs)InvMapView(im)initWithCoder:",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "iNaviNavigationSdk",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "changeMapStyle",
+            "printedName": "changeMapStyle(styleUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC06changeE5Style8styleUrlySS_tF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC06changeE5Style8styleUrlySS_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMapClickListener",
+            "printedName": "setMapClickListener(listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Double, Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Double, Swift.Double)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC03setE13ClickListener8listeneryySd_Sdtc_tF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC03setE13ClickListener8listeneryySd_Sdtc_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMapLongClickListener",
+            "printedName": "setMapLongClickListener(listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Double, Swift.Double) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Double, Swift.Double)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC03setE17LongClickListener8listeneryySd_Sdtc_tF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC03setE17LongClickListener8listeneryySd_Sdtc_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMapMoveListener",
+            "printedName": "setMapMoveListener(listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(iNaviNavigationSdk.MapMoveStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MapMoveStatus",
+                    "printedName": "iNaviNavigationSdk.MapMoveStatus",
+                    "usr": "s:18iNaviNavigationSdk13MapMoveStatusO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC03setE12MoveListener8listeneryyAA0eH6StatusOc_tF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC03setE12MoveListener8listeneryyAA0eH6StatusOc_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateCarLocation",
+            "printedName": "updateCarLocation(longitude:latitude:angle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC17updateCarLocation9longitude8latitude5angleySd_SdSitF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC17updateCarLocation9longitude8latitude5angleySd_SdSitF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMapCenter",
+            "printedName": "setMapCenter(longitude:latitude:zoom:tilt:bearing:animated:durationMs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC03setE6Center9longitude8latitude4zoom4tilt7bearing8animated10durationMsySd_S4dSbSitF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC03setE6Center9longitude8latitude4zoom4tilt7bearing8animated10durationMsySd_S4dSbSitF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "zoomToFit",
+            "printedName": "zoomToFit(orbisPadding:delay:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC9zoomToFit12orbisPadding5delayySi_SitF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC9zoomToFit12orbisPadding5delayySi_SitF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllRouteLines",
+            "printedName": "removeAllRouteLines()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC19removeAllRouteLinesyyF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC19removeAllRouteLinesyyF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllMarkers",
+            "printedName": "removeAllMarkers()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC16removeAllMarkersyyF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC16removeAllMarkersyyF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCompassButtonVisible",
+            "printedName": "setCompassButtonVisible(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC23setCompassButtonVisibleyySbF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC23setCompassButtonVisibleyySbF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "zoomIn",
+            "printedName": "zoomIn(durationMs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC6zoomIn10durationMsySi_tF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC6zoomIn10durationMsySi_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "zoomOut",
+            "printedName": "zoomOut(durationMs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC7zoomOut10durationMsySi_tF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC7zoomOut10durationMsySi_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearMap",
+            "printedName": "clearMap()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC05clearE0yyF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC05clearE0yyF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateRouteLine",
+            "printedName": "updateRouteLine(progress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC15updateRouteLine8progressySd_tF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC15updateRouteLine8progressySd_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPadding",
+            "printedName": "setPadding(bottom:top:left:right:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC10setPadding6bottom3top4left5rightySi_S3itF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC10setPadding6bottom3top4left5rightySi_S3itF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addMarker",
+            "printedName": "addMarker(mapMarkerOption:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InvMapMarkerOption",
+                "printedName": "iNaviNavigationSdk.InvMapMarkerOption",
+                "usr": "s:18iNaviNavigationSdk18InvMapMarkerOptionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC9addMarker03mapH6OptionyAA0dehJ0V_tF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC9addMarker03mapH6OptionyAA0dehJ0V_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeMarker",
+            "printedName": "removeMarker(markerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk10InvMapViewC12removeMarker8markerIdySS_tF",
+            "mangledName": "$s18iNaviNavigationSdk10InvMapViewC12removeMarker8markerIdySS_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Function",
             "name": "mapViewDidFailLoadingMap",
             "printedName": "mapViewDidFailLoadingMap(_:withError:)",
@@ -19242,7 +19916,6 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)UIView",
-        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "UIKit.UIView",
@@ -22047,35 +22720,63 @@
     {
       "filePath": "\/Users\/daecheolkim\/Documents\/android_workspace\/navisdk_core\/navisdk_ios_ui\/NaviSDK\/NaviSDK\/View\/InvMapView.swift",
       "kind": "Array",
-      "offset": 399,
+      "offset": 407,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/daecheolkim\/Documents\/android_workspace\/navisdk_core\/navisdk_ios_ui\/NaviSDK\/NaviSDK\/View\/InvMapView.swift",
       "kind": "BooleanLiteral",
-      "offset": 436,
+      "offset": 444,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daecheolkim\/Documents\/android_workspace\/navisdk_core\/navisdk_ios_ui\/NaviSDK\/NaviSDK\/View\/InvMapView.swift",
       "kind": "BooleanLiteral",
-      "offset": 475,
+      "offset": 483,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/daecheolkim\/Documents\/android_workspace\/navisdk_core\/navisdk_ios_ui\/NaviSDK\/NaviSDK\/View\/InvMapView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3201,
+      "length": 4,
+      "value": "15.0"
+    },
+    {
+      "filePath": "\/Users\/daecheolkim\/Documents\/android_workspace\/navisdk_core\/navisdk_ios_ui\/NaviSDK\/NaviSDK\/View\/InvMapView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3251,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/daecheolkim\/Documents\/android_workspace\/navisdk_core\/navisdk_ios_ui\/NaviSDK\/NaviSDK\/View\/InvMapView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3303,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/daecheolkim\/Documents\/android_workspace\/navisdk_core\/navisdk_ios_ui\/NaviSDK\/NaviSDK\/View\/InvMapView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3354,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/daecheolkim\/Documents\/android_workspace\/navisdk_core\/navisdk_ios_ui\/NaviSDK\/NaviSDK\/View\/InvMapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3275,
+      "offset": 3407,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/daecheolkim\/Documents\/android_workspace\/navisdk_core\/navisdk_ios_ui\/NaviSDK\/NaviSDK\/View\/InvMapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3883,
+      "offset": 3983,
       "length": 3,
       "value": "500"
     },

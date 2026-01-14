@@ -54129,6 +54129,27 @@
       },
       {
         "kind": "Function",
+        "name": "timeInUnits",
+        "printedName": "timeInUnits()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int32",
+            "printedName": "Swift.Int32",
+            "usr": "s:s5Int32V"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11NaviSDKCore11timeInUnitss5Int32VyF",
+        "mangledName": "$s11NaviSDKCore11timeInUnitss5Int32VyF",
+        "moduleName": "NaviSDKCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
         "name": "timeInstant",
         "printedName": "timeInstant(timeMs:)",
         "children": [
@@ -54196,6 +54217,27 @@
         "declKind": "Func",
         "usr": "s:11NaviSDKCore14timeInstantNowSo021NSDKCKotlinx_datetimeD0CyF",
         "mangledName": "$s11NaviSDKCore14timeInstantNowSo021NSDKCKotlinx_datetimeD0CyF",
+        "moduleName": "NaviSDKCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "timeMillis",
+        "printedName": "timeMillis()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int64",
+            "printedName": "Swift.Int64",
+            "usr": "s:s5Int64V"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11NaviSDKCore10timeMilliss5Int64VyF",
+        "mangledName": "$s11NaviSDKCore10timeMilliss5Int64VyF",
         "moduleName": "NaviSDKCore",
         "declAttributes": [
           "AccessControl"
@@ -54549,6 +54591,27 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Function",
+        "name": "getNanoTime",
+        "printedName": "getNanoTime()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Int64",
+            "printedName": "Swift.Int64",
+            "usr": "s:s5Int64V"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:11NaviSDKCore11getNanoTimes5Int64VyF",
+        "mangledName": "$s11NaviSDKCore11getNanoTimes5Int64VyF",
+        "moduleName": "NaviSDKCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "Function",
