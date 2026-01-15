@@ -1303,6 +1303,9 @@ Classes:
     SwiftName: "currentProjectionPadding"
     Type: "NSDKCMapPadding * _Nonnull"
   Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
   - Selector: "commonSetCameraMapView:location:altitude:pitch:bearing:durationMs:padding:isForceRendering:"
     MethodKind: "Instance"
     SwiftName: "commonSetCamera(mapView:location:altitude:pitch:bearing:durationMs:padding:isForceRendering:)"
@@ -2020,13 +2023,15 @@ Classes:
       Type: "NSDKCMapCameraOptions * _Nonnull"
     - Position: 1
       Type: "int32_t"
-  - Selector: "attachMapLibre:"
+  - Selector: "attachMapLibre:mapCommon:"
     MethodKind: "Instance"
-    SwiftName: "attach(mapLibre:)"
+    SwiftName: "attach(mapLibre:mapCommon:)"
     ResultType: "void"
     Parameters:
     - Position: 0
       Type: "id _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
   - Selector: "boundsAnimatedCameraBounds:padding:delay:"
     MethodKind: "Instance"
     SwiftName: "boundsAnimatedCamera(bounds:padding:delay:)"
@@ -2145,13 +2150,15 @@ Classes:
   - Selector: "init"
     MethodKind: "Instance"
     SwiftName: "init()"
-  - Selector: "attachMapLibre:"
+  - Selector: "attachMapLibre:mapCommon:"
     MethodKind: "Instance"
-    SwiftName: "attach(mapLibre:)"
+    SwiftName: "attach(mapLibre:mapCommon:)"
     ResultType: "void"
     Parameters:
     - Position: 0
       Type: "id _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
   - Selector: "enableContext:"
     MethodKind: "Instance"
     SwiftName: "enable(context:)"
@@ -45334,13 +45341,15 @@ Protocols:
 - Name: "NSDKCLocationController"
   SwiftName: "LocationController"
   Methods:
-  - Selector: "attachMapLibre:"
+  - Selector: "attachMapLibre:mapCommon:"
     MethodKind: "Instance"
-    SwiftName: "attach(mapLibre:)"
+    SwiftName: "attach(mapLibre:mapCommon:)"
     ResultType: "void"
     Parameters:
     - Position: 0
       Type: "id _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
   - Selector: "enableContext:"
     MethodKind: "Instance"
     SwiftName: "enable(context:)"
@@ -45472,13 +45481,15 @@ Protocols:
       Type: "NSDKCMapCameraOptions * _Nonnull"
     - Position: 1
       Type: "int32_t"
-  - Selector: "attachMapLibre:"
+  - Selector: "attachMapLibre:mapCommon:"
     MethodKind: "Instance"
-    SwiftName: "attach(mapLibre:)"
+    SwiftName: "attach(mapLibre:mapCommon:)"
     ResultType: "void"
     Parameters:
     - Position: 0
       Type: "id _Nonnull"
+    - Position: 1
+      Type: "id _Nullable"
   - Selector: "boundsAnimatedCameraBounds:padding:delay:"
     MethodKind: "Instance"
     SwiftName: "boundsAnimatedCamera(bounds:padding:delay:)"

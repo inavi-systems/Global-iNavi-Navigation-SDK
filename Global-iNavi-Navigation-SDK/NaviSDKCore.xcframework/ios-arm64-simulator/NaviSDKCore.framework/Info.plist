@@ -19,7 +19,7 @@
         <string>iPhoneSimulator</string>
     </array>
     <key>CFBundleVersion</key>
-    <string>115</string>
+    <string>116</string>
     <key>MinimumOSVersion</key>
     <string>14.0</string>
     <key>UIDeviceFamily</key>

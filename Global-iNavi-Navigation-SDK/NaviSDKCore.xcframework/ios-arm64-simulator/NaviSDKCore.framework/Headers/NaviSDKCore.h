@@ -968,14 +968,12 @@ __attribute__((swift_name("InvIOSMapFragmentHandler")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InvMapCommon")))
 @interface NSDKCInvMapCommon : NSDKCBase
-@property (class, readonly, getter=shared) NSDKCInvMapCommon *shared __attribute__((swift_name("shared")));
 @property NSDKCDouble * _Nullable angle __attribute__((swift_name("angle")));
 @property NSDKCLocationInfoPoint * _Nullable currentLocation __attribute__((swift_name("currentLocation")));
 @property NSDKCKotlinDoubleArray *currentMapPadding __attribute__((swift_name("currentMapPadding")));
 @property NSDKCMapPadding *currentProjectionPadding __attribute__((swift_name("currentProjectionPadding")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)invMapCommon __attribute__((swift_name("init()")));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 
 /**
  * 공용 카메라 업데이트 로직
@@ -1096,7 +1094,7 @@ __attribute__((swift_name("CameraController")))
 @protocol NSDKCCameraController
 @required
 - (void)animatedCameraCameraOptions:(NSDKCMapCameraOptions *)cameraOptions delay:(int32_t)delay __attribute__((swift_name("animatedCamera(cameraOptions:delay:)")));
-- (void)attachMapLibre:(id)mapLibre __attribute__((swift_name("attach(mapLibre:)")));
+- (void)attachMapLibre:(id)mapLibre mapCommon:(id _Nullable)mapCommon __attribute__((swift_name("attach(mapLibre:mapCommon:)")));
 - (void)boundsAnimatedCameraBounds:(NSArray<NSDKCCoordinate *> *)bounds padding:(NSDKCMapPadding *)padding delay:(int32_t)delay __attribute__((swift_name("boundsAnimatedCamera(bounds:padding:delay:)")));
 - (void)moveCameraCameraOptions:(NSDKCMapCameraOptions *)cameraOptions __attribute__((swift_name("moveCamera(cameraOptions:)")));
 - (void)setPaddingPadding:(NSDKCMapPadding *)padding __attribute__((swift_name("setPadding(padding:)")));
@@ -1129,7 +1127,7 @@ __attribute__((swift_name("IOSCameraController")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (void)animatedCameraCameraOptions:(NSDKCMapCameraOptions *)cameraOptions delay:(int32_t)delay __attribute__((swift_name("animatedCamera(cameraOptions:delay:)")));
-- (void)attachMapLibre:(id)mapLibre __attribute__((swift_name("attach(mapLibre:)")));
+- (void)attachMapLibre:(id)mapLibre mapCommon:(id _Nullable)mapCommon __attribute__((swift_name("attach(mapLibre:mapCommon:)")));
 - (void)boundsAnimatedCameraBounds:(NSArray<NSDKCCoordinate *> *)bounds padding:(NSDKCMapPadding *)padding delay:(int32_t)delay __attribute__((swift_name("boundsAnimatedCamera(bounds:padding:delay:)")));
 - (void)moveCameraCameraOptions:(NSDKCMapCameraOptions *)cameraOptions __attribute__((swift_name("moveCamera(cameraOptions:)")));
 - (void)setPaddingPadding:(NSDKCMapPadding *)padding __attribute__((swift_name("setPadding(padding:)")));
@@ -1162,7 +1160,7 @@ __attribute__((swift_name("IOSGestureController")))
 __attribute__((swift_name("LocationController")))
 @protocol NSDKCLocationController
 @required
-- (void)attachMapLibre:(id)mapLibre __attribute__((swift_name("attach(mapLibre:)")));
+- (void)attachMapLibre:(id)mapLibre mapCommon:(id _Nullable)mapCommon __attribute__((swift_name("attach(mapLibre:mapCommon:)")));
 - (void)enableContext:(id _Nullable)context __attribute__((swift_name("enable(context:)")));
 - (NSDKCMapCameraMode *)getCameraMode __attribute__((swift_name("getCameraMode()")));
 - (void)setCameraModeType:(NSDKCMapCameraMode *)type mode:(NSDKCInt * _Nullable)mode __attribute__((swift_name("setCameraMode(type:mode:)")));
@@ -1180,7 +1178,7 @@ __attribute__((swift_name("IOSLocationController")))
 @property NSDKCMapCameraMode *curCameraMode __attribute__((swift_name("curCameraMode")));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (void)attachMapLibre:(id)mapLibre __attribute__((swift_name("attach(mapLibre:)")));
+- (void)attachMapLibre:(id)mapLibre mapCommon:(id _Nullable)mapCommon __attribute__((swift_name("attach(mapLibre:mapCommon:)")));
 - (void)enableContext:(id _Nullable)context __attribute__((swift_name("enable(context:)")));
 - (NSDKCMapCameraMode *)getCameraMode __attribute__((swift_name("getCameraMode()")));
 - (void)setCameraModeType:(NSDKCMapCameraMode *)type mode:(NSDKCInt * _Nullable)mode __attribute__((swift_name("setCameraMode(type:mode:)")));
