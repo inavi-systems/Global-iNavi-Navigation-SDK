@@ -15193,31 +15193,23 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "imaps"
     Type: "NSDKCImapsResult * _Nullable"
-  - Name: "keycode"
-    PropertyKind: "Instance"
-    SwiftName: "keycode"
-    Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithImaps:keycode:accessToken:"
+  - Selector: "initWithImaps:accessToken:"
     MethodKind: "Instance"
-    SwiftName: "init(imaps:keycode:accessToken:)"
+    SwiftName: "init(imaps:accessToken:)"
     Parameters:
     - Position: 0
       Type: "NSDKCImapsResult * _Nullable"
     - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
       Type: "NSString * _Nonnull"
-  - Selector: "doCopyImaps:keycode:accessToken:"
+  - Selector: "doCopyImaps:accessToken:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(imaps:keycode:accessToken:)"
+    SwiftName: "doCopy(imaps:accessToken:)"
     ResultType: "NSDKCAuthDto * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSDKCImapsResult * _Nullable"
     - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
       Type: "NSString * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -15248,43 +15240,19 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "result"
     Type: "NSString * _Nullable"
-  - Name: "result_dem"
-    PropertyKind: "Instance"
-    SwiftName: "result_dem"
-    Type: "NSString * _Nullable"
-  - Name: "result_h"
-    PropertyKind: "Instance"
-    SwiftName: "result_h"
-    Type: "NSString * _Nullable"
-  - Name: "result_h_dem"
-    PropertyKind: "Instance"
-    SwiftName: "result_h_dem"
-    Type: "NSString * _Nullable"
   Methods:
-  - Selector: "initWithResult:result_dem:result_h:result_h_dem:"
+  - Selector: "initWithResult:"
     MethodKind: "Instance"
-    SwiftName: "init(result:result_dem:result_h:result_h_dem:)"
+    SwiftName: "init(result:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
-      Type: "NSString * _Nullable"
-  - Selector: "doCopyResult:result_dem:result_h:result_h_dem:"
+  - Selector: "doCopyResult:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(result:result_dem:result_h:result_h_dem:)"
+    SwiftName: "doCopy(result:)"
     ResultType: "NSDKCImapsResult * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "NSString * _Nullable"
-    - Position: 1
-      Type: "NSString * _Nullable"
-    - Position: 2
-      Type: "NSString * _Nullable"
-    - Position: 3
       Type: "NSString * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -29183,6 +29151,13 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSDKCCoordinate * _Nonnull"
+- Name: "NSDKCSDKVersion"
+  SwiftName: "SDKVersion"
+  Properties:
+  - Name: "releaseVersion"
+    PropertyKind: "Instance"
+    SwiftName: "releaseVersion"
+    Type: "NSString * _Nonnull"
 - Name: "NSDKCSharedRes"
   SwiftName: "SharedRes"
 - Name: "NSDKCSharedResStrings"
@@ -38022,6 +37997,10 @@ Classes:
 - Name: "NSDKCOrbisNetworkModule"
   SwiftName: "OrbisNetworkModule"
   Properties:
+  - Name: "devServiceUrl"
+    PropertyKind: "Instance"
+    SwiftName: "devServiceUrl"
+    Type: "NSString * _Nonnull"
   - Name: "httpClient"
     PropertyKind: "Instance"
     SwiftName: "httpClient"

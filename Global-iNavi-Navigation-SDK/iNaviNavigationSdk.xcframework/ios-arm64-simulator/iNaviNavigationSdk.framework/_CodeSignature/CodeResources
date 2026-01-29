@@ -90,11 +90,11 @@
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		hysq/FLSd48BmOrIbyLd/J/WPLg=
+		xA3pJ0d/KHzdjALOPwY8PWP50C4=
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		L1FXylRmN0nzS8LW8VW/N8sHxjs=
+		isJ02w+KNnybfQBXfNc+tUhZXb0=
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wS2Tfu96ayLLnhgD4G9BC2uXg4Y=
+		/ttAcYrihROAZTZMFaZTIyHq2Vs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -392,14 +392,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4bqmCXATB8z/ndkBMVVneWfUj+FQFWvW1QMAf45HfgM=
+			Fon7ZwbQj8dLdUga3MEC9si0Z41IwWa5M/m7zxKxV10=
 			</data>
 		</dict>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m7HhsHnb9EC/5Dk5/TF4cjth8ZfSQbvIQBoIajlFXzs=
+			hNbkYZD09wxOvYT6DsECg5U2fJhgCtipqisN4nZwzR4=
 			</data>
 		</dict>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -427,7 +427,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C2PQEWEywKcRp6j0lVeaq+bYI6XjsgxCRCKBpedk4gs=
+			pSC899CXt3AmbKhfqfObX1VXLexP5GNmeSTqg7oFFA0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
