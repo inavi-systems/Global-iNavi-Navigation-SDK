@@ -20930,6 +20930,156 @@
           },
           {
             "kind": "Function",
+            "name": "setCarWeight",
+            "printedName": "setCarWeight(weight:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk15InaviControllerC12setCarWeight6weightSbSd_tF",
+            "mangledName": "$s18iNaviNavigationSdk15InaviControllerC12setCarWeight6weightSbSd_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCarWeight",
+            "printedName": "getCarWeight()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk15InaviControllerC12getCarWeightSdyF",
+            "mangledName": "$s18iNaviNavigationSdk15InaviControllerC12getCarWeightSdyF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCarHeight",
+            "printedName": "setCarHeight(height:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk15InaviControllerC12setCarHeight6heightSbSd_tF",
+            "mangledName": "$s18iNaviNavigationSdk15InaviControllerC12setCarHeight6heightSbSd_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCarHeight",
+            "printedName": "getCarHeight()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk15InaviControllerC12getCarHeightSdyF",
+            "mangledName": "$s18iNaviNavigationSdk15InaviControllerC12getCarHeightSdyF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCarLength",
+            "printedName": "setCarLength(length:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk15InaviControllerC12setCarLength6lengthSbSd_tF",
+            "mangledName": "$s18iNaviNavigationSdk15InaviControllerC12setCarLength6lengthSbSd_tF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCarLength",
+            "printedName": "getCarLength()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18iNaviNavigationSdk15InaviControllerC12getCarLengthSdyF",
+            "mangledName": "$s18iNaviNavigationSdk15InaviControllerC12getCarLengthSdyF",
+            "moduleName": "iNaviNavigationSdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "addMapIcon",
             "printedName": "addMapIcon(mapMarkerOption:)",
             "children": [

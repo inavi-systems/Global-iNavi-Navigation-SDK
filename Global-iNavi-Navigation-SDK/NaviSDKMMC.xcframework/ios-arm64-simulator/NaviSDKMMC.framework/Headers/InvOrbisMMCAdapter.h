@@ -142,6 +142,19 @@ typedef void (^GPSListener)(InvGPSInfo*);
 - (InvMMCResult*)getMatchInfo;
 
 /**
+ * Debug 로그 파일 저장 시작
+ * @param logPath nmea 로그 파일의 path
+ * @return 0: 성공, 1: 이미 시작됨, 0미만 : 실패
+ */
+- (NSInteger)startDebugLogging:(NSString *)logPath;
+
+/**
+ * Debug 로그 파일 저장 종료
+ * @return 0: 성공, 0 미만 : 실패
+ */
+- (NSInteger)stopDebugLogging;
+
+/**
  *
  * @param linkidIndex 프로젝션 할 링크 id index
  * @param longitude 프로젝션 할 좌표 경도

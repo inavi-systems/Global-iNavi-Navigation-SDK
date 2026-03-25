@@ -7519,7 +7519,7 @@ Classes:
   - Name: "connLinksIdx"
     PropertyKind: "Instance"
     SwiftName: "connLinksIdx"
-    Type: "NSDKCKotlinLongArray * _Nonnull"
+    Type: "NSDKCKotlinLongArray * _Nullable"
   - Name: "connNum"
     PropertyKind: "Instance"
     SwiftName: "connNum"
@@ -7539,7 +7539,7 @@ Classes:
   - Name: "pPts"
     PropertyKind: "Instance"
     SwiftName: "pPts"
-    Type: "NSDKCKotlinDoubleArray * _Nonnull"
+    Type: "NSDKCKotlinDoubleArray * _Nullable"
   Methods:
   - Selector: "initWithNodeID:nodeIdx:connNum:NodeType:connLinksIdx:nPoint:pPts:"
     MethodKind: "Instance"
@@ -7554,45 +7554,11 @@ Classes:
     - Position: 3
       Type: "int32_t"
     - Position: 4
-      Type: "NSDKCKotlinLongArray * _Nonnull"
+      Type: "NSDKCKotlinLongArray * _Nullable"
     - Position: 5
       Type: "int32_t"
     - Position: 6
-      Type: "NSDKCKotlinDoubleArray * _Nonnull"
-  - Selector: "doCopyNodeID:nodeIdx:connNum:NodeType:connLinksIdx:nPoint:pPts:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(nodeID:nodeIdx:connNum:NodeType:connLinksIdx:nPoint:pPts:)"
-    ResultType: "NSDKCOrbisNode * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "int64_t"
-    - Position: 2
-      Type: "int32_t"
-    - Position: 3
-      Type: "int32_t"
-    - Position: 4
-      Type: "NSDKCKotlinLongArray * _Nonnull"
-    - Position: 5
-      Type: "int32_t"
-    - Position: 6
-      Type: "NSDKCKotlinDoubleArray * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
+      Type: "NSDKCKotlinDoubleArray * _Nullable"
 - Name: "NSDKCOrbisLink"
   SwiftName: "OrbisLink"
   Properties:
@@ -7652,9 +7618,21 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "linkType"
     Type: "int32_t"
+  - Name: "maxHeight"
+    PropertyKind: "Instance"
+    SwiftName: "maxHeight"
+    Type: "int32_t"
+  - Name: "maxLength"
+    PropertyKind: "Instance"
+    SwiftName: "maxLength"
+    Type: "int32_t"
   - Name: "maxSpeed"
     PropertyKind: "Instance"
     SwiftName: "maxSpeed"
+    Type: "int32_t"
+  - Name: "maxWeight"
+    PropertyKind: "Instance"
+    SwiftName: "maxWeight"
     Type: "int32_t"
   - Name: "nPoint"
     PropertyKind: "Instance"
@@ -7671,7 +7649,7 @@ Classes:
   - Name: "osmID"
     PropertyKind: "Instance"
     SwiftName: "osmID"
-    Type: "int32_t"
+    Type: "int64_t"
   - Name: "pPts"
     PropertyKind: "Instance"
     SwiftName: "pPts"
@@ -7697,9 +7675,9 @@ Classes:
     SwiftName: "stAngle"
     Type: "int32_t"
   Methods:
-  - Selector: "initWithLinkID:linkIdx:sNodeIdx:eNodeIdx:osmID:roadRank:numLane:maxSpeed:routeLevel:isToll:isBridge:isTunnel:roundAbout:isPlural:linkType:isOneway:isFerry:nameID:isTurnInfo:isTurnInfoB:stAngle:edAngle:length:nPoint:pPts:"
+  - Selector: "initWithLinkID:linkIdx:sNodeIdx:eNodeIdx:osmID:roadRank:numLane:maxSpeed:routeLevel:isToll:isBridge:isTunnel:roundAbout:isPlural:linkType:isOneway:isFerry:nameID:isTurnInfo:isTurnInfoB:stAngle:edAngle:length:maxWeight:maxHeight:maxLength:nPoint:pPts:"
     MethodKind: "Instance"
-    SwiftName: "init(linkID:linkIdx:sNodeIdx:eNodeIdx:osmID:roadRank:numLane:maxSpeed:routeLevel:isToll:isBridge:isTunnel:roundAbout:isPlural:linkType:isOneway:isFerry:nameID:isTurnInfo:isTurnInfoB:stAngle:edAngle:length:nPoint:pPts:)"
+    SwiftName: "init(linkID:linkIdx:sNodeIdx:eNodeIdx:osmID:roadRank:numLane:maxSpeed:routeLevel:isToll:isBridge:isTunnel:roundAbout:isPlural:linkType:isOneway:isFerry:nameID:isTurnInfo:isTurnInfoB:stAngle:edAngle:length:maxWeight:maxHeight:maxLength:nPoint:pPts:)"
     Parameters:
     - Position: 0
       Type: "int64_t"
@@ -7710,7 +7688,7 @@ Classes:
     - Position: 3
       Type: "int64_t"
     - Position: 4
-      Type: "int32_t"
+      Type: "int64_t"
     - Position: 5
       Type: "int32_t"
     - Position: 6
@@ -7750,77 +7728,13 @@ Classes:
     - Position: 23
       Type: "int32_t"
     - Position: 24
+      Type: "int32_t"
+    - Position: 25
+      Type: "int32_t"
+    - Position: 26
+      Type: "int32_t"
+    - Position: 27
       Type: "NSDKCKotlinDoubleArray * _Nonnull"
-  - Selector: "doCopyLinkID:linkIdx:sNodeIdx:eNodeIdx:osmID:roadRank:numLane:maxSpeed:routeLevel:isToll:isBridge:isTunnel:roundAbout:isPlural:linkType:isOneway:isFerry:nameID:isTurnInfo:isTurnInfoB:stAngle:edAngle:length:nPoint:pPts:"
-    MethodKind: "Instance"
-    SwiftName: "doCopy(linkID:linkIdx:sNodeIdx:eNodeIdx:osmID:roadRank:numLane:maxSpeed:routeLevel:isToll:isBridge:isTunnel:roundAbout:isPlural:linkType:isOneway:isFerry:nameID:isTurnInfo:isTurnInfoB:stAngle:edAngle:length:nPoint:pPts:)"
-    ResultType: "NSDKCOrbisLink * _Nonnull"
-    Parameters:
-    - Position: 0
-      Type: "int64_t"
-    - Position: 1
-      Type: "int64_t"
-    - Position: 2
-      Type: "int64_t"
-    - Position: 3
-      Type: "int64_t"
-    - Position: 4
-      Type: "int32_t"
-    - Position: 5
-      Type: "int32_t"
-    - Position: 6
-      Type: "int32_t"
-    - Position: 7
-      Type: "int32_t"
-    - Position: 8
-      Type: "int32_t"
-    - Position: 9
-      Type: "BOOL"
-    - Position: 10
-      Type: "BOOL"
-    - Position: 11
-      Type: "BOOL"
-    - Position: 12
-      Type: "int32_t"
-    - Position: 13
-      Type: "BOOL"
-    - Position: 14
-      Type: "int32_t"
-    - Position: 15
-      Type: "BOOL"
-    - Position: 16
-      Type: "BOOL"
-    - Position: 17
-      Type: "int32_t"
-    - Position: 18
-      Type: "BOOL"
-    - Position: 19
-      Type: "BOOL"
-    - Position: 20
-      Type: "int32_t"
-    - Position: 21
-      Type: "int32_t"
-    - Position: 22
-      Type: "int32_t"
-    - Position: 23
-      Type: "int32_t"
-    - Position: 24
-      Type: "NSDKCKotlinDoubleArray * _Nonnull"
-  - Selector: "isEqual:"
-    MethodKind: "Instance"
-    SwiftName: "isEqual(_:)"
-    ResultType: "BOOL"
-    Parameters:
-    - Position: 0
-      Type: "id _Nullable"
-  - Selector: "hash"
-    MethodKind: "Instance"
-    SwiftName: "hash()"
-    ResultType: "NSUInteger"
-  - Selector: "description"
-    MethodKind: "Instance"
-    SwiftName: "description()"
-    ResultType: "NSString * _Nonnull"
 - Name: "NSDKCINaviLocationInfo"
   SwiftName: "INaviLocationInfo"
   Properties:
@@ -13319,6 +13233,10 @@ Classes:
     PropertyKind: "Class"
     SwiftName: "appkeyError"
     Type: "NSDKCResponseCode * _Nonnull"
+  - Name: "notFoundMapInfo"
+    PropertyKind: "Class"
+    SwiftName: "notFoundMapInfo"
+    Type: "NSDKCResponseCode * _Nonnull"
   - Name: "noMatchMember"
     PropertyKind: "Class"
     SwiftName: "noMatchMember"
@@ -13799,6 +13717,24 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "init(message:cause:)"
     Availability: "nonswift"
+- Name: "NSDKCNotFoundMapInfoException"
+  SwiftName: "NotFoundMapInfoException"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "initWithMessage:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:)"
+    Availability: "nonswift"
+  - Selector: "initWithMessage:cause:"
+    MethodKind: "Instance"
+    SwiftName: "init(message:cause:)"
+    Availability: "nonswift"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Availability: "nonswift"
 - Name: "NSDKCCountryCode"
   SwiftBridge: "CountryCode"
   SwiftName: "__CountryCode"
@@ -14029,10 +13965,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "osVer"
     Type: "NSString * _Nonnull"
+  - Name: "serviceType"
+    PropertyKind: "Instance"
+    SwiftName: "serviceType"
+    Type: "NSString * _Nonnull"
   Methods:
-  - Selector: "initWithCountry:osType:osVer:appVer:appVerCode:device:"
+  - Selector: "initWithCountry:osType:osVer:appVer:appVerCode:device:serviceType:"
     MethodKind: "Instance"
-    SwiftName: "init(country:osType:osVer:appVer:appVerCode:device:)"
+    SwiftName: "init(country:osType:osVer:appVer:appVerCode:device:serviceType:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
@@ -14046,9 +13986,11 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 5
       Type: "NSString * _Nonnull"
-  - Selector: "doCopyCountry:osType:osVer:appVer:appVerCode:device:"
+    - Position: 6
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyCountry:osType:osVer:appVer:appVerCode:device:serviceType:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(country:osType:osVer:appVer:appVerCode:device:)"
+    SwiftName: "doCopy(country:osType:osVer:appVer:appVerCode:device:serviceType:)"
     ResultType: "NSDKCRequestHeader * _Nonnull"
     Parameters:
     - Position: 0
@@ -14062,6 +14004,8 @@ Classes:
     - Position: 4
       Type: "NSString * _Nonnull"
     - Position: 5
+      Type: "NSString * _Nonnull"
+    - Position: 6
       Type: "NSString * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -14159,6 +14103,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "endY"
     Type: "double"
+  - Name: "height"
+    PropertyKind: "Instance"
+    SwiftName: "height"
+    Type: "NSDKCDouble * _Nullable"
+  - Name: "length"
+    PropertyKind: "Instance"
+    SwiftName: "length"
+    Type: "NSDKCDouble * _Nullable"
   - Name: "routecount"
     PropertyKind: "Instance"
     SwiftName: "routecount"
@@ -14187,10 +14139,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "viaList"
     Type: "NSArray<NSArray<NSDKCDouble *> *> * _Nullable"
+  - Name: "weight"
+    PropertyKind: "Instance"
+    SwiftName: "weight"
+    Type: "NSDKCDouble * _Nullable"
   Methods:
-  - Selector: "initWithStartX:startY:endX:endY:viaList:traffic:directionangle:sideroadstart:sideroadend:routecount:"
+  - Selector: "initWithStartX:startY:endX:endY:viaList:traffic:directionangle:sideroadstart:sideroadend:routecount:weight:height:length:"
     MethodKind: "Instance"
-    SwiftName: "init(startX:startY:endX:endY:viaList:traffic:directionangle:sideroadstart:sideroadend:routecount:)"
+    SwiftName: "init(startX:startY:endX:endY:viaList:traffic:directionangle:sideroadstart:sideroadend:routecount:weight:height:length:)"
     Parameters:
     - Position: 0
       Type: "double"
@@ -14212,9 +14168,15 @@ Classes:
       Type: "NSDKCInt * _Nullable"
     - Position: 9
       Type: "NSDKCInt * _Nullable"
-  - Selector: "doCopyStartX:startY:endX:endY:viaList:traffic:directionangle:sideroadstart:sideroadend:routecount:"
+    - Position: 10
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 11
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 12
+      Type: "NSDKCDouble * _Nullable"
+  - Selector: "doCopyStartX:startY:endX:endY:viaList:traffic:directionangle:sideroadstart:sideroadend:routecount:weight:height:length:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(startX:startY:endX:endY:viaList:traffic:directionangle:sideroadstart:sideroadend:routecount:)"
+    SwiftName: "doCopy(startX:startY:endX:endY:viaList:traffic:directionangle:sideroadstart:sideroadend:routecount:weight:height:length:)"
     ResultType: "NSDKCSearchRouteMultiRequest * _Nonnull"
     Parameters:
     - Position: 0
@@ -14237,6 +14199,12 @@ Classes:
       Type: "NSDKCInt * _Nullable"
     - Position: 9
       Type: "NSDKCInt * _Nullable"
+    - Position: 10
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 11
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 12
+      Type: "NSDKCDouble * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -14274,6 +14242,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "endY"
     Type: "double"
+  - Name: "height"
+    PropertyKind: "Instance"
+    SwiftName: "height"
+    Type: "NSDKCDouble * _Nullable"
+  - Name: "length"
+    PropertyKind: "Instance"
+    SwiftName: "length"
+    Type: "NSDKCDouble * _Nullable"
   - Name: "option"
     PropertyKind: "Instance"
     SwiftName: "option"
@@ -14302,10 +14278,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "viaList"
     Type: "NSArray<NSArray<NSDKCDouble *> *> * _Nullable"
+  - Name: "weight"
+    PropertyKind: "Instance"
+    SwiftName: "weight"
+    Type: "NSDKCDouble * _Nullable"
   Methods:
-  - Selector: "initWithStartX:startY:endX:endY:viaList:option:traffic:directionangle:sideroadstart:sideroadend:"
+  - Selector: "initWithStartX:startY:endX:endY:viaList:option:traffic:directionangle:sideroadstart:sideroadend:weight:height:length:"
     MethodKind: "Instance"
-    SwiftName: "init(startX:startY:endX:endY:viaList:option:traffic:directionangle:sideroadstart:sideroadend:)"
+    SwiftName: "init(startX:startY:endX:endY:viaList:option:traffic:directionangle:sideroadstart:sideroadend:weight:height:length:)"
     Parameters:
     - Position: 0
       Type: "double"
@@ -14327,9 +14307,15 @@ Classes:
       Type: "NSDKCInt * _Nullable"
     - Position: 9
       Type: "NSDKCInt * _Nullable"
-  - Selector: "doCopyStartX:startY:endX:endY:viaList:option:traffic:directionangle:sideroadstart:sideroadend:"
+    - Position: 10
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 11
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 12
+      Type: "NSDKCDouble * _Nullable"
+  - Selector: "doCopyStartX:startY:endX:endY:viaList:option:traffic:directionangle:sideroadstart:sideroadend:weight:height:length:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(startX:startY:endX:endY:viaList:option:traffic:directionangle:sideroadstart:sideroadend:)"
+    SwiftName: "doCopy(startX:startY:endX:endY:viaList:option:traffic:directionangle:sideroadstart:sideroadend:weight:height:length:)"
     ResultType: "NSDKCSearchRouteRequest * _Nonnull"
     Parameters:
     - Position: 0
@@ -14352,6 +14338,12 @@ Classes:
       Type: "NSDKCInt * _Nullable"
     - Position: 9
       Type: "NSDKCInt * _Nullable"
+    - Position: 10
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 11
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 12
+      Type: "NSDKCDouble * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -15777,6 +15769,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "end"
     Type: "NSDKCCoordinateDto * _Nonnull"
+  - Name: "height"
+    PropertyKind: "Instance"
+    SwiftName: "height"
+    Type: "NSDKCDouble * _Nullable"
+  - Name: "length"
+    PropertyKind: "Instance"
+    SwiftName: "length"
+    Type: "NSDKCDouble * _Nullable"
   - Name: "option"
     PropertyKind: "Instance"
     SwiftName: "option"
@@ -15805,10 +15805,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "viaList"
     Type: "NSArray<NSArray<NSDKCDouble *> *> * _Nullable"
+  - Name: "weight"
+    PropertyKind: "Instance"
+    SwiftName: "weight"
+    Type: "NSDKCDouble * _Nullable"
   Methods:
-  - Selector: "initWithStart:end:viaList:option:traffic:directionangle:sideroadstart:sideroadend:routecount:"
+  - Selector: "initWithStart:end:viaList:option:traffic:directionangle:sideroadstart:sideroadend:routecount:weight:height:length:"
     MethodKind: "Instance"
-    SwiftName: "init(start:end:viaList:option:traffic:directionangle:sideroadstart:sideroadend:routecount:)"
+    SwiftName: "init(start:end:viaList:option:traffic:directionangle:sideroadstart:sideroadend:routecount:weight:height:length:)"
     Parameters:
     - Position: 0
       Type: "NSDKCCoordinateDto * _Nonnull"
@@ -15828,9 +15832,15 @@ Classes:
       Type: "NSDKCInt * _Nullable"
     - Position: 8
       Type: "NSDKCInt * _Nullable"
-  - Selector: "doCopyStart:end:viaList:option:traffic:directionangle:sideroadstart:sideroadend:routecount:"
+    - Position: 9
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 10
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 11
+      Type: "NSDKCDouble * _Nullable"
+  - Selector: "doCopyStart:end:viaList:option:traffic:directionangle:sideroadstart:sideroadend:routecount:weight:height:length:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(start:end:viaList:option:traffic:directionangle:sideroadstart:sideroadend:routecount:)"
+    SwiftName: "doCopy(start:end:viaList:option:traffic:directionangle:sideroadstart:sideroadend:routecount:weight:height:length:)"
     ResultType: "NSDKCUserInfoDto * _Nonnull"
     Parameters:
     - Position: 0
@@ -15851,6 +15861,12 @@ Classes:
       Type: "NSDKCInt * _Nullable"
     - Position: 8
       Type: "NSDKCInt * _Nullable"
+    - Position: 9
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 10
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 11
+      Type: "NSDKCDouble * _Nullable"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -20269,10 +20285,14 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "privateKey"
     Type: "NSString * _Nullable"
+  - Name: "serviceType"
+    PropertyKind: "Instance"
+    SwiftName: "serviceType"
+    Type: "NSString * _Nonnull"
   Methods:
-  - Selector: "initWithContentType:inavi:privateKey:country:osType:osVer:appVer:appVerCode:device:authorization:"
+  - Selector: "initWithContentType:inavi:privateKey:country:osType:osVer:appVer:appVerCode:device:authorization:serviceType:"
     MethodKind: "Instance"
-    SwiftName: "init(contentType:inavi:privateKey:country:osType:osVer:appVer:appVerCode:device:authorization:)"
+    SwiftName: "init(contentType:inavi:privateKey:country:osType:osVer:appVer:appVerCode:device:authorization:serviceType:)"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
@@ -20294,9 +20314,11 @@ Classes:
       Type: "NSString * _Nonnull"
     - Position: 9
       Type: "NSString * _Nonnull"
-  - Selector: "doCopyContentType:inavi:privateKey:country:osType:osVer:appVer:appVerCode:device:authorization:"
+    - Position: 10
+      Type: "NSString * _Nonnull"
+  - Selector: "doCopyContentType:inavi:privateKey:country:osType:osVer:appVer:appVerCode:device:authorization:serviceType:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(contentType:inavi:privateKey:country:osType:osVer:appVer:appVerCode:device:authorization:)"
+    SwiftName: "doCopy(contentType:inavi:privateKey:country:osType:osVer:appVer:appVerCode:device:authorization:serviceType:)"
     ResultType: "NSDKCOrbisServiceGateHeader * _Nonnull"
     Parameters:
     - Position: 0
@@ -20318,6 +20340,8 @@ Classes:
     - Position: 8
       Type: "NSString * _Nonnull"
     - Position: 9
+      Type: "NSString * _Nonnull"
+    - Position: 10
       Type: "NSString * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
@@ -33812,6 +33836,13 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "start()"
     ResultType: "int32_t"
+  - Selector: "startDebugLoggingLogPath:"
+    MethodKind: "Instance"
+    SwiftName: "startDebugLogging(logPath:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
   - Selector: "startLogDriveLogPath:"
     MethodKind: "Instance"
     SwiftName: "startLogDrive(logPath:)"
@@ -33829,6 +33860,10 @@ Classes:
   - Selector: "stop"
     MethodKind: "Instance"
     SwiftName: "stop()"
+    ResultType: "int32_t"
+  - Selector: "stopDebugLogging"
+    MethodKind: "Instance"
+    SwiftName: "stopDebugLogging()"
     ResultType: "int32_t"
   - Selector: "stopLogDrive"
     MethodKind: "Instance"
@@ -36666,6 +36701,18 @@ Classes:
       Type: "NSDKCUIComponent * _Nonnull"
     - Position: 1
       Type: "BOOL"
+  - Selector: "getCarHeight"
+    MethodKind: "Instance"
+    SwiftName: "getCarHeight()"
+    ResultType: "double"
+  - Selector: "getCarLength"
+    MethodKind: "Instance"
+    SwiftName: "getCarLength()"
+    ResultType: "double"
+  - Selector: "getCarWeight"
+    MethodKind: "Instance"
+    SwiftName: "getCarWeight()"
+    ResultType: "double"
   - Selector: "getCurrentDateTimeString"
     MethodKind: "Instance"
     SwiftName: "getCurrentDateTimeString()"
@@ -36804,6 +36851,27 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
+  - Selector: "setCarHeightHeight:"
+    MethodKind: "Instance"
+    SwiftName: "setCarHeight(height:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "double"
+  - Selector: "setCarLengthLength:"
+    MethodKind: "Instance"
+    SwiftName: "setCarLength(length:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "double"
+  - Selector: "setCarWeightWeight:"
+    MethodKind: "Instance"
+    SwiftName: "setCarWeight(weight:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "double"
   - Selector: "setGuidanceStateGuidanceState:"
     MethodKind: "Instance"
     SwiftName: "setGuidanceState(guidanceState:)"
@@ -38774,9 +38842,9 @@ Classes:
       Type: "id<NSDKCRouteRepository> _Nonnull"
     - Position: 1
       Type: "NSDKCPositionManager * _Nonnull"
-  - Selector: "invokeStart:goal:viaList:traffic:routeCount:sideRoadStart:"
+  - Selector: "invokeStart:goal:viaList:traffic:routeCount:sideRoadStart:weight:height:length:"
     MethodKind: "Instance"
-    SwiftName: "invoke(start:goal:viaList:traffic:routeCount:sideRoadStart:)"
+    SwiftName: "invoke(start:goal:viaList:traffic:routeCount:sideRoadStart:weight:height:length:)"
     ResultType: "NSDKCSkieKotlinFlow<NSDKCNetworkResponse<NSDKCSearchRouteMultiDto *> *> * _Nonnull"
     Parameters:
     - Position: 0
@@ -38791,6 +38859,12 @@ Classes:
       Type: "int32_t"
     - Position: 5
       Type: "int32_t"
+    - Position: 6
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 7
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 8
+      Type: "NSDKCDouble * _Nullable"
 - Name: "NSDKCGetCategorySearchUseCase"
   SwiftName: "GetCategorySearchUseCase"
   Methods:
@@ -39136,9 +39210,9 @@ Classes:
       Type: "NSDKCOrbisRoadType * _Nonnull"
     - Position: 1
       Type: "int32_t"
-  - Selector: "runRouteRouteCount:start:goal:sideRoadStart:viaList:completionHandler:"
+  - Selector: "runRouteRouteCount:start:goal:sideRoadStart:viaList:weight:height:length:completionHandler:"
     MethodKind: "Instance"
-    SwiftName: "__runRoute(routeCount:start:goal:sideRoadStart:viaList:completionHandler:)"
+    SwiftName: "__runRoute(routeCount:start:goal:sideRoadStart:viaList:weight:height:length:completionHandler:)"
     SwiftPrivate: true
     ResultType: "void"
     Parameters:
@@ -39153,6 +39227,12 @@ Classes:
     - Position: 4
       Type: "NSArray<NSDKCLocationInfoRoutePtItem *> * _Nullable"
     - Position: 5
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 6
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 7
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 8
       Type: "void (^ _Nonnull)(NSDKCKotlinPair<NSArray<NSDKCOrbisRouteInfo *> *, NSDKCInvErrorCode *> * _Nullable_result, NSError * _Nullable)"
   - Selector: "init"
     MethodKind: "Instance"
@@ -39849,10 +39929,10 @@ Classes:
 - Name: "NSDKCSearchViewModel"
   SwiftName: "SearchViewModel"
   Properties:
-  - Name: "devModeState"
+  - Name: "devModeEvent"
     PropertyKind: "Instance"
-    SwiftName: "devModeState"
-    Type: "NSDKCSkieKotlinStateFlow<NSDKCBoolean *> * _Nonnull"
+    SwiftName: "devModeEvent"
+    Type: "NSDKCSkieKotlinSharedFlow<NSDKCBoolean *> * _Nonnull"
   - Name: "errorState"
     PropertyKind: "Instance"
     SwiftName: "errorState"
@@ -44091,9 +44171,9 @@ Classes:
       Type: "NSDKCGetTomTomAPIKeyUseCase * _Nonnull"
     - Position: 1
       Type: "NSDKCSkie_SuspendHandler * _Nonnull"
-  - Selector: "Skie_Suspend__85__runRouteDispatchReceiver:routeCount:start:goal:sideRoadStart:viaList:suspendHandler:"
+  - Selector: "Skie_Suspend__85__runRouteDispatchReceiver:routeCount:start:goal:sideRoadStart:viaList:weight:height:length:suspendHandler:"
     MethodKind: "Class"
-    SwiftName: "Skie_Suspend__85__runRoute(dispatchReceiver:routeCount:start:goal:sideRoadStart:viaList:suspendHandler:)"
+    SwiftName: "Skie_Suspend__85__runRoute(dispatchReceiver:routeCount:start:goal:sideRoadStart:viaList:weight:height:length:suspendHandler:)"
     Availability: "nonswift"
     ResultType: "void"
     Parameters:
@@ -44110,6 +44190,12 @@ Classes:
     - Position: 5
       Type: "NSArray<NSDKCLocationInfoRoutePtItem *> * _Nullable"
     - Position: 6
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 7
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 8
+      Type: "NSDKCDouble * _Nullable"
+    - Position: 9
       Type: "NSDKCSkie_SuspendHandler * _Nonnull"
   - Selector: "Skie_Suspend__86__getPermissionStateDispatchReceiver:permission:suspendHandler:"
     MethodKind: "Class"

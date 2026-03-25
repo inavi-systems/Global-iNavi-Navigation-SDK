@@ -830,7 +830,7 @@ extension NaviSDKCore.GetTomTomAPIKeyUseCase {
 extension NaviSDKCore.RouteStore {
   #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func runRoute(routeCount: Swift.Int32, start: NaviSDKCore.LocationInfo.RoutePtItem, goal: NaviSDKCore.LocationInfo.RoutePtItem, sideRoadStart: Swift.Int32, viaList: [NaviSDKCore.LocationInfo.RoutePtItem]?) async throws -> NaviSDKCore.KotlinPair<Foundation.NSArray, NaviSDKCore.InvErrorCode>?
+  public func runRoute(routeCount: Swift.Int32, start: NaviSDKCore.LocationInfo.RoutePtItem, goal: NaviSDKCore.LocationInfo.RoutePtItem, sideRoadStart: Swift.Int32, viaList: [NaviSDKCore.LocationInfo.RoutePtItem]?, weight: NaviSDKCore.KotlinDouble?, height: NaviSDKCore.KotlinDouble?, length: NaviSDKCore.KotlinDouble?) async throws -> NaviSDKCore.KotlinPair<Foundation.NSArray, NaviSDKCore.InvErrorCode>?
   #endif
 }
 extension NaviSDKCore.PermissionsPermissionsControllerProtocol {
@@ -1516,6 +1516,7 @@ extension NaviSDKCore.__DialogButtonType {
   case authFail
   case imapsFail
   case appkeyError
+  case notFoundMapInfo
   case noMatchMember
   case needIdPasswordConfirm
   case needEmailConfirm
@@ -2184,6 +2185,7 @@ extension NaviSDKCore.Skie.Model.OrbismapException {
     case noRoadNearDestinationException(NaviSDKCore.NoRoadNearDestinationException)
     case noRoadNearStartException(NaviSDKCore.NoRoadNearStartException)
     case noRoadNearWaypointException(NaviSDKCore.NoRoadNearWaypointException)
+    case notFoundMapInfoException(NaviSDKCore.NotFoundMapInfoException)
     case notSupportCountryException(NaviSDKCore.NotSupportCountryException)
     case notSupportTomTomException(NaviSDKCore.NotSupportTomTomException)
     case routeException(NaviSDKCore.RouteException)

@@ -4955,6 +4955,57 @@
                       },
                       {
                         "kind": "Var",
+                        "name": "notFoundMapInfoException",
+                        "printedName": "notFoundMapInfoException",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(NaviSDKCore.Skie.Model.OrbismapException.__Sealed.Type) -> (NaviSDKCore.NotFoundMapInfoException) -> NaviSDKCore.Skie.Model.OrbismapException.__Sealed",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(NaviSDKCore.NotFoundMapInfoException) -> NaviSDKCore.Skie.Model.OrbismapException.__Sealed",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "NaviSDKCore.Skie.Model.OrbismapException.__Sealed",
+                                    "usr": "s:11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "NotFoundMapInfoException",
+                                    "printedName": "NaviSDKCore.NotFoundMapInfoException",
+                                    "usr": "c:objc(cs)NSDKCNotFoundMapInfoException"
+                                  }
+                                ]
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Metatype",
+                                "printedName": "NaviSDKCore.Skie.Model.OrbismapException.__Sealed.Type",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "__Sealed",
+                                    "printedName": "NaviSDKCore.Skie.Model.OrbismapException.__Sealed",
+                                    "usr": "s:11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "declKind": "EnumElement",
+                        "usr": "s:11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO015notFoundMapInfoF0yAISo08NSDKCNotijkF0CcAImF",
+                        "mangledName": "$s11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO015notFoundMapInfoF0yAISo08NSDKCNotijkF0CcAImF",
+                        "moduleName": "NaviSDKCore",
+                        "fixedbinaryorder": 10
+                      },
+                      {
+                        "kind": "Var",
                         "name": "notSupportCountryException",
                         "printedName": "notSupportCountryException",
                         "children": [
@@ -5002,7 +5053,7 @@
                         "usr": "s:11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO017notSupportCountryF0yAISo08NSDKCNotijF0CcAImF",
                         "mangledName": "$s11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO017notSupportCountryF0yAISo08NSDKCNotijF0CcAImF",
                         "moduleName": "NaviSDKCore",
-                        "fixedbinaryorder": 10
+                        "fixedbinaryorder": 11
                       },
                       {
                         "kind": "Var",
@@ -5053,7 +5104,7 @@
                         "usr": "s:11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO013notSupportTomjF0yAISo08NSDKCNotijjF0CcAImF",
                         "mangledName": "$s11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO013notSupportTomjF0yAISo08NSDKCNotijjF0CcAImF",
                         "moduleName": "NaviSDKCore",
-                        "fixedbinaryorder": 11
+                        "fixedbinaryorder": 12
                       },
                       {
                         "kind": "Var",
@@ -5104,7 +5155,7 @@
                         "usr": "s:11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO05routeF0yAISo010NSDKCRouteF0CcAImF",
                         "mangledName": "$s11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO05routeF0yAISo010NSDKCRouteF0CcAImF",
                         "moduleName": "NaviSDKCore",
-                        "fixedbinaryorder": 12
+                        "fixedbinaryorder": 13
                       },
                       {
                         "kind": "Var",
@@ -5155,7 +5206,7 @@
                         "usr": "s:11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO020routeExpansionFailedF0yAISo010NSDKCRouteijF0CcAImF",
                         "mangledName": "$s11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO020routeExpansionFailedF0yAISo010NSDKCRouteijF0CcAImF",
                         "moduleName": "NaviSDKCore",
-                        "fixedbinaryorder": 13
+                        "fixedbinaryorder": 14
                       },
                       {
                         "kind": "Var",
@@ -5206,7 +5257,7 @@
                         "usr": "s:11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO018serviceUnavailableF0yAISo012NSDKCServiceiF0CcAImF",
                         "mangledName": "$s11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO018serviceUnavailableF0yAISo012NSDKCServiceiF0CcAImF",
                         "moduleName": "NaviSDKCore",
-                        "fixedbinaryorder": 14
+                        "fixedbinaryorder": 15
                       },
                       {
                         "kind": "Var",
@@ -5257,7 +5308,7 @@
                         "usr": "s:11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO09webclientF0yAISo014NSDKCWebclientF0CcAImF",
                         "mangledName": "$s11NaviSDKCore4SkieO5ModelO17OrbismapExceptionO8__SealedO09webclientF0yAISo014NSDKCWebclientF0CcAImF",
                         "moduleName": "NaviSDKCore",
-                        "fixedbinaryorder": 15
+                        "fixedbinaryorder": 16
                       },
                       {
                         "kind": "Var",
@@ -39781,6 +39832,44 @@
           },
           {
             "kind": "Var",
+            "name": "notFoundMapInfo",
+            "printedName": "notFoundMapInfo",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaviSDKCore.ResponseCode.Type) -> NaviSDKCore.ResponseCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResponseCode",
+                    "printedName": "NaviSDKCore.ResponseCode",
+                    "usr": "s:11NaviSDKCore12ResponseCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaviSDKCore.ResponseCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ResponseCode",
+                        "printedName": "NaviSDKCore.ResponseCode",
+                        "usr": "s:11NaviSDKCore12ResponseCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NaviSDKCore12ResponseCodeO15notFoundMapInfoyA2CmF",
+            "mangledName": "$s11NaviSDKCore12ResponseCodeO15notFoundMapInfoyA2CmF",
+            "moduleName": "NaviSDKCore",
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
             "name": "noMatchMember",
             "printedName": "noMatchMember",
             "children": [
@@ -39815,7 +39904,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO13noMatchMemberyA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO13noMatchMemberyA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -39853,7 +39942,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO21needIdPasswordConfirmyA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO21needIdPasswordConfirmyA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -39891,7 +39980,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO16needEmailConfirmyA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO16needEmailConfirmyA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -39929,7 +40018,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO20personalKeyCheckFailyA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO20personalKeyCheckFailyA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -39967,7 +40056,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO15encryptionErroryA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO15encryptionErroryA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -40005,7 +40094,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO15decryptionErroryA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO15decryptionErroryA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -40043,7 +40132,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO14webclientErroryA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO14webclientErroryA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -40081,7 +40170,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO12dataNotFoundyA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO12dataNotFoundyA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 19
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Var",
@@ -40119,7 +40208,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO18dataIntegrityErroryA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO18dataIntegrityErroryA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 20
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -40157,7 +40246,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO19internalServerErroryA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO19internalServerErroryA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 21
+            "fixedbinaryorder": 22
           },
           {
             "kind": "Var",
@@ -40195,7 +40284,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO12requestErroryA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO12requestErroryA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 22
+            "fixedbinaryorder": 23
           },
           {
             "kind": "Var",
@@ -40233,7 +40322,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO14undefinedErroryA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO14undefinedErroryA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 23
+            "fixedbinaryorder": 24
           },
           {
             "kind": "Var",
@@ -40271,7 +40360,7 @@
             "usr": "s:11NaviSDKCore12ResponseCodeO13timeLockErroryA2CmF",
             "mangledName": "$s11NaviSDKCore12ResponseCodeO13timeLockErroryA2CmF",
             "moduleName": "NaviSDKCore",
-            "fixedbinaryorder": 24
+            "fixedbinaryorder": 25
           },
           {
             "kind": "Var",
@@ -62224,7 +62313,7 @@
           {
             "kind": "Function",
             "name": "runRoute",
-            "printedName": "runRoute(routeCount:start:goal:sideRoadStart:viaList:)",
+            "printedName": "runRoute(routeCount:start:goal:sideRoadStart:viaList:weight:height:length:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -62299,11 +62388,53 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NaviSDKCore.KotlinDouble?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinDouble",
+                    "printedName": "NaviSDKCore.KotlinDouble",
+                    "usr": "c:objc(cs)NSDKCDouble"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NaviSDKCore.KotlinDouble?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinDouble",
+                    "printedName": "NaviSDKCore.KotlinDouble",
+                    "usr": "c:objc(cs)NSDKCDouble"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NaviSDKCore.KotlinDouble?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinDouble",
+                    "printedName": "NaviSDKCore.KotlinDouble",
+                    "usr": "c:objc(cs)NSDKCDouble"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So15NSDKCRouteStoreC11NaviSDKCoreE8runRoute10routeCount5start4goal13sideRoadStart7viaListSo15NSDKCKotlinPairCySo7NSArrayCSo17NSDKCInvErrorCodeCGSgs5Int32V_So017NSDKCLocationInfoF6PtItemCAuSSayAUGSgtYaKF",
-            "mangledName": "$sSo15NSDKCRouteStoreC11NaviSDKCoreE8runRoute10routeCount5start4goal13sideRoadStart7viaListSo15NSDKCKotlinPairCySo7NSArrayCSo17NSDKCInvErrorCodeCGSgs5Int32V_So017NSDKCLocationInfoF6PtItemCAuSSayAUGSgtYaKF",
+            "usr": "s:So15NSDKCRouteStoreC11NaviSDKCoreE8runRoute10routeCount5start4goal13sideRoadStart7viaList6weight6height6lengthSo15NSDKCKotlinPairCySo7NSArrayCSo17NSDKCInvErrorCodeCGSgs5Int32V_So017NSDKCLocationInfoF6PtItemCAxVSayAXGSgSo11NSDKCDoubleCSgA1_A1_tYaKF",
+            "mangledName": "$sSo15NSDKCRouteStoreC11NaviSDKCoreE8runRoute10routeCount5start4goal13sideRoadStart7viaList6weight6height6lengthSo15NSDKCKotlinPairCySo7NSArrayCSo17NSDKCInvErrorCodeCGSgs5Int32V_So017NSDKCLocationInfoF6PtItemCAxVSayAXGSgSo11NSDKCDoubleCSgA1_A1_tYaKF",
             "moduleName": "NaviSDKCore",
             "intro_Macosx": "10.15",
             "intro_iOS": "13",

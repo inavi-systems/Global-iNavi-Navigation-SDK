@@ -562,6 +562,12 @@ extension iNaviNavigationSdk.InvMapView : MapLibre.MLNMapViewDelegate {
   public func zoomOut()
   public func setMapViewMode(mode: iNaviNavigationSdk.InvMapViewMode)
   public func getMapViewMode() -> iNaviNavigationSdk.InvMapViewMode
+  public func setCarWeight(weight: Swift.Double) -> Swift.Bool
+  public func getCarWeight() -> Swift.Double
+  public func setCarHeight(height: Swift.Double) -> Swift.Bool
+  public func getCarHeight() -> Swift.Double
+  public func setCarLength(length: Swift.Double) -> Swift.Bool
+  public func getCarLength() -> Swift.Double
   public func addMapIcon(mapMarkerOption: iNaviNavigationSdk.InvMapMarkerOption)
   public func removeMapIcon(markerId: Swift.String)
   public func removeMapIconAll()
