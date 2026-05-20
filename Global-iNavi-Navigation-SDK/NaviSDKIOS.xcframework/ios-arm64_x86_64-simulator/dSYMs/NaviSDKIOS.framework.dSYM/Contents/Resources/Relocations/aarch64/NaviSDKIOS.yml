@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/daecheolkim/Documents/android_workspace/navisdk_core/NaviSDKIOS/build/Release-iphonesimulator/NaviSDKIOS.framework/NaviSDKIOS'
+relocations:
+  - { offset: 0x8463B, size: 0x8, addend: 0x0, symName: _NaviSDKIOSVersionString, symObjAddr: 0x0, symBinAddr: 0x1090, symSize: 0x0 }
+  - { offset: 0x84670, size: 0x8, addend: 0x0, symName: _NaviSDKIOSVersionNumber, symObjAddr: 0x30, symBinAddr: 0x10C0, symSize: 0x0 }
+  - { offset: 0x846AD, size: 0x8, addend: 0x0, symName: '+[utilsAdapter unGzippedData:]', symObjAddr: 0x0, symBinAddr: 0xB10, symSize: 0x18C }
+  - { offset: 0x846E8, size: 0x8, addend: 0x0, symName: '+[utilsAdapter unGzippedData:]', symObjAddr: 0x0, symBinAddr: 0xB10, symSize: 0x18C }
+  - { offset: 0x84874, size: 0x8, addend: 0x0, symName: '+[utilsAdapter gunzippedData:]', symObjAddr: 0x18C, symBinAddr: 0xC9C, symSize: 0x170 }
+  - { offset: 0x8494F, size: 0x8, addend: 0x0, symName: '+[utilsAdapter isGzippedData:]', symObjAddr: 0x2FC, symBinAddr: 0xE0C, symSize: 0x74 }
+...

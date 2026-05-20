@@ -39,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) int max_weight;
 @property (nonatomic) int max_height;
 @property (nonatomic) int max_length;
+@property (nonatomic) int hazmat;
 @property (nonatomic) int reserved;
 @property (nonatomic) double minDist;
 

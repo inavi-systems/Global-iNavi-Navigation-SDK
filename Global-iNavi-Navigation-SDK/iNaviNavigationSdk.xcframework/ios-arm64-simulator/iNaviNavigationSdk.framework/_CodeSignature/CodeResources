@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PNwJ1lNZSbUxQyK/sJUg/aM53NM=
+		rtyvy2fb7kPVdZtz4Hedu1n11kI=
 		</data>
 		<key>InvBottomView.nib</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>InvRouteCollectionViewCell.nib</key>
 		<data>
-		f7LBCFoEgjN2fEWXtbz62/VogsU=
+		Y6S255BoH7jUcnTRfwnpVDgMEf4=
 		</data>
 		<key>InvRouteTableViewCell.nib</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		yis403Da/YZk23fhupJlX613fEE=
+		yQeyVpK/1YRFIF1Z7x7UytaTHmg=
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -110,141 +110,12 @@
 		</data>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		T+oi3V9VnX2/udoPZ+6vlU4Oh44=
+		2NVz49z1E37FxzZ2ZdWDfdcZwDM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Z2kiujUyLzuksMIZL3sthalKeIU=
 		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Info.plist</key>
-		<data>
-		bmiZWYNMKGE4x+ZMIZ78gkeSZBw=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/Assets.car</key>
-		<data>
-		JVDq2Ppc0GxpPNcqklcIlyjX5wY=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/Base.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EpldFpChj+CnTNmQG+Lom67F8Zs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/NotoSansCJKkr-Bold.otf</key>
-		<data>
-		Rj7iELPm/YdYkB+rEVt+jqmBM0g=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/NotoSansCJKkr-Medium.otf</key>
-		<data>
-		95ZsbtWB8R/jbgBfL6L+Ef1fxhQ=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/NotoSansCJKkr-Regular.otf</key>
-		<data>
-		69+bWIbPb2miPokLIPVKkDhOCRQ=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EpldFpChj+CnTNmQG+Lom67F8Zs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/files/safetyendguide_light.wav</key>
-		<data>
-		Y8FrXZMW0z9YDIOzbu2cYDQWIcc=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/files/safetyendguide_soft.wav</key>
-		<data>
-		UZ+QvsOkHlSqiVSx4Y3dPbhvLog=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/files/speedover_light.wav</key>
-		<data>
-		VYZo3uywVRauF2Wtm9gMe1h6O58=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/files/speedover_soft.wav</key>
-		<data>
-		pvaSK/fluC83GIykVrP7aoFakks=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/ko.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yRtCq52OVAgck/d5gCzB0vSDKnY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/korea_log1.txt</key>
-		<data>
-		cG7z58N6qbmZOk39qSK/onwc2Qo=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/korea_log2.txt</key>
-		<data>
-		qkivPhd2adkVUiZA2Le1kFNNxZA=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/nmea_log-2025-03-29-11-08-47.txt</key>
-		<data>
-		Lvcjkug4U7FXEMEr5Yp5IQtXChU=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/nmea_log-2025-03-30-03-59-03.txt</key>
-		<data>
-		XqLof52FtVSeVbaHTl/I4UtocCU=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/nmea_log-2025-03-30-09-42-28.txt</key>
-		<data>
-		PeQWkH1NL+gF4J1kxs2HQcgG+70=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/nmea_log-2025-04-02-11-57-48.txt</key>
-		<data>
-		rUaIelkwkr09i0xHit3fU28xcCk=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/nmea_log-2025-04-02-12-56-18.txt</key>
-		<data>
-		ii2KUlRLb+aGjiXNQDd4y375Myg=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/pretendard_bold.ttf</key>
-		<data>
-		ixiXn29A64pdaES2uULZ1vOMhFI=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/pretendard_medium.ttf</key>
-		<data>
-		vThBcF84WXOE8im3NB1XaX5bv2g=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/pretendard_regular.ttf</key>
-		<data>
-		f/tj7mhmobNMNIrOdtZSlBbx4TE=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/street_driving_dark_orbis.json</key>
-		<data>
-		K7MLb9CEMDmFEkAXYnGqyLaeMtA=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/street_driving_light_orbis.json</key>
-		<data>
-		jNonbdrH5wcNKK13DqNP0rn1+hk=
-		</data>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/zh-CN.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BZkYkCXdCsxBiWXuadddo55H598=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/zh-TW.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			84y6XywVCbs8/KeW75ksdiHk9sk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -322,7 +193,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jUhIHZL3u/lqAl+jDI8+LXt21Al5qi+yNcIjKdObVKQ=
+			Fvjb27EH+ZzlZYLcaoosfi9Hi6SUusgaJfSjjgbTv9E=
 			</data>
 		</dict>
 		<key>InvRouteTableViewCell.nib</key>
@@ -392,7 +263,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ujuqe2ZCBD7THZjFvRSbUeoHLJZTtirfwtGE6ryLiDo=
+			+yLxiFr2D4dbtsg7dsMPDrPXuU4mxu1XpbVrA1Wp5hI=
 			</data>
 		</dict>
 		<key>Modules/iNaviNavigationSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -427,7 +298,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mvqXQX0orfAYx6yPkmh1LBKTJ/6eXEQm33eSkfA5WCA=
+			glxTII6H1O0l3VNP6VyQOSxO80dGla2g3PIqA9lH9M8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -436,198 +307,6 @@
 			<data>
 			Q8VPVJ1MmhUMVKI786HoLHuU16Yv5GFyVT3JvRGqvig=
 			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			joYeCvWIi3aJm5F8AWURUlmBGuc15v0uSOt/li4QI2I=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KXAM8knX1bLDsCJQC3px6XZyS7h3Ivs2f74DSPqy2L4=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/Base.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1MoQa+srpAR/xVlFGcxZmhhfZKhD2JN6f/NOnTjzmf0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/NotoSansCJKkr-Bold.otf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8UaG4XRVugsPaR+ljG3dixRlRLri8XKeSV27UQQ9Qks=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/NotoSansCJKkr-Medium.otf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			S/jouVtAdH3bDD4hCgfv0cx1pLIn68AyDrF5yKVZTOE=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/NotoSansCJKkr-Regular.otf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1L4vnq1uUSyz2lGjOezX7SaE0kdLN2GBvpOJy+3YWjg=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1MoQa+srpAR/xVlFGcxZmhhfZKhD2JN6f/NOnTjzmf0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/files/safetyendguide_light.wav</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eFDKi47A9WtSzXLW1wJNv9W+1qrGBKnpeKmLNR9Jt0k=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/files/safetyendguide_soft.wav</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			iSU50L9WD+7N8Qh8ryaFMVm4fsjPCd8VroXclXDqP3s=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/files/speedover_light.wav</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			V6uygLgUxX902m1cBFyMx9OYTnn/0DSOU2H1t4yPlhc=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/files/speedover_soft.wav</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0NV+RoGkmaMupBIRj8fzlFafNT7C3S8NjoJ72ieAZwc=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/ko.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			33JzzBlOdcKvA7Goe0lVlvh77UCxZwcl5HvWshmDmIM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/korea_log1.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZuXpr30AhoATRrQjLMgX5HxTcQTdOcaif4IgjYRJlqQ=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/korea_log2.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MFmj06Y4SZEP07LfpVjDJyaA/5vzPfCdDCjAQBTraks=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/nmea_log-2025-03-29-11-08-47.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vzjOzop6pD3xnnf0oTWh9TApnYRs9S8mfMi9hL5TfP4=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/nmea_log-2025-03-30-03-59-03.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OCAMwH14HPZv8obEl+r/XLTxQPSl4GSIx35oOkto14c=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/nmea_log-2025-03-30-09-42-28.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Aa0hUQ/dNoTvx+S4f5TsEyZs+W9IwMhvH1Lfa8L4WRc=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/nmea_log-2025-04-02-11-57-48.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			40T3PdzdE6WYmurJ3OjqKUoARqXyjrl/Z2DyIvjpFlY=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/nmea_log-2025-04-02-12-56-18.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xDyEOEpM68fqigght29ng60AowVtQipqUWhYgmzRC2E=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/pretendard_bold.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7g+3tDJe21AxW4G/s22/EqANtZbLQ/G5sdkNggx4i74=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/pretendard_medium.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			m4poADtY6+KCiZczYOD7shmQGDA7tS1ookBQkw3xh4w=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/pretendard_regular.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8ylSiTwzSOzOsbWXXpU8qhNvuhB+1AAxf+hlmo+0xQY=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/street_driving_dark_orbis.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bC9Fo4XNdlebqmjg3SuHevR0+aZsbpTs9yBkIfHyXJ8=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/street_driving_light_orbis.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yZtf+TG0XWVrSrHS+f2gwcIIxvyjeEpyuku89IdNb1w=
-			</data>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/zh-CN.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nkUju8OIRao6vcW7DOyPWA0hGmxzatoG/cu8IwYN0yo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>com.inavisys.navisdk.utils:utils.bundle/Contents/Resources/zh-TW.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dL014f2rtxtdgmObl/zbZ1ULQXEXa9HQu4NQm3u5fqc=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

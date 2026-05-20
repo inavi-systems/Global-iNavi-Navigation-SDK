@@ -110,8 +110,6 @@ public enum Skie {
     }
     public enum ReRouteType {
     }
-    public enum ReqBase {
-    }
     public enum OrbismapException {
     }
     public enum TomTomSearchRequest {
@@ -119,6 +117,8 @@ public enum Skie {
     public enum InitStatus {
     }
     public enum ResultEvent {
+    }
+    public enum ReqBase {
     }
     public enum NetworkResponse {
     }
@@ -510,27 +510,6 @@ public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
   @objc deinit
 }
-extension NaviSDKCore.AgentNetworkModule_iosKt {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public static func streamingDownload(url: Swift.String, outputFilePath: Swift.String) async throws
-}
-#if compiler(>=5.3) && $NonescapableTypes
-public func __streamingDownload(url: Swift.String, outputFilePath: Swift.String, completionHandler: @escaping ((any Swift.Error)?) -> Swift.Void)
-#endif
-@available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-public func streamingDownload(url: Swift.String, outputFilePath: Swift.String) async throws
-extension NaviSDKCore.CommonUtilsKt {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public static func getResponseBody(response: NaviSDKCore.Ktor_client_coreHttpResponse) async throws -> Swift.String
-}
-public var jsonInstance: NaviSDKCore.Kotlinx_serialization_jsonJson {
-  get
-}
-#if compiler(>=5.3) && $NonescapableTypes
-public func __getResponseBody(response: NaviSDKCore.Ktor_client_coreHttpResponse, completionHandler: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
-#endif
-@available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-public func getResponseBody(response: NaviSDKCore.Ktor_client_coreHttpResponse) async throws -> Swift.String
 extension NaviSDKCore.IOSRouteController {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func updateLineFeature(routeOptions: NaviSDKCore.MapRouteOptions, routeInfo: NaviSDKCore.RouteInfo) async throws
@@ -614,17 +593,37 @@ extension NaviSDKCore.NaviMapView {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func emit(event: NaviSDKCore.MapClickEvent) async throws
 }
-extension NaviSDKCore.AgentNetworkModule {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func checkFileSize(ltempFileSize: Swift.Int64, strTempServerUrl: Swift.String) async throws -> NaviSDKCore.KotlinBoolean
+extension NaviSDKCore.NetworkModule {
   #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func request(httpMethod: NaviSDKCore.Ktor_httpHttpMethod, path: Swift.String, body: NaviSDKCore.ReqBase?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  public func executeRequest(method: NaviSDKCore.Ktor_httpHttpMethod, path: Swift.String, body: Swift.String?) async throws -> NaviSDKCore.Ktor_client_coreHttpResponse
   #endif
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func requestDownloadBuffer(url: Swift.String) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.KotlinByteArray>
+  public func getNetworkResponseTime() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.NetworkTimeResponse>
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func requestStreamingDownload(url: Swift.String, outputFilePath: Swift.String) async throws -> NaviSDKCore.NetworkResponse<Foundation.NSString>
+  public func getTomTomApiKey() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomKeys>
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func handleResponse(response: NaviSDKCore.Ktor_client_coreHttpResponse) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func request(method: NaviSDKCore.Ktor_httpHttpMethod, path: Swift.String, body: Any?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func streamingDownload(url: Swift.String, outputFilePath: Swift.String) async throws -> NaviSDKCore.NetworkResponse<Foundation.NSString>
+}
+extension NaviSDKCore.Ktor_ioByteReadChannel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func awaitContent(min: Swift.Int32) async throws -> NaviSDKCore.KotlinBoolean
+}
+extension NaviSDKCore.Ktor_client_coreHttpClientCall {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func body(info: NaviSDKCore.Ktor_utilsTypeInfo) async throws -> Any
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func bodyNullable(info: NaviSDKCore.Ktor_utilsTypeInfo) async throws -> Any?
+  #endif
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getResponseContent() async throws -> any NaviSDKCore.Ktor_ioByteReadChannel
 }
 extension NaviSDKCore.Skie.KtorUtils.Pipeline {
   public struct __Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject {
@@ -643,55 +642,23 @@ extension NaviSDKCore.KotlinSuspendFunction2 {
   public func invoke(p1: Any?, p2: Any?) async throws -> Any?
   #endif
 }
-extension NaviSDKCore.Ktor_client_coreHttpClientCall {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func body(info: NaviSDKCore.Ktor_utilsTypeInfo) async throws -> Any
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func bodyNullable(info: NaviSDKCore.Ktor_utilsTypeInfo) async throws -> Any?
-  #endif
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getResponseContent() async throws -> any NaviSDKCore.Ktor_ioByteReadChannel
-}
-extension NaviSDKCore.Ktor_ioByteReadChannel {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func awaitContent(min: Swift.Int32) async throws -> NaviSDKCore.KotlinBoolean
-}
 extension NaviSDKCore.Ktor_client_coreHttpClientEngine {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func execute(data: NaviSDKCore.Ktor_client_coreHttpRequestData) async throws -> NaviSDKCore.Ktor_client_coreHttpResponseData
 }
-extension NaviSDKCore.OrbisNetworkModule {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getNetworkResponseTime() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.NetworkTimeResponse>
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getTomTomApiKey() async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomKeys>
+extension NaviSDKCore.NetworkResponseHandler {
   #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func requestAuth(authType: NaviSDKCore.AuthType, body: NaviSDKCore.AuthRequest?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
+  public func extractBody(response: NaviSDKCore.Ktor_client_coreHttpResponse, tag: Swift.String) async throws -> Swift.String?
   #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+}
+extension NaviSDKCore.NetworkResponseHandlerImpl {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func requestMultiRoute(routeType: NaviSDKCore.RouteType, body: NaviSDKCore.SearchRouteMultiRequest?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func requestSafetyCamera(cameraType: NaviSDKCore.SafetyCameraType, body: NaviSDKCore.TomTomSafetyCameraRequest?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func requestSearch(type: NaviSDKCore.SearchType, body: NaviSDKCore.TomTomSearchRequest?) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
-  #endif
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func requestServiceGateForOrbis(body: NaviSDKCore.ServiceGateRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ServiceGateResponse>
+  public func getResponseBody(response: NaviSDKCore.Ktor_client_coreHttpResponse) async throws -> Swift.String
 }
 extension NaviSDKCore.AuthApi {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func requestAuth(reqAuth: NaviSDKCore.AuthRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.AuthDto>
-}
-extension NaviSDKCore.BufferDownloadApi {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getDownloadBuffer(url: Swift.String) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.KotlinByteArray>
 }
 extension NaviSDKCore.CameraApi {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -702,8 +669,6 @@ extension NaviSDKCore.MapDownloadApi {
   public func downloadZipFileFromUrl(url: Swift.String, path: Swift.String) async throws -> NaviSDKCore.NetworkResponse<Foundation.NSString>
 }
 extension NaviSDKCore.RouteApi {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getMultiRoute(reqData: NaviSDKCore.ReqBase.ReqFindMultiRoute) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ResFindMultiRoute>
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getOrbisMultiRoute(req: NaviSDKCore.SearchRouteMultiRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchRouteMultiDto>
 }
@@ -725,11 +690,7 @@ extension NaviSDKCore.SearchApi {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getPOISearch(reqData: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchCommonDto>
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getRevGeocoding(reqData: NaviSDKCore.ReqBase.ReqGeocoding) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ResGeocoding>
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getReverseGeocodeSearch(reqData: NaviSDKCore.TomTomReverseGeocodeRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.TomTomReverseGeocodeDto>
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getSQESearch(reqData: NaviSDKCore.ReqSQE) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ResSQE>
 }
 extension NaviSDKCore.ServiceApi {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -748,12 +709,10 @@ extension NaviSDKCore.MapDownloadRepository {
   public func orbisDownloadAndExtractMapData(serverUrl: Swift.String, mapVer: Swift.String, country: Swift.String) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.ResBase>
 }
 extension NaviSDKCore.RouteRepository {
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getBufferDownload(url: Swift.String) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.KotlinByteArray>
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getMultiRoute(reqMultiRoute: NaviSDKCore.ReqBase.ReqFindMultiRoute) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getOrbisMultiRoute(request: NaviSDKCore.SearchRouteMultiRequest) async throws -> NaviSDKCore.NetworkResponse<NaviSDKCore.SearchRouteMultiDto>
+  public func runRoute(routeCount: Swift.Int32, start: NaviSDKCore.LocationInfo.RoutePtItem, goal: NaviSDKCore.LocationInfo.RoutePtItem, sideRoadStart: Swift.Int32, viaList: [NaviSDKCore.LocationInfo.RoutePtItem]?, weight: NaviSDKCore.KotlinDouble?, height: NaviSDKCore.KotlinDouble?, length: NaviSDKCore.KotlinDouble?) async throws -> NaviSDKCore.KotlinPair<Foundation.NSArray, NaviSDKCore.InvErrorCode>?
+  #endif
 }
 extension NaviSDKCore.SafeGuideRepository {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -764,8 +723,6 @@ extension NaviSDKCore.SafeGuideRepository {
 extension NaviSDKCore.SearchRepository {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getCategorySearch(req: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getCommonSearch(reqSQE: NaviSDKCore.ReqSQE) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getGenesisFuzzySearch(req: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -781,8 +738,6 @@ extension NaviSDKCore.SearchRepository {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getPOISearch(req: NaviSDKCore.TomTomSearchCommonRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getRevGeocoding(reqGeocoding: NaviSDKCore.ReqBase.ReqGeocoding) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func getReverseGeocodeSearch(req: NaviSDKCore.TomTomReverseGeocodeRequest) async throws -> NaviSDKCore.NetworkResponse<Swift.AnyObject>
 }
 extension NaviSDKCore.GetSafeGuideUseCase {
@@ -793,32 +748,6 @@ extension NaviSDKCore.GetOrbisMapDownloadUseCase {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func invoke() async throws -> NaviSDKCore.ResultEvent
 }
-extension NaviSDKCore.GetBufferUseCase {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getGuideBuffer(gdata: Swift.String) async throws -> NaviSDKCore.KotlinByteArray?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getRouteBuffer(rdata: Swift.String) async throws -> NaviSDKCore.KotlinByteArray?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func getTrafficBuffer(tdata: Swift.String) async throws -> NaviSDKCore.KotlinByteArray?
-  #endif
-}
-extension NaviSDKCore.GetMultiRouteUseCase {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func invoke(reqMultiRoute: NaviSDKCore.ReqBase.ReqFindMultiRoute) async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
-}
-extension NaviSDKCore.GetCommonSearchUseCase {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func invoke(reqSearch: NaviSDKCore.ReqSQE) async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
-}
-extension NaviSDKCore.GetRevGeocodingUseCase {
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func invoke(reqGeocoding: NaviSDKCore.ReqBase.ReqGeocoding) async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
-}
 extension NaviSDKCore.GetServiceGateUseCase {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func invoke(reqServiceGateForOrbis: NaviSDKCore.ServiceGateRequest) async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
@@ -826,12 +755,6 @@ extension NaviSDKCore.GetServiceGateUseCase {
 extension NaviSDKCore.GetTomTomAPIKeyUseCase {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
   public func invoke() async throws -> any NaviSDKCore.Kotlinx_coroutines_coreFlow
-}
-extension NaviSDKCore.RouteStore {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
-  public func runRoute(routeCount: Swift.Int32, start: NaviSDKCore.LocationInfo.RoutePtItem, goal: NaviSDKCore.LocationInfo.RoutePtItem, sideRoadStart: Swift.Int32, viaList: [NaviSDKCore.LocationInfo.RoutePtItem]?, weight: NaviSDKCore.KotlinDouble?, height: NaviSDKCore.KotlinDouble?, length: NaviSDKCore.KotlinDouble?) async throws -> NaviSDKCore.KotlinPair<Foundation.NSArray, NaviSDKCore.InvErrorCode>?
-  #endif
 }
 extension NaviSDKCore.PermissionsPermissionsControllerProtocol {
   @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
@@ -2148,31 +2071,6 @@ public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.ReRo
 #if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.ReRouteType.__Sealed? where __Sealed : NaviSDKCore.ReRouteType
 #endif
-extension NaviSDKCore.Skie.Model.ReqBase {
-  @frozen public enum __Sealed : Swift.Hashable {
-    case formData(NaviSDKCore.ReqBase.FormData)
-    case reqATL(NaviSDKCore.ReqBase.ReqATL)
-    case reqClauseAgree(NaviSDKCore.ReqBase.ReqClauseAgree)
-    case reqDataSetInfo(NaviSDKCore.ReqBase.ReqDataSetInfo)
-    case reqFindMultiRoute(NaviSDKCore.ReqBase.ReqFindMultiRoute)
-    case reqGP(NaviSDKCore.ReqBase.ReqGP)
-    case reqGeocoding(NaviSDKCore.ReqBase.ReqGeocoding)
-    case reqMapDownInfo(NaviSDKCore.ReqBase.ReqMapDownInfo)
-    case reqOrbisMapPath(NaviSDKCore.ReqBase.ReqOrbisMapPath)
-    case reqSearchBase(NaviSDKCore.ReqBase.ReqSearchBase)
-    case reqServiceGate(NaviSDKCore.ReqBase.ReqServiceGate)
-    case reqSQE(NaviSDKCore.ReqSQE)
-    public static func == (a: NaviSDKCore.Skie.Model.ReqBase.__Sealed, b: NaviSDKCore.Skie.Model.ReqBase.__Sealed) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.ReqBase.__Sealed where __Sealed : NaviSDKCore.ReqBase
-#if compiler(>=5.3) && $NonescapableTypes
-@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.ReqBase.__Sealed? where __Sealed : NaviSDKCore.ReqBase
-#endif
 extension NaviSDKCore.Skie.Model.OrbismapException {
   @frozen public enum __Sealed : Swift.Hashable {
     case accessTokenExpiredException(NaviSDKCore.AccessTokenExpiredException)
@@ -2257,6 +2155,31 @@ extension NaviSDKCore.Skie.Model.ResultEvent {
 public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.ResultEvent.__Sealed where __Sealed : NaviSDKCore.ResultEvent
 #if compiler(>=5.3) && $NonescapableTypes
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.ResultEvent.__Sealed? where __Sealed : NaviSDKCore.ResultEvent
+#endif
+extension NaviSDKCore.Skie.Model.ReqBase {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case formData(NaviSDKCore.ReqBase.FormData)
+    case reqATL(NaviSDKCore.ReqBase.ReqATL)
+    case reqClauseAgree(NaviSDKCore.ReqBase.ReqClauseAgree)
+    case reqDataSetInfo(NaviSDKCore.ReqBase.ReqDataSetInfo)
+    case reqFindMultiRoute(NaviSDKCore.ReqBase.ReqFindMultiRoute)
+    case reqGP(NaviSDKCore.ReqBase.ReqGP)
+    case reqGeocoding(NaviSDKCore.ReqBase.ReqGeocoding)
+    case reqMapDownInfo(NaviSDKCore.ReqBase.ReqMapDownInfo)
+    case reqOrbisMapPath(NaviSDKCore.ReqBase.ReqOrbisMapPath)
+    case reqSearchBase(NaviSDKCore.ReqBase.ReqSearchBase)
+    case reqServiceGate(NaviSDKCore.ReqBase.ReqServiceGate)
+    case reqSQE(NaviSDKCore.ReqSQE)
+    public static func == (a: NaviSDKCore.Skie.Model.ReqBase.__Sealed, b: NaviSDKCore.Skie.Model.ReqBase.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> NaviSDKCore.Skie.Model.ReqBase.__Sealed where __Sealed : NaviSDKCore.ReqBase
+#if compiler(>=5.3) && $NonescapableTypes
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> NaviSDKCore.Skie.Model.ReqBase.__Sealed? where __Sealed : NaviSDKCore.ReqBase
 #endif
 extension NaviSDKCore.Skie.Model.NetworkResponse {
   @frozen public enum __Sealed<T> : Swift.Hashable where T : AnyObject {
@@ -2731,7 +2654,7 @@ public func timeInstantNow() -> NaviSDKCore.Kotlinx_datetimeInstant
 public func timeMillis() -> Swift.Int64
 public func getLanguageCodeStr() -> Swift.String
 public func getLanguageType() -> NaviSDKCore.LanguageType
-public var jsonInstance_: NaviSDKCore.Kotlinx_serialization_jsonJson {
+public var jsonInstance: NaviSDKCore.Kotlinx_serialization_jsonJson {
   get
 }
 public func getSpeedDigitImageResources(speed: Swift.Int32) -> [Any]
@@ -2777,12 +2700,11 @@ public func getLocalString(stringResource: NaviSDKCore.ResourcesStringResource) 
 public func getResourceString(stringType: NaviSDKCore.StringType) -> Swift.String
 public func showToast(message: Swift.String)
 public func randomUUID() -> Swift.String
-public func wrtieDriveLogToFile(path: Swift.String, type: NaviSDKCore.AssetType)
+public func writeDriveLogToFile(path: Swift.String, type: NaviSDKCore.AssetType)
 public var searchResultTypeAdapter: any NaviSDKCore.RuntimeColumnAdapter {
   get
 }
 public func createOrbisMapMatcher(context: Any, fileManager: NaviSDKCore.FileManager) -> NaviSDKCore.OrbisMapMatcher
-public func getGPSEnabled() -> Swift.Bool
 public func getOrbisRouteLoader() -> any NaviSDKCore.OrbisRouteLoader
 #if compiler(>=5.3) && $NonescapableTypes
 public func getOrbisRoute() -> (any NaviSDKCore.OrbisRouteIF)?
